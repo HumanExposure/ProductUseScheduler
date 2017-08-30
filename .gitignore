@@ -32,3 +32,7 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 .Rproj.user
+
+##not including /input and /output directories
+/INPUTS/
+/OUTPUTS/
