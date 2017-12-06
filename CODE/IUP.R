@@ -30,7 +30,7 @@ IUP <- function(housePUCs, ic, ent, hpf, file_csv=NULL){
     # remove excluded PUCs
     ent <- ent[ent$NO2017!=1, ]
 
-    # remove HUP non-related PUCs
+    # remove IUP non-related PUCs
     ent <- ent[ent$IUP!=0, ]
 
     #if statement for gender (Male/Female)

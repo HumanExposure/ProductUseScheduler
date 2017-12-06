@@ -27,7 +27,7 @@ ABS <- function(wd=NULL){
 
     # population and housing generator output file
     tryCatch(
-        phf <- read.csv(file="./INPUTS/pophouse.csv", header=TRUE, sep=",", stringsAsFactors = FALSE), 
+        phf <- read.csv(file="./INPUTS/pophouse_10k.csv", header=TRUE, sep=",", stringsAsFactors = FALSE), 
          error=function(e) {stop("pophouse.csv is not available")}
     )
 
@@ -74,12 +74,20 @@ ABS <- function(wd=NULL){
     )
     activity_diary_pool <- filter(activity_diary_pool, Day.of.the.year>0)
 
+    ################################################
+    # Call Household Characteristics Processor (HCP)
+    ################################################
+    HCP_output <- HCP(phf)
+    # households_list <- unique(HCP_output$household_index)
+
+
     return_variables <- list("phf"=phf,
                              "ent"=ent,
                              "hpf"=hpf_sub,
                              "sheds_var_raw"=sheds_var_raw,
                              "activity_diary"=activity_diary_pool,
-                             "seasonality_PUC"=Seasonality_PUC
+                             "seasonality_PUC"=Seasonality_PUC,
+                             "HCP_output"=HCP_output
                             )
     return(return_variables)
 }

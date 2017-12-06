@@ -32,6 +32,7 @@ CAD <- function(rdiary, cluster_df){
 
             # extract sheds_id from a randomly sampled cluster
             cluster_comp <- strsplit(cluster_temp$new_cluster_PUC, " ")[[1]]
+
             # if this slot is truncated, this ratio is <1
             duration_ratio <- 1
 

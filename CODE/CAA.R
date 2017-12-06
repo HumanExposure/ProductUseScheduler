@@ -12,9 +12,9 @@ CAA <- function(ilist){
     #       ilist: a dataframe corresponding to an individual's list of PUCs 
     #        (with data on duration, freq, etc)
     # Outputs:
-    #       db2: a dataframe with PUCs that are part of clusters
-    #       db4: a dataframe with non-cluster PUCs and collapsed cluster PUCs
-    #       db6: a dataframe of both cluster and non-cluster PUCs except that 
+    #       PUC_clusters: a dataframe with PUCs that are part of clusters
+    #       collapsed_clusters: a dataframe with non-cluster PUCs and collapsed cluster PUCs
+    #       indi_puc_new_freq: a dataframe of both cluster and non-cluster PUCs except that 
     #            frequencies of PUCs from the same cluster are set to the same
     #########################################################################
 
@@ -23,6 +23,7 @@ CAA <- function(ilist){
 
     # db2 contains those PUCs that are part of clusters
     db2 <- ilist[!(ilist$Clusters==""|is.na(ilist$Clusters)),] 
+
     # temporally replace a mixture of indoor/outdoor PUCs to indoor
     unique_painting_io <- unique(unlist(db2[(db2$Clusters=="Painting"), "Indoor_outdoor"]))
     if (length(unique_painting_io) > 1){
@@ -32,7 +33,7 @@ CAA <- function(ilist){
     # maxdur collapses the clusters to extract the maximum duration
     sumdur <- aggregate(new_aso ~ Clusters, data=db2, FUN=sum) 
 
-    # maxfreq collapses the clusters to extract the minimum frequency
+    # maxfreq collapses the clusters to extract the max frequency
     maxfreq <- aggregate(new_freq ~ Clusters, data=db2, FUN=max) 
 
     # personal or communal
@@ -64,7 +65,7 @@ CAA <- function(ilist){
     db5 <- left_join(select(db2, -c(new_freq)), select(db3, c(Clusters, new_freq)), by="Clusters")
 
     # used to check how PUCs are assigned
-    db6 <- rbind(db1, db5) 
+    db6 <- rbind(db1, db5)
 
     # output processed dataframe as well as original list of cluster pucs for later expansion in CAD
     res <- list("collapsed_clusters"=db4, "PUC_clusters"=db2, "indi_puc_new_freq"=db6)

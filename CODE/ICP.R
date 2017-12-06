@@ -15,7 +15,7 @@ ICP <- function(PUC_household, household_communal_uni, person_index_str){
     #       person_index_str: a string, index of an individual with a household
     # Output:   
     #       ICP_person_temp: a dataframe with PUCs after adjusting 
-    #                        usages for communal PUCs at indivudial level
+    #                        usages for communal PUCs at individual level
     ############################################################################
 
     # subset based on person index
@@ -65,14 +65,34 @@ ICP <- function(PUC_household, household_communal_uni, person_index_str){
             household_communal_temp <- filter(household_communal_uni, sheds_id==PUC_temp)
             # we assume male will use 80% of outdoor communal PUCs and 
             # female will use 80% of indoor communal PUCs
-            if (I_O_temp == "O" && gender_temp == "M"){
-                new_freq <- 0.8 * household_communal_temp$c_use_freq/household_communal_temp$n_male_use
-            } else if (I_O_temp == "O" && gender_temp == "F"){
-                new_freq <- 0.2 * household_communal_temp$c_use_freq/household_communal_temp$n_female_use
-            } else if (I_O_temp == "I" && gender_temp == "M"){
-                new_freq <- 0.2 * household_communal_temp$c_use_freq/household_communal_temp$n_male_use
-            } else if (I_O_temp == "I" && gender_temp == "F"){
-                new_freq <- 0.8 * household_communal_temp$c_use_freq/household_communal_temp$n_female_use
+            n_male_use <- household_communal_temp$n_male_use
+            n_female_use <- household_communal_temp$n_female_use
+            n_household_adult <- n_male_use + n_female_use
+
+            if (n_household_adult>=2 && n_male_use>0 && n_female_use>0){
+                if (I_O_temp == "O" && gender_temp == "M"){
+                    new_freq <- 0.8 * household_communal_temp$c_use_freq/household_communal_temp$n_male_use
+                } else if (I_O_temp == "O" && gender_temp == "F"){
+                    new_freq <- 0.2 * household_communal_temp$c_use_freq/household_communal_temp$n_female_use
+                } else if (I_O_temp == "I" && gender_temp == "M"){
+                    new_freq <- 0.2 * household_communal_temp$c_use_freq/household_communal_temp$n_male_use
+                } else if (I_O_temp == "I" && gender_temp == "F"){
+                    new_freq <- 0.8 * household_communal_temp$c_use_freq/household_communal_temp$n_female_use
+                } 
+            } else if(n_household_adult>=2 && n_male_use==0 && n_female_use>0){
+                if (I_O_temp == "O" && gender_temp == "F"){
+                    new_freq <- household_communal_temp$c_use_freq/household_communal_temp$n_female_use
+                } else if (I_O_temp == "I" && gender_temp == "F"){
+                    new_freq <- household_communal_temp$c_use_freq/household_communal_temp$n_female_use
+                }
+            } else if(n_household_adult>=2 && n_male_use>0 && n_female_use==0){
+                if (I_O_temp == "O" && gender_temp == "M"){
+                    new_freq <- household_communal_temp$c_use_freq/household_communal_temp$n_male_use
+                } else if (I_O_temp == "I" && gender_temp == "M"){
+                    new_freq <- household_communal_temp$c_use_freq/household_communal_temp$n_male_use
+                } 
+            } else{
+                new_freq <- household_communal_temp$c_use_freq
             }
             new_aso <- household_communal_temp$c_use_aso
         } else{

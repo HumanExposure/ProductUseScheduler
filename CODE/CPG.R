@@ -63,7 +63,7 @@ CPG <- function(PUC_household){
                                                          use_aso = new_use_aso,
                                                          use_prev = new_use_prev,
                                                          Personal_or_Communal = new_Personal_or_Communal,
-                                                         Clusters=new_Clusters,
+                                                         Clusters = new_Clusters,
                                                          Indoor_outdoor = new_Indoor_outdoor
                                   )
 
@@ -78,7 +78,7 @@ CPG <- function(PUC_household){
     # Select communal PUCs used by people whose ages are >12
     # this means that we assume people <= 12 will not carry responsibility of 
     # applying household PUCs. 
-    household_communal <- filter(PUC_household_Step_2, Personal_or_Communal=="Communal", person_age >12)
+    household_communal <- filter(PUC_household_Step_2, Personal_or_Communal=="Communal", person_age>12)
 
     # Count number of males and females
     gender_pivot <- household_communal %>% distinct(person_index, person_gender)

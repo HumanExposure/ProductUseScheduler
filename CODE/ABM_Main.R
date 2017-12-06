@@ -2,10 +2,11 @@
 # ABM is executed by calling ABM_Runner() 
 ##############################################
 
+
 ###################################
 #### Beginning of ABM_Runner ######
 ###################################
-ABM_Runner <- function(pth_str=NULL, household_number=3, random_seed=123){
+ABM_Runner <- function(pth_str=NULL, household_number=3){
     ############################################################################
     # Inputs:
     #       pth_str: a working folder with the following three sub-folders:
@@ -22,7 +23,6 @@ ABM_Runner <- function(pth_str=NULL, household_number=3, random_seed=123){
     ##################
     # setup ABM inputs
     ##################
-    set.seed(random_seed)
     setwd(pth_str)
     tryCatch(source("./CODE/ABS.R"),
          error=function(e) {stop("ABS.R is not available")}
@@ -36,10 +36,9 @@ ABM_Runner <- function(pth_str=NULL, household_number=3, random_seed=123){
     seasonality_PUC <- ABSoutput$seasonality_PUC    # PUC seasonality
 
     ################################################
-    # Call Household Characteristics Processor (HCP)
+    # Household Characteristics Processor (HCP)
     ################################################
-    HCP_output <- HCP(phf)
-    households_list <- unique(HCP_output$household_index)
+    HCP_output <-  ABSoutput$HCP_output
 
     ##########################
     ## for a given household 
@@ -353,37 +352,37 @@ ABM_Runner <- function(pth_str=NULL, household_number=3, random_seed=123){
 
 
 
-#######################################################
-# Example run_mode 1 
-# non-parallel, directly specify household numbers
-#######################################################
-# declare working folder
-pth_str <- "L:/Lab/HEM/ABM-ICF/R/May 12 Deliverable/"
-
-# directly specify household numbers
-house_list <- c(125)
-
-# Call ABM runner
-for (i in 1:length(house_list)){
-    ABM_Runner(pth_str, house_list[i])
-}
-
-#######################################################
-# Example run_mode 2 
-# non-parallel, randomly select a specified number 
-# of households without replacement
-#######################################################
-# declare working folder
-pth_str <- "L:/Lab/HEM/ABM-ICF/R/May 12 Deliverable/"
-
-# randomly select a specified number of households without replacement
-n_of_house <- 2
-house_list <- sample(x=1:1000, size=n_of_house, replace=FALSE)
-
-# Call ABM runner
-for (i in 1:length(house_list)){
-    ABM_Runner(pth_str, house_list[i])
-}
+# #######################################################
+# # Example run_mode 1 
+# # non-parallel, directly specify household numbers
+# #######################################################
+# # declare working folder
+# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/"
+# 
+# # directly specify household numbers
+# house_list <- c(1)
+# set.seed(1234)
+# # Call ABM runner
+# for (i in 1:length(house_list)){
+#     ABM_Runner(pth_str, house_list[i])
+# }
+# 
+# #######################################################
+# # Example run_mode 2 
+# # non-parallel, randomly select a specified number 
+# # of households without replacement
+# #######################################################
+# # declare working folder
+# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/"
+# 
+# # randomly select a specified number of households without replacement
+# n_of_house <- 2
+# house_list <- sample(x=1:1000, size=n_of_house, replace=FALSE)
+# set.seed(1234)
+# # Call ABM runner
+# for (i in 1:length(house_list)){
+#     ABM_Runner(pth_str, house_list[i])
+# }
 
 ################################################
 # Example run_mode 3 
@@ -393,15 +392,16 @@ library(foreach)
 library(doParallel)
 
 # register number of cores (total #CPU-2)
-cl <- makeCluster(detectCores() - 2)
-registerDoParallel(cl, cores = detectCores() - 2)
+cl <- makeCluster(detectCores() - 4)
+registerDoParallel(cl, cores = detectCores() - 4)
 
 # declare working folder
-pth_str <- "L:/Lab/HEM/ABM-ICF/R/May 12 Deliverable/"
+pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/"
 
 # directly specify household numbers
-house_list <- 1:10
+house_list <- 1:600
 
+set.seed(1234)
 # Call ABM runner
 out <- foreach(i = 1:length(house_list)) %dopar% {
   res <- tryCatch({
@@ -411,30 +411,30 @@ out <- foreach(i = 1:length(house_list)) %dopar% {
 
 on.exit(stopCluster(cl))
 
-##################################################
-# Example run_mode 4 
-# parallel, randomly select a specified number 
-# of households without replacement
-##################################################
-library(foreach)
-library(doParallel)
-
-# register number of cores (total #CPU-2)
-cl <- makeCluster(detectCores() - 2)
-registerDoParallel(cl, cores = detectCores() - 2)
-
-# declare working folder
-pth_str <- "L:/Lab/HEM/ABM-ICF/R/May 12 Deliverable/"
-
-# randomly select a specified number of households without replacement
-n_of_house <- 10
-house_list <- sample(x=1:1000, size=n_of_house, replace=FALSE)
-
-# Call ABM runner
-out <- foreach(i = 1:length(house_list)) %dopar% {
-    res <- tryCatch({
-        ABM_Runner(pth_str, house_list[i])
-    }, error=function(e) NULL)
-}
-
-on.exit(stopCluster(cl))
+# ##################################################
+# # Example run_mode 4 
+# # parallel, randomly select a specified number 
+# # of households without replacement
+# ##################################################
+# library(foreach)
+# library(doParallel)
+# 
+# # register number of cores (total #CPU-2)
+# cl <- makeCluster(detectCores() - 2)
+# registerDoParallel(cl, cores = detectCores() - 2)
+# 
+# # declare working folder
+# pth_str <- "C:/Users/33855/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/"
+# 
+# # randomly select a specified number of households without replacement
+# n_of_house <- 10
+# house_list <- sample(x=1:1000, size=n_of_house, replace=FALSE)
+# set.seed(1234)
+# # Call ABM runner
+# out <- foreach(i = 1:length(house_list)) %dopar% {
+#     res <- tryCatch({
+#         ABM_Runner(pth_str, house_list[i])
+#     }, error=function(e) NULL)
+# }
+# 
+# on.exit(stopCluster(cl))
