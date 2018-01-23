@@ -6,14 +6,13 @@
 #### Beginning of HUP #####
 ###########################
 
-HUP <- function(household_index, phf, ent, hpf, file_csv=NULL){
+HUP <- function(household_index, phf, ent, file_csv=NULL){
     
     ####################################################################
     # Inputs:
     #       household_index: index number of a given household
     #       phf: population and housing generator output file
     #       ent: ever never table
-    #       hpf: product categories file; full list of possible PUCs
     # Outputs:
     #       huplist: a list of candidate PUCs
     ###################################################################
@@ -35,7 +34,7 @@ HUP <- function(household_index, phf, ent, hpf, file_csv=NULL){
     hc <- phf[household_index, ] 
 
     # read in universe of PUCs
-    upuclist <- hpf$SHEDSID 
+    upuclist <- unique(ent$PUCID_productype) 
 
     # if statement for cars:
     if(hc$cars==0){ 
