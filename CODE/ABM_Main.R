@@ -16,8 +16,8 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     #       random_seed: number of a random seed
     ############################################################################
 
-    pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/Version_2/"
-    household_number=3
+    pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+    household_number=1
 
 
     # check inputs
@@ -35,9 +35,8 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     ABSoutput <- ABS()
     phf <- ABSoutput$phf                            # population and housing generator output file
     ent <- ABSoutput$ent                            # ever never table
-    # hpf <- ABSoutput$hpf                          # product categories file
     sheds_var_raw <- ABSoutput$sheds_var_raw        # inputs sheds_sheds_variables both product and refined levels
-    sheds_var_product_raw <- ABSoutput$sheds_var_product_raw # inputs sheds_sheds_variables only product level
+    # sheds_var_product_raw <- ABSoutput$sheds_var_product_raw # inputs sheds_sheds_variables only product level
     activity_diary <- ABSoutput$activity_diary      # people activity diary
     seasonality_PUC <- ABSoutput$seasonality_PUC    # PUC seasonality
 
@@ -62,6 +61,10 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     # list all the persons from a given household
     person_list <- unique(HCP_output_sub$person_index)
 
+
+    CPS_out <- CPS(HUPoutput_temp, HCP_output_sub, sheds_var_raw)
+
+    write.csv(CPS_out, "CPS_out1.csv")
     # # create a dataframe PUC_household to hold available PUCs at the 
     # # household level with its user's information (gender, age), PUC use 
     # # profile (mass, duration), as well as household information (size)

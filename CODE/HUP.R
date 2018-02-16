@@ -24,7 +24,7 @@ HUP <- function(household_index, phf, ent, file_csv=NULL){
     ent[is.na(ent)] <- 999 
 
     # remove excluded PUCs
-    removelist <- c(removelist, ent[ent$NO2017==1, "sheds_id"])
+    removelist <- c(removelist, ent[ent$NO2017==1, "PUCID_productype"])
     ent <- ent[ent$NO2017!=1, ]
     
     # remove HUP non-related PUCs

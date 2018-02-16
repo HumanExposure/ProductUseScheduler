@@ -18,9 +18,9 @@ ABS <- function(wd=NULL){
     # load all modules
     # R_file_pool <- c("AAD.R", "CAA.R","CAD.R","CPG.R","CSF.R","HUP.R",
     #                  "ICP.R","INACT.R","IIT.R","ISP.R","IUP.R","RID.R","RPS.R",
-    #                  "UPG.R")
+    #                  )
     
-    R_file_pool <- c("HCP.R", "HUP.R")
+    R_file_pool <- c("HCP.R", "HUP.R", "UPG.R", "CPS.R")
 
     for (each_R_file in R_file_pool){
         tryCatch(source(paste0("./CODE/", each_R_file)),
@@ -66,7 +66,7 @@ ABS <- function(wd=NULL){
 
     # load inputs sheds_sheds_variables
     tryCatch(
-        sheds_var_raw <- read.csv("./INPUTS/PUC_use_data_NEW.csv", header=TRUE, stringsAsFactors=FALSE),
+        sheds_var_raw <- read.csv("./INPUTS/PUC_use_data_NEW_TH2.csv", header=TRUE, stringsAsFactors=FALSE),
         error=function(e) {stop("PUC_use_data.csv is not available")}
     )
 
