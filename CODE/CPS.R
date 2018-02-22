@@ -1,9 +1,7 @@
 # Communal PUC Selector (CPS)
 # Function: 
 
-###########################
-#### Beginning of CPS #####
-###########################
+
 
 sample_communal_PUC_step2 <- function(sheds_var_raw, sheds_var_product_selected, HCP_output_sub){
 	##########################################################
@@ -24,8 +22,7 @@ sample_communal_PUC_step2 <- function(sheds_var_raw, sheds_var_product_selected,
 	sheds_var_raw_sub <- sheds_var_raw_refined_t[sample(nrow(sheds_var_raw_refined_t), 1), ]
 
 	### Step 2: for all household members, pick one to use this item
-
-	# select threshold to select a male
+	# select threshold if a male is picked
 	refined_PUC_prev_M <- sheds_var_raw_sub$Prev_M[1]
 
 	# get a random number to decide which person will use this communal PUC
@@ -86,10 +83,10 @@ sample_communal_PUC_step2 <- function(sheds_var_raw, sheds_var_product_selected,
 
 
 sample_communal_PUC_step1 <- function(product_in, sheds_var_raw, HCP_output_sub){
-	################################################
-	# function decide which communal product will 
-	# be used at the household level
-	################################################
+	###################################################################################
+	# function first decides which communal product will be used at the household level
+	# then call function _step2() to assign to a member
+	###################################################################################
 	n_product = dim(product_in)[1]  # number of products
 	product_use_profile <- data.frame()     # empty df to store results
 
@@ -116,14 +113,14 @@ sample_communal_PUC_step1 <- function(product_in, sheds_var_raw, HCP_output_sub)
 }
 
 
-
-
-CPS <- function(HUPoutput, HCP_output_sub, sheds_var_raw){
+###########################
+#### Beginning of CPS #####
+###########################
+CPS <- function(HUP_output, HCP_output_sub, sheds_var_raw){
 
 	### Step 1 is to split HUP filtered products to communal cluster and communal noncluster group
-
 	# subset products filtered by HUP, which are the potential ones can be used by the household
-	sheds_var_product_sub <-  sheds_var_raw[(sheds_var_raw$PUCID_productype %in% HUPoutput), ]
+	sheds_var_product_sub <-  sheds_var_raw[(sheds_var_raw$PUCID_productype %in% HUP_output), ]
 
 	# communal cluster
 	sheds_var_product_sub_cluster <- sheds_var_product_sub[(sheds_var_product_sub$cluster != 0) & 
@@ -151,7 +148,7 @@ CPS <- function(HUPoutput, HCP_output_sub, sheds_var_raw){
 			cluster_name_t <- clusters_pool[zzz]
 
 			# list all communal products which belong to the same cluster (after filtered by HUP)
-			cluster_product_level <- sheds_var_raw[(sheds_var_raw$PUCID_productype %in% HUPoutput) &
+			cluster_product_level <- sheds_var_raw[(sheds_var_raw$PUCID_productype %in% HUP_output) &
 			                                       (sheds_var_raw$cluster==cluster_name_t) &
 			                                       (sheds_var_raw$personal_communal != "Personal") &
 			                                       (sheds_var_raw$refined==0), ]

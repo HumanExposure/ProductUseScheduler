@@ -135,6 +135,9 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
         use_ht_val <- ari_random(use_ht_select_mean, use_ht_select_sd, "ht", pctl)
         use_act_val <- product_type_select$AT
         use_aso_val <- use_ht_val + use_act_val
+        
+        io=product_type_select$indoor_outdoor
+        pc=product_type_select$personal_communal
 
         df_return <- data.frame("sheds_id" = as.character(sheds_id),
                                 "use_mass" = use_mass_val, 
@@ -145,6 +148,8 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
                                 "use_prev" = use_prev_val,
                                 "gender" = gender,
                                 "age_person" = age_person,
+                                "Personal_or_Communal"=pc,
+                                "Indoor_outdoor"=io,
                                 stringsAsFactors = FALSE)
     }
 
