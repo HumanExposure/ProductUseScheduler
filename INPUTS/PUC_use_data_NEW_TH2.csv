@@ -152,7 +152,7 @@ EL.0300.050,#N/A,#N/A,P.HO.010,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,
 EL.0300.050,EL.0300.050.099.F,"computers and accessories/supplies , printer ink NOC",P.HO.010.000,printer ink,0,1,Communal,I,0,NA,1,0.2,0.8,0,104,0.3,5,0.3,0,1,1
 EL.0300.060,#N/A,#N/A,P.HO.020,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 EL.0300.060,EL.0300.060.099.F,"computers and accessories/supplies , printer toner NOC",P.HO.020.000,printer toner,0,1,Communal,I,0,NA,1,0.2,0.8,0,104,0.3,5,0.3,0,1,1
-AC.0700.030,#N/A,#N/A,P.HO.030,#N/A,#N/A,0,Communal,,0,NA,NA,0.02,0.02,0,NA,NA,NA,NA,NA,NA,NA
+AC.0700.030,#N/A,#N/A,P.HO.030,#N/A,#N/A,0,Personal,,0,NA,NA,0.02,0.02,0,NA,NA,NA,NA,NA,NA,NA
 AC.0700.030,AC.0700.030.099.F,"home office , white out NOC",P.HO.030.000,white out,0,1,Personal,I,0,NA,NA,1,1,1,12,0.3,5,0.3,0,3,1
 CP.0100.010,#N/A,#N/A,P.IH.010,#N/A,#N/A,0,Communal,,0,0.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 CP.0100.010,CP.0100.010.051.F,"air freshener , air freshener gel",P.IH.010.007,air freshener gel,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,1,0.6,0,5,1

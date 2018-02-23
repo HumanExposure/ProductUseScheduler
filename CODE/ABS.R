@@ -48,7 +48,8 @@ ABS <- function(wd=NULL){
         error=function(e) {stop("PUC_use_data.csv is not available")}
     )
 
-    # sheds_var_product_raw <- filter(sheds_var_raw, refined==0)
+    product_refine_tbl <- filter(sheds_var_raw, refined==1) %>% select(PUCID_productype, PUCID_refined) %>% 
+                          left_join(select(ent, PUCID_productype, PUCID_PT_description), by="PUCID_productype")
 
     # load diary RDS file
     tryCatch(
@@ -66,6 +67,7 @@ ABS <- function(wd=NULL){
     return_variables <- list("phf"=phf,
                              "ent"=ent,
                              "sheds_var_raw"=sheds_var_raw,
+                             "product_refine_tbl"=product_refine_tbl,
                              "activity_diary"=activity_diary_pool,
                              "seasonality_PUC"=Seasonality_PUC,
                              "HCP_output"=HCP_output
