@@ -104,7 +104,7 @@ HM.0100.020,#N/A,#N/A,P.HM.110,#N/A,#N/A,0,Communal,,0,0.61,NA,NA,NA,NA,NA,NA,NA
 HM.0100.020,HM.0100.020.050.F,"adhesives and adhesive removers , multipurpose adhesive spray",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,20,1,0,10,1
 HM.0100.020,HM.0100.020.099.F,"adhesives and adhesive removers , multipurpose adhesive NOC",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,20,1,0,10,1
 HM.1400.010,#N/A,#N/A,P.HM.120,#N/A,#N/A,0,Communal,,Painting,0.44,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.010,HM.1400.010.040.F,"paint/stain and related products , paint exterior",P.HM.120.005,paint exterior,0,1,Communal,I,Painting,NA,0.25,0.8,0.2,0,2,1,120,0.6,30,3000,1
+HM.1400.010,HM.1400.010.040.F,"paint/stain and related products , paint exterior",P.HM.120.005,paint exterior,0,1,Communal,O,Painting,NA,0.25,0.8,0.2,0,2,1,120,0.6,30,3000,1
 HM.1400.010,HM.1400.010.041.F,"paint/stain and related products , paint interior",P.HM.120.009,paint interior,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,2,1,120,0.6,30,1000,1
 HM.1400.010,HM.1400.010.050.F,"paint/stain and related products , paint spray",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,4,1,30,1,30,180,1
 HM.1400.010,HM.1400.010.099.F,"paint/stain and related products , paint NOC",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,4,1,30,1,30,180,1
@@ -120,7 +120,7 @@ HM.1500.010,HM.1500.010.099.F,"patch and repair , patch and repair NOC",P.HM.160
 HM.1600.010,#N/A,#N/A,P.HM.170,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 HM.1600.010,HM.1600.010.099.F,"plumbing , plumbing NOC",P.HM.170.000,plumbing,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,60,0.6,0,50,1
 HM.1400.050,#N/A,#N/A,P.HM.180,#N/A,#N/A,0,Communal,,Painting,0.14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.050,HM.1400.050.040.F,"paint/stain and related products , primer exterior",P.HM.180.005,primer exterior,0,1,Communal,I,Painting,NA,0.25,0.8,0.2,0,3.5,1,90,0.6,30,550,1
+HM.1400.050,HM.1400.050.040.F,"paint/stain and related products , primer exterior",P.HM.180.005,primer exterior,0,1,Communal,O,Painting,NA,0.25,0.8,0.2,0,3.5,1,90,0.6,30,550,1
 HM.1400.050,HM.1400.050.041.F,"paint/stain and related products , primer interior",P.HM.180.009,primer interior,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,550,1
 HM.1400.050,HM.1400.050.050.F,"paint/stain and related products , primer spray",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,250,1
 HM.1400.050,HM.1400.050.099.F,"paint/stain and related products , primer NOC",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,250,1

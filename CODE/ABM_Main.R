@@ -62,7 +62,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     # Call Communal PUC Selector (CPS)
     ################################################
     CPS_out <- CPS(HUP_output, HCP_output_sub, sheds_var_raw)
-    # write.csv(CPS_out, "CPS_out1.csv")
+    write.csv(CPS_out, paste0("./OUTPUTS/CPS_out_", household_index_str, ".csv"))
 
     # create a dataframe PUC_household to hold available PUCs at the 
     # household level with its user's information (gender, age), PUC use 
@@ -220,7 +220,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
                 select(df_rpt, sheds_id, use_ht, use_act, use_mass), 
                 by=c("PUCID_refined"="sheds_id")
                 )
-
+      
         ### TODO ### Need to drop product_type from beginning this is just a quick fix
         household_output <- left_join(select(rdiary_household_output, -product_type),  
                                     df_rpt_temp, 
@@ -257,18 +257,18 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
                                                 use.act=use_act, 
                                                 use.mass=use_mass
                                                 )
-
-
+        household_output$Primary.person <- 0
+        household_output[household_output$person.index=="1", "Primary.person"] <- 1
         household_output$freq.float <- as.numeric(household_output$freq.float)
         household_output <- household_output %>% mutate_at(.vars = c("Duration.hr", "periodicity", "dur.actural", 
                                                                    "dur.theory.combine", "freq.float", "Duration.min", 
                                                                    "use.ht", "use.act", "use.mass"),
-                                                          .funs = funs(round(.,3)), )
-
-
+                                                          .funs = funs(round(.,3)))
+      
+      
         # export results into a CSV
         write.csv(household_output, paste0("./OUTPUTS/", "Household_", household_index_str, ".csv"), row.names = FALSE)
-
+      
         # post-processing
         source("./CODE/post_analysis.R")
         post_process(household_number, household_output)
@@ -283,12 +283,12 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 ######################
 
 # pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-# household_number=2
+# household_number=1
+# set.seed(1234)
 
-# # library(profvis)
-# # profvis({
-# ABM_Runner(pth_str,household_number)
-# })
+# for (zz in (1:1)){
+#  ABM_Runner(pth_str,zz)
+# }
 
 
 ################################################
@@ -311,9 +311,9 @@ house_list <- 1:100
 set.seed(1234)
 # Call ABM runner
 out <- foreach(i = 1:length(house_list)) %dopar% {
-    res <- tryCatch({
-        ABM_Runner(pth_str, house_list[i])
-    }, error=function(e) NULL)
+  res <- tryCatch({
+    ABM_Runner(pth_str, house_list[i])
+  }, error=function(e) cat(e))
 }
 
 on.exit(stopCluster(cl))

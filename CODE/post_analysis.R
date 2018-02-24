@@ -1,5 +1,5 @@
     post_process <- function(household_idx, household_output){
-    library(xlsx)
+    library(openxlsx)
     file_name <- paste0("./OUTPUTS/", "Summary_PUC_Household_", household_idx, ".xlsx")
 
     ####################################################################
@@ -17,8 +17,7 @@
                                             )
 
     summary_household_assign_all <- arrange(summary_household_assign_all, person.index, sheds.id.refined)
-    write.xlsx(x = as.data.frame(summary_household_assign_all), file = file_name, 
-               sheetName = "All PUCs", row.names = FALSE, append=TRUE)
+
 
 
     ####################################################################
@@ -41,7 +40,14 @@
     summary_household_assign_c0 <- arrange(summary_household_assign_c0, person.index)
 
 
-    write.xlsx(x = as.data.frame(summary_household_assign_c0), file = file_name,
-               sheetName = "Cluster", row.names = FALSE, append=TRUE)
+    # save results to an excel
+    wb <- createWorkbook()
+    addWorksheet(wb = wb, sheetName = "All PUCs", gridLines = TRUE)
+    writeDataTable(wb = wb, sheet = "All PUCs", x = as.data.frame(summary_household_assign_all))
+    addWorksheet(wb = wb, sheetName = "Cluster", gridLines = TRUE)
+    writeDataTable(wb = wb, sheet = "Cluster", x = as.data.frame(summary_household_assign_c0))
+    saveWorkbook(wb, file_name, overwrite = TRUE)
+
+
 }
 
