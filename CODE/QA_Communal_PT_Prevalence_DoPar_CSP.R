@@ -14,7 +14,7 @@
 pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
 setwd(pth_str)
 
-sheds_var_raw<-read.csv("./INPUTS/PUC_use_data_NEW_TH2.csv")
+sheds_var_raw<-read.csv("./INPUTS/PUC_use_data.csv")
 upt_comm<-sheds_var_raw[sheds_var_raw$refined==0&sheds_var_raw$personal_communal=="Communal",]
 upt_comm_list<-as.list(upt_comm$PUCID_productype)
 upt_comm_list<-as.vector(unlist(upt_comm_list))
@@ -67,7 +67,7 @@ op<-foreach(a=1:length(upt_comm_list),.combine=rbind) %dopar% com_puc_prev(a)
 
 opdf<-merge(op,upt_comm[,c("PUCID_productype","Prev_hh")],by.x="PUC_Product_Type",by.y="PUCID_productype",all.x=T)
 
-ent<-read.csv("./INPUTS/FullENT_NEW.csv")
+ent<-read.csv("./INPUTS/FullENT.csv")
 
 opdf<-merge(opdf,ent[,c("PUCID_productype","PUCID_PT_description")],by.x="PUC_Product_Type",by.y="PUCID_productype",all.x=T)
 

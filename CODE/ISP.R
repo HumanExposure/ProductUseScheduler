@@ -37,8 +37,38 @@ ISP <- function(sheds_var_raw, IUPoutput){
       cluster_temp <- ""
     }
         
-    # generate a single random number
+    # get a random number to decide which person will use this personal product type
     rnd <- runif(1) 
+    
+    if (as.integer(person_age_temp)<13){
+      age_group <- "children"
+    } else {
+      age_group <- "adult"
+    }
+    
+    gender<-person_gender_temp
+    
+    # select the correct prevalence value
+    if (age_group == "adult" && tolower(gender) == "f") {
+      # sheds_prev_select <- sheds_var_raw[, c("source.id", "source.description", "Prev_F")]
+      sheds_prev_select <- sheds_var_raw[, c("PUCID_productype","PUCID_refined",  "refined","New.Description", "Prev_F")]
+      
+    } else if (age_group == "adult" && tolower(gender) == "m") {
+      sheds_prev_select <- sheds_var_raw[, c("PUCID_productype","PUCID_refined", "refined", "New.Description", "Prev_M")]
+      
+    } else if (age_group == "children") {
+      sheds_prev_select <- sheds_var_raw[, c("PUCID_productype","PUCID_refined", "refined","New.Description", "Prev_child")]
+      
+    }
+    
+    use_prev_select <- sheds_prev_select[which((sheds_prev_select$PUCID_productype==sheds_id_temp)&(sheds_var_raw$refined==0)),]
+    use_prev_val <- use_prev_select[,5] 
+ 
+    if (is.null(use_prev_val)|is.na(use_prev_val)|use_prev_val<rnd){# if the product type is NOT selected for the person return UPG output as empty dataframe
+      UPG_output <-data.frame()
+    }
+    
+    else { # if the product type is selected for the person compute its use profile by calling UPG
     
     # get all the refined PUCs
     sheds_var_raw_refined_t <- sheds_var_raw[(sheds_var_raw$PUCID_productype==sheds_id_temp) & (sheds_var_raw$refined==1), ]
@@ -47,15 +77,20 @@ ISP <- function(sheds_var_raw, IUPoutput){
     sheds_id_temp_refined <- sheds_var_raw_refined_t[sample(nrow(sheds_var_raw_refined_t), 1), ]
     sheds_id_temp_refined <- sheds_id_temp_refined$PUCID_refined[1]
     
-    # for each PUC, call UPG to get its use profile
-    UPG_output <- UPG(sheds_id_temp_refined, sheds_var_raw, house_size_temp, person_gender_temp, person_age_temp, personal_or_Communal_temp, rnd)
+    # for each PUC, call UPG to get its use profile. Set rnd to 0 to force selection of the refined PUC because the selection is determined here in ISP and must not be left to UPG.
+    UPG_output <- UPG(sheds_id_temp_refined, sheds_var_raw, house_size_temp, person_gender_temp, person_age_temp, personal_or_Communal_temp, 0)
     
     if (nrow(UPG_output)>0){
       # UPG_output$PUCID_productype<-PUCID_PT
       UPG_output$cluster <- cluster_temp
-      UPG_output_all <- bind_rows(UPG_output_all, UPG_output)
     }
-  }
+      
+    } # end else for when PT is selected
+    
+      UPG_output_all <- bind_rows(UPG_output_all, UPG_output)
+    } # end for over all IUP items
+  
+
   
   # convert characters to strings since some of them are factors for later merge
   UPG_output_all$sheds_id <- as.character(UPG_output_all$sheds_id)

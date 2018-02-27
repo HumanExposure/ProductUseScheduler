@@ -20,6 +20,7 @@ $RECYCLE.BIN/
 # Doc folder
 DOC/
 OUTPUTS/
+OUTPUTS_good/
 
 # =========================
 # Operating System Files

@@ -34,7 +34,7 @@ ABS <- function(wd=NULL){
 
     # ever never table
     tryCatch(
-        ent <- read.csv(file="./INPUTS/FullENT_NEW.csv", header=TRUE, sep=",", stringsAsFactors = FALSE),
+        ent <- read.csv(file="./INPUTS/FullENT.csv", header=TRUE, sep=",", stringsAsFactors = FALSE),
          error=function(e) {stop("FullENT.csv is not available")}
     )
 
@@ -44,7 +44,7 @@ ABS <- function(wd=NULL){
 
     # load inputs sheds_sheds_variables
     tryCatch(
-        sheds_var_raw <- read.csv("./INPUTS/PUC_use_data_NEW_TH2.csv", header=TRUE, stringsAsFactors=FALSE),
+        sheds_var_raw <- read.csv("./INPUTS/PUC_use_data.csv", header=TRUE, stringsAsFactors=FALSE),
         error=function(e) {stop("PUC_use_data.csv is not available")}
     )
 

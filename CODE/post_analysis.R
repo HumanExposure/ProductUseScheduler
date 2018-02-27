@@ -13,7 +13,8 @@
                                              n_assigned = length(sheds.id.refined),
                                              dur_actural_mean = mean(as.numeric(Duration.hr)),
                                              dur_actural_min = min(as.numeric(Duration.hr)),
-                                             dur_actural_max = max(as.numeric(Duration.hr))
+                                             dur_actural_max = max(as.numeric(Duration.hr)),
+                                             mass_mean = mean(as.numeric(use.mass))
                                             )
 
     summary_household_assign_all <- arrange(summary_household_assign_all, person.index, sheds.id.refined)

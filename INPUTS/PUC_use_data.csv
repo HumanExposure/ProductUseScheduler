@@ -171,8 +171,6 @@ CP.0200.010,CP.0200.010.050.F,"bathroom , bathroom cleaner spray",P.IH.040.029,b
 CP.0200.010,CP.0200.010.099.F,"bathroom , bathroom cleaner NOC",P.IH.040.029,bathroom cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,100,0.3,20,0.6,0,50,1
 CP.0700.010,#N/A,#N/A,P.IH.050,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 CP.0700.010,CP.0700.010.099.F,"general household cleaning , bleach NOC",P.IH.050.000,bleach,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,104,0.3,3,0.6,0,50,1
-CP.0700.010,#N/A,#N/A,P.IH.060,#N/A,#N/A,0,Communal,,0,0.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0700.010,HF.0200.010.099.A,"décor , candles NOC",P.IH.060.000,candles,0,1,Communal,I,0,NA,1,0.2,0.8,0,364,0,2,0.6,0,5,1
 CP.0300.010,#N/A,#N/A,P.IH.070,#N/A,#N/A,0,Communal,,Carpet cleaning,0.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 CP.0300.010,CP.0300.010.050.F,"carpet and floor , carpet cleaner spray",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.2,0.8,0,12,0.3,30,0.6,0,200,1
 CP.0300.010,CP.0300.010.099.F,"carpet and floor , carpet cleaner NOC",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.2,0.8,0,12,0.3,30,0.6,0,200,1
