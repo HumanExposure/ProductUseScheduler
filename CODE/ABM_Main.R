@@ -62,7 +62,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     # Call Communal PUC Selector (CPS)
     ################################################
     CPS_out <- CPS(HUP_output, HCP_output_sub, sheds_var_raw)
-    write.csv(CPS_out, paste0("./OUTPUTS/CPS_out_", household_index_str, ".csv"))
+    # write.csv(CPS_out, paste0("./OUTPUTS/CPS_out_", household_index_str, ".csv"))
 
     # create a dataframe PUC_household to hold available PUCs at the 
     # household level with its user's information (gender, age), PUC use 
@@ -109,8 +109,10 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
         # Call Clustered Activity Aggregator (CAA)
         ####################################################################
         CAA_output <- CAA(df_rpt)
-        df_aggcl<-CAA_output$collapsed_clusters
-        df_puccl<-CAA_output$PUC_clusters
+        df_aggcl <- CAA_output$collapsed_clusters 
+        df_aggcl <- df_aggcl[order(df_aggcl$use_freq, decreasing = TRUE),]
+        df_puccl <- CAA_output$PUC_clusters
+        df_puccl <- df_puccl[order(df_puccl$use_freq, decreasing = TRUE),]
 
         ####################################################################
         # Call Read Individual Diary (RID) and select a person's diary
@@ -210,22 +212,17 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
         rdiary_final$person_gender <- person_gender_temp
         rdiary_final$person_age <- person_age_temp
         rdiary_final$household_index <- household_index_str
+        # create table of relevant refined PUCs with fields like use_mass, use_ht
+        df_rpt_temp <- merge(select(df_rpt, sheds_id, use_ht, use_act, use_mass), 
+                             product_refine_tbl, all.x=T, by.x="sheds_id", by.y="PUCID_refined") 
+        # add fields like use_mass to idnvidual diary
+        rdiary_final <- merge(rdiary_final, df_rpt_temp, all.x=T, by="sheds_id") 
+
         rdiary_household_output <- bind_rows(rdiary_household_output, rdiary_final)
         } # end of second pass loop
 
-        ########################################
-        # add ht, act to output
-        ########################################
-        df_rpt_temp <- left_join(product_refine_tbl, 
-                select(df_rpt, sheds_id, use_ht, use_act, use_mass), 
-                by=c("PUCID_refined"="sheds_id")
-                )
-      
-        ### TODO ### Need to drop product_type from beginning this is just a quick fix
-        household_output <- left_join(select(rdiary_household_output, -product_type),  
-                                    df_rpt_temp, 
-                                   by=c("sheds_id"="PUCID_refined")
-                                   ) %>% select(Person.ID,
+
+        household_output <- rdiary_household_output %>% select(Person.ID,
                                                 Day.of.the.year, 
                                                 Start.Time.hr.using.military.time, 
                                                 Duration.hr,
@@ -256,7 +253,9 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
                                                 use.ht=use_ht,
                                                 use.act=use_act, 
                                                 use.mass=use_mass
-                                                )
+                                                ) %>% 
+                                      arrange(Person.ID, Day.of.the.year, Start.Time.hr.using.military.time)
+
         household_output$Primary.person <- 0
         household_output[household_output$person.index=="1", "Primary.person"] <- 1
         household_output$freq.float <- as.numeric(household_output$freq.float)
@@ -282,9 +281,9 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 #### End of ABM_Runner
 ######################
 
-# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-# household_number=1
-# set.seed(1234)
+pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+household_number=1
+set.seed(1234)
 
 # for (zz in (1:1)){
 #  ABM_Runner(pth_str,zz)
@@ -295,25 +294,25 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 # Example run_mode 3 
 # parallel, directly specify household numbers
 ################################################
-library(foreach)
-library(doParallel)
+# library(foreach)
+# library(doParallel)
 
-# register number of cores (total #CPU-2)
-cl <- makeCluster(detectCores() - 4)
-registerDoParallel(cl, cores = detectCores() - 4)
+# # register number of cores (total #CPU-2)
+# cl <- makeCluster(detectCores() - 4)
+# registerDoParallel(cl, cores = detectCores() - 4)
 
-# declare working folder
-pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+# # declare working folder
+# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
 
-# directly specify household numbers
-house_list <- 1:100
+# # directly specify household numbers
+# house_list <- 1:100
 
-set.seed(1234)
-# Call ABM runner
-out <- foreach(i = 1:length(house_list)) %dopar% {
-  res <- tryCatch({
-    ABM_Runner(pth_str, house_list[i])
-  }, error=function(e) cat(e))
-}
+# set.seed(1234)
+# # Call ABM runner
+# out <- foreach(i = 1:length(house_list)) %dopar% {
+#   res <- tryCatch({
+#     ABM_Runner(pth_str, house_list[i])
+#   }, error=function(e) cat(e))
+# }
 
-on.exit(stopCluster(cl))
+# on.exit(stopCluster(cl))

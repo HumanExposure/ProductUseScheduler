@@ -71,7 +71,7 @@ ISP <- function(sheds_var_raw, IUPoutput){
     else { # if the product type is selected for the person compute its use profile by calling UPG
     
     # get all the refined PUCs
-    sheds_var_raw_refined_t <- sheds_var_raw[(sheds_var_raw$PUCID_productype==sheds_id_temp) & (sheds_var_raw$refined==1), ]
+    sheds_var_raw_refined_t <- sheds_var_raw[which((sheds_var_raw$PUCID_productype==sheds_id_temp) & (sheds_var_raw$refined==1)), ]
     
     # randomly pick one
     sheds_id_temp_refined <- sheds_var_raw_refined_t[sample(nrow(sheds_var_raw_refined_t), 1), ]

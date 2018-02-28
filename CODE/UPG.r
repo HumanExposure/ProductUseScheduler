@@ -109,9 +109,8 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
         } else{
             pctl <- 0
         }
-        ##############
-        pctl <- 0.00001
-######################
+
+
         sheds_var_raw <- ungroup(sheds_var_raw)
         product_type_select <- sheds_var_raw[which(sheds_var_raw$PUCID_refined==sheds_id),]
 
@@ -120,8 +119,7 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
         ###################################################
         use_mass_select_mean <- product_type_select$Mass
         use_mass_select_sd <- use_mass_select_mean*product_type_select$Mass_CV
-        # use_mass_val <- ari_random(use_mass_select_mean, use_mass_select_sd, "mass", pctl)
-        use_mass_val <- ari_random(use_mass_select_mean, 0, "mass", pctl)
+        use_mass_val <- ari_random(use_mass_select_mean, use_mass_select_sd, "mass", pctl)
 
         ###################################################
         # frequency (1/year)
