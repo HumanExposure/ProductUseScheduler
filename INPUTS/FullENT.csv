@@ -13,7 +13,7 @@ AC.0500.030,"general arts and crafts supplies , arts and crafts finish",,0,1,0,1
 AC.0500.040,"general arts and crafts supplies , arts and crafts paint",,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Personal
 AC.0500.050,"general arts and crafts supplies , craft kit",,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,,Personal
 AC.0500.060,"general arts and crafts supplies , flocking",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
-AC.0600.010,"gun cleaner , gun cleaner",,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,,,,,,,,,,,,Personal
+AC.0600.010,"gun cleaner , gun cleaner",1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,,,,,,,,,,,,Personal
 AC.0700.020,"home office , pens and markers",,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,,Personal
 AC.0700.030,"home office , white out",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Communal
 AC.0800.010,"pottery making , glaze",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
@@ -27,7 +27,7 @@ CP.0400.020,"dishwasher and dishes , automatic dishwashing additive",,1,0,0,,,,,
 CP.0400.030,"dishwasher and dishes , automatic dishwashing detergent",,1,0,0,,,,,,,,,,,,,,,1,1,0,1,1,1,1,1,,,,Communal
 CP.0400.040,"dishwasher and dishes , dish soap",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
 CP.0500.010,"drain , drain",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
-CP.0600.010,"fireplace , fireplace",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
+CP.0600.010,"fireplace , fireplace",1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
 CP.0700.010,"general household cleaning , bleach",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Communal
 CP.0700.020,"general household cleaning , disinfectant",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
 CP.0700.030,"general household cleaning , glass cleaner",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
@@ -80,25 +80,25 @@ HM.1400.070,"paint/stain and related products , stripper",,1,0,0,,,,,,,,,,,,,,,0
 HM.1500.010,"patch and repair , patch and repair",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.1500.020,"patch and repair , putty or filler",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.1600.010,"plumbing , plumbing",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.1700.010,"refrigerant , refrigerant",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
+HM.1700.010,"refrigerant , refrigerant",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.1800.010,"roof , roof",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
-HM.1900.010,"septic system , septic system",,1,0,0,,,,,,,,,,,,,,,0,0,1,1,1,1,1,1,,,,Communal
+HM.1900.010,"septic system , septic system",1,1,0,0,,,,,,,,,,,,,,,0,0,1,1,1,1,1,1,,,,Communal
 HM.2000.040,"surface sealers , surface sealer",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
 HM.2100.010,"tiling , grout sealer",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.2100.020,"tiling , mortar or grout",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.2300.010,"walls , walls",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.2400.010,"welding , welding",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-LY.0100.010,"cleaner , cleaner",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0200.010,"grill/camping fuel , grill/camping fuel",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
-LY.0300.010,"herbicide , herbicide",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0400.010,"lawn fertilizer , lawn fertilizer",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0500.010,"lawnmower , lawnmower fluids",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0600.010,"plants and garden , garden care",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
-LY.0600.020,"plants and garden , garden fertilizer",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
-LY.0600.030,"plants and garden , mulch",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0600.040,"plants and garden , potting soil",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
-LY.0600.050,"plants and garden , trees",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
-LY.0700.010,"pool , pool chemicals",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,0,1,1,0,0,Communal
+HM.2400.010,"welding , welding",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
+LY.0100.010,"cleaner , cleaner",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0200.010,"grill/camping fuel , grill/camping fuel",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
+LY.0300.010,"herbicide , herbicide",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0400.010,"lawn fertilizer , lawn fertilizer",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0500.010,"lawnmower , lawnmower fluids",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0600.010,"plants and garden , garden care",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
+LY.0600.020,"plants and garden , garden fertilizer",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal
+LY.0600.030,"plants and garden , mulch",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0600.040,"plants and garden , potting soil",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
+LY.0600.050,"plants and garden , trees",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
+LY.0700.010,"pool , pool chemicals",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,0,1,1,0,0,Communal
 LY.0800.010,"surface deicer , surface deicer",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,0,0,1,Communal
 PC.0100.010,"acne treatment , acne spot treatment",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
 PC.0100.020,"acne treatment , face scrub",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
@@ -146,7 +146,7 @@ PC.1800.010,"glitter , glitter",,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Pe
 PC.1900.010,"hair coloring , hair bleach",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.1900.020,"hair coloring , hair color",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.1900.030,"hair coloring , hair color - permanent",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
-PC.1900.040,"hair coloring , hair color - professional",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
+PC.1900.040,"hair coloring , hair color - professional",1,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.1900.050,"hair coloring , hair color - temporary",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.1900.060,"hair coloring , hair color activator",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.1900.070,"hair coloring , hair color developer",,0,1,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
@@ -156,8 +156,8 @@ PC.2000.080,"hair styling and care , ethnic hair care",,0,1,0,1,1,1,1,1,1,1,1,0,
 PC.2000.090,"hair styling and care , hair conditioner",,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Personal
 PC.2000.100,"hair styling and care , hair conditioner - leave-in",,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Personal
 PC.2000.110,"hair styling and care , hair conditioning treatment",,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
-PC.2000.120,"hair styling and care , hair conditioning treatment - professional",,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
-PC.2000.130,"hair styling and care , hair relaxer",,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
+PC.2000.120,"hair styling and care , hair conditioning treatment - professional",1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
+PC.2000.130,"hair styling and care , hair relaxer",1,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
 PC.2000.140,"hair styling and care , hair spray",,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
 PC.2000.150,"hair styling and care , hair styling",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
 PC.2000.160,"hair styling and care , hair styling - gel",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
@@ -187,8 +187,8 @@ PC.2400.010,"nails , nail adhesive",,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,
 PC.2400.020,"nails , nail polish",,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Personal
 PC.2400.030,"nails , nail polish remover",,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Personal
 PC.2400.040,"nails , other nail products",,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
-PC.2500.010,"self-tanner , self-tanner",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
-PC.2600.010,"sexual wellness , sexual wellness",,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
+PC.2500.010,"self-tanner , self-tanner",1,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
+PC.2600.010,"sexual wellness , sexual wellness",1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.2700.040,"shaving and hair removal , aftershave ",,0,1,0,1,0,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
 PC.2700.050,"shaving and hair removal , clipper lubricant/cleaner ",,0,1,0,1,0,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Personal
 PC.2700.060,"shaving and hair removal , depilatory ",,0,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Personal
@@ -207,18 +207,18 @@ PE.0400.010,"insecticide , insecticide ",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,
 PE.0400.020,"insecticide , insecticide - exterior ",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,0,0,Communal
 PE.0400.030,"insecticide , insecticide - interior ",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,1,Communal
 PE.0500.010,"rodenticide , rodenticide ",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
-PT.0100.060,"all pets , other pet treatments ",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
-PT.0100.070,"all pets , pesticide - pet ",,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,0,,,,,,,,1,1,0,Communal
-PT.0100.080,"all pets , pet shampoo ",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
-PT.0100.090,"all pets , pet stain cleaner ",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
-PT.0200.010,"cats , cat litter ",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
-PT.0400.010,"fish , aquarium ",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
+PT.0100.060,"all pets , other pet treatments ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
+PT.0100.070,"all pets , pesticide - pet ",1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,0,,,,,,,,1,1,0,Communal
+PT.0100.080,"all pets , pet shampoo ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
+PT.0100.090,"all pets , pet stain cleaner ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
+PT.0200.010,"cats , cat litter ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
+PT.0400.010,"fish , aquarium ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
 VE.0100.010,"auto body work , auto paint ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
 VE.0100.020,"auto body work , body repair ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
 VE.0100.030,"auto body work , detailing ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
 VE.0100.040,"auto body work , windows/windshield ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
-VE.0200.020,"boat care and maintenance , boat cleaner - general ",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
-VE.0200.040,"boat care and maintenance , boat engine fluids ",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
+VE.0200.020,"boat care and maintenance , boat cleaner - general ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
+VE.0200.040,"boat care and maintenance , boat engine fluids ",1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
 VE.0300.010,"car interior , auto air freshener ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
 VE.0400.010,"car surface treatment , body cleaner ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal
 VE.0400.020,"car surface treatment , body wax ",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,0,1,1,1,,,,Communal

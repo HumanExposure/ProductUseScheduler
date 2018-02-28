@@ -11,8 +11,9 @@
 # keep umbrella product type codes and prev_hh columns (theoretical prevalence)
 
 #data frames to hold data: 
-pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-setwd(pth_str)
+wd <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+setwd(wd)
+
 
 sheds_var_raw<-read.csv("./INPUTS/PUC_use_data.csv")
 

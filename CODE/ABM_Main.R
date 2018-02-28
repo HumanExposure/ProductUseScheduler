@@ -222,10 +222,12 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
         } # end of second pass loop
 
 
-        household_output <- rdiary_household_output %>% select(Person.ID,
+        household_output <- rdiary_household_output %>% select( #Person.ID,
                                                 Day.of.the.year, 
                                                 Start.Time.hr.using.military.time, 
+                                                End.Time.hr.using.military.time=ending_time,
                                                 Duration.hr,
+                                                Duration.min, 
                                                 Activity.Code, 
                                                 Diary.category, 
                                                 PUCID.productype=PUCID_productype, 
@@ -244,8 +246,6 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
                                                 agg.fold.list=agg_fold_list,
                                                 freq.float=freq_float, 
                                                 flag,
-                                                Duration.min, 
-                                                ending.time=ending_time,
                                                 household.index=household_index,
                                                 person.index=person_index, 
                                                 person.gender=person_gender,
@@ -254,7 +254,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
                                                 use.act=use_act, 
                                                 use.mass=use_mass
                                                 ) %>% 
-                                      arrange(Person.ID, Day.of.the.year, Start.Time.hr.using.military.time)
+                                      arrange(person.index, Day.of.the.year, Start.Time.hr.using.military.time)
 
         household_output$Primary.person <- 0
         household_output[household_output$person.index=="1", "Primary.person"] <- 1
@@ -281,11 +281,11 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 #### End of ABM_Runner
 ######################
 
-pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-household_number=1
-set.seed(1234)
+# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+# household_number=1
+# set.seed(1234)
 
-# for (zz in (1:1)){
+# for (zz in (1:10)){
 #  ABM_Runner(pth_str,zz)
 # }
 
@@ -294,25 +294,25 @@ set.seed(1234)
 # Example run_mode 3 
 # parallel, directly specify household numbers
 ################################################
-# library(foreach)
-# library(doParallel)
+library(foreach)
+library(doParallel)
 
-# # register number of cores (total #CPU-2)
-# cl <- makeCluster(detectCores() - 4)
-# registerDoParallel(cl, cores = detectCores() - 4)
+# register number of cores (total #CPU-2)
+cl <- makeCluster(detectCores() - 4)
+registerDoParallel(cl, cores = detectCores() - 4)
 
-# # declare working folder
-# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
+# declare working folder
+pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
 
-# # directly specify household numbers
-# house_list <- 1:100
+# directly specify household numbers
+house_list <- 1:100
 
-# set.seed(1234)
-# # Call ABM runner
-# out <- foreach(i = 1:length(house_list)) %dopar% {
-#   res <- tryCatch({
-#     ABM_Runner(pth_str, house_list[i])
-#   }, error=function(e) cat(e))
-# }
+set.seed(1234)
+# Call ABM runner
+out <- foreach(i = 1:length(house_list)) %dopar% {
+  res <- tryCatch({
+    ABM_Runner(pth_str, house_list[i])
+  }, error=function(e) cat(e))
+}
 
-# on.exit(stopCluster(cl))
+on.exit(stopCluster(cl))

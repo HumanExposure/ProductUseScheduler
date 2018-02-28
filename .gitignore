@@ -1,3 +1,7 @@
+# QA files
+QA_*.R
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -19,8 +23,6 @@ $RECYCLE.BIN/
 
 # Doc folder
 DOC/
-OUTPUTS/
-OUTPUTS_good/
 
 # =========================
 # Operating System Files
