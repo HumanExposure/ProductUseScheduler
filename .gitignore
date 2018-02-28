@@ -1,6 +1,6 @@
 # QA files
 QA_*.R
-
+QA_*.csv
 
 # Windows image file caches
 Thumbs.db
@@ -17,6 +17,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.7z
 
 # Windows shortcuts
 *.lnk
