@@ -49,9 +49,9 @@ AAD <- function(rdiary){
 					Start.Time.hr.temp <- row_dagg_temp[qq, "Start.Time.hr.using.military.time"]
 					ending_time.temp <- Start.Time.hr.temp + row_dagg_temp[qq, "Duration.hr"]
 					row_dagg_temp[qq, "ending_time"] <- ending_time.temp
-					if (row_dagg_temp[qq, "flag"]==11){
+					if (row_dagg_temp[qq, "flag"] %in% c(11, 12)){
 						row_dagg_temp[qq, "flag"] <- 114
-					} else if (row_dagg_temp[qq, "flag"]==12){
+					} else if (row_dagg_temp[qq, "flag"] %in% c(21, 22)){
 						row_dagg_temp[qq, "flag"] <- 124
 					} else {
 						row_dagg_temp[qq, "flag"] <- 204
@@ -63,9 +63,9 @@ AAD <- function(rdiary){
 					row_dagg_temp[qq, "Start.Time.hr.using.military.time"] <- Start.Time.hr.temp
 					ending_time.temp <- Start.Time.hr.temp + row_dagg_temp[qq, "Duration.hr"]
 					row_dagg_temp[qq, "ending_time"] <- ending_time.temp
-					if (row_dagg_temp[qq, "flag"]==11){
+					if (row_dagg_temp[qq, "flag"] %in% c(11, 12)){
 						row_dagg_temp[qq, "flag"] <- 114
-					} else if (row_dagg_temp[qq, "flag"]==12){
+					} else if (row_dagg_temp[qq, "flag"] %in% c(21, 22)){
 						row_dagg_temp[qq, "flag"] <- 124
 					} else {
 						row_dagg_temp[qq, "flag"] <- 204

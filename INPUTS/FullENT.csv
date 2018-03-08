@@ -32,7 +32,6 @@ CP.0700.010,"general household cleaning , bleach",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1
 CP.0700.020,"general household cleaning , disinfectant",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
 CP.0700.030,"general household cleaning , glass cleaner",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
 CP.0700.040,"general household cleaning , surface cleaner",,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,,,,,,,,,,,Communal
-CP.0700.050,"general household cleaning , magic erasers and cleaning pads",,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,,Communal
 CP.0800.010,"hand cleaner , hand cleaner",,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,,,,,,,,,,,Personal
 CP.0900.010,"heavy duty cleaner , heavy duty cleaner",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,,,,,,,,,Communal
 CP.1000.010,"houseplant care , houseplant care",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
@@ -55,19 +54,15 @@ CP.1800.010,"wood specific , wood polish",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,,,,
 EL.0300.050,"computers and accessories/supplies , printer ink",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,1,0,1,1,,,,Communal
 EL.0300.060,"computers and accessories/supplies , printer toner",,1,0,0,,,,,,,,,,,,,,,1,1,1,1,1,0,1,1,,,,Communal
 EL.0400.010,"electronics cleaner , electronics cleaner",,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,,,,,,,,,,,,Communal
-HF.0200.010,"décor , candles",,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,,,,,,,,,,,Communal
 HM.0100.010,"adhesives and adhesive removers , adhesive remover",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0100.020,"adhesives and adhesive removers , multipurpose adhesive",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0100.030,"adhesives and adhesive removers , wood adhesive",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.0300.010,"building materials , other",,1,0,0,,,,,,,,,,,,,,,0,,,,,,,,,,,Communal
 HM.0400.010,"caulk/sealant , caulk/sealant",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0500.010,"concrete , concrete",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0600.010,"corrosion protection , corrosion protection",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0700.010,"degreaser , degreaser",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.0800.010,"finish , finish",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.0900.010,"flooring , flooring",,1,0,0,,,,,,,,,,,,,,,0,,,,,,,,,,,Communal
 HM.1000.010,"insulation , spray foam",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.1100.010,"large appliances , appliances",,1,0,0,,,,,,,,,,,,,,,0,,,,,,,,,,,Communal
 HM.1200.010,"lock deicer , lock deicer",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,0,0,1,Communal
 HM.1300.010,"lubricant , lubricant",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.1400.010,"paint/stain and related products , paint",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
@@ -86,7 +81,6 @@ HM.1900.010,"septic system , septic system",1,1,0,0,,,,,,,,,,,,,,,0,0,1,1,1,1,1,
 HM.2000.040,"surface sealers , surface sealer",,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,1,1,0,Communal
 HM.2100.010,"tiling , grout sealer",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.2100.020,"tiling , mortar or grout",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
-HM.2300.010,"walls , walls",,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 HM.2400.010,"welding , welding",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,1,,,,Communal
 LY.0100.010,"cleaner , cleaner",1,1,0,1,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,1,1,0,Communal
 LY.0200.010,"grill/camping fuel , grill/camping fuel",1,1,0,0,,,,,,,,,,,,,,,0,1,1,1,1,1,1,0,,,,Communal

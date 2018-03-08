@@ -139,12 +139,11 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
         RIDoutput$freq_float <- NA
         RIDoutput$flag <- NA
          
-         
         # Begin to assign PUCs to diary
         for (jj in 1:nrow(df_aggcl)){
            # use_freq unit is times per year, use_aso unit is minutes
            # periodicity in minutes
-           per <- 364.0/df_aggcl[jj, "use_freq"]*24*60
+           per <- (364.0/df_aggcl[jj, "use_freq"])*24*60
            # duration in hr
            dur <- df_aggcl[jj, "use_aso"]/60
            # name of a cluster (if available)
@@ -269,8 +268,8 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
         write.csv(household_output, paste0("./OUTPUTS/", "Household_", household_index_str, ".csv"), row.names = FALSE)
       
         # post-processing
-        source("./CODE/post_analysis.R")
-        post_process(household_number, household_output)
+        # source("./CODE/post_analysis.R")
+        # post_process(household_number, household_output)
 
         # clean up memory
         gc()
@@ -282,7 +281,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 ######################
 
 # pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-# household_number=1
+# household_number <- 2
 # set.seed(1234)
 
 # for (zz in (1:10)){

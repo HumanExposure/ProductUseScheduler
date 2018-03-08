@@ -23,11 +23,11 @@ dpro <- function(rdiary, sdf, PUC, region) {
     #       rdiary: a dataframe of processed raw diary
     #       idiary: a dataframe of idle diary
     #################################################################
-    rdiary$rind <- seq.int(nrow(rdiary)) # introduce row index
-    rdiary$Duration.min <- rdiary$Duration.hr*60# introduces duration variable in minutes  
+    rdiary$rind <- seq.int(nrow(rdiary))            # introduce row index
+    rdiary$Duration.min <- rdiary$Duration.hr*60    # introduces duration variable in minutes  
     rdiary$Minutes <- rdiary$Day.of.the.year*24*60+rdiary$Start.Time.hr.using.military.time*60
-    idiary <- rdiary[rdiary$Day.of.the.year!=0,] # keep only days not equal to 0 in idle diary
-    idiary <- idiary[idiary$Activity.Code==-1,] # keep only idle slots in idle diary 
+    idiary <- rdiary[rdiary$Day.of.the.year!=0,]    # keep only days not equal to 0 in idle diary
+    idiary <- idiary[idiary$Activity.Code==-1,]     # keep only idle slots in idle diary 
 
     if (nrow(idiary) >0){
         # count of idle time slots per day
@@ -112,6 +112,7 @@ fslot <- function(idiary, per, dur) {
                    prob=c(prob_freq_floor, prob_freq_ceiling), 
                    replace = TRUE)
 
+
     # keep only those days in the individual idle diary occurring in the first period
     id <- idiary[idiary$Minutes<=per,] 
 
@@ -126,9 +127,9 @@ fslot <- function(idiary, per, dur) {
     # duration are not available
     while (nrow(id)==0 & mper<=max(idiary$Minutes)){ 
         # try adding one hour to periodicity
-        mper <- mper+1*24*60 
+        mper <- mper+24*60 
         id <- idiary[idiary$Minutes<=mper,]
-        id <- id[id$Duration.hr-dur>=0.01,] 
+        id <- id[(id$Duration.hr-dur)>=0.01,] 
     } #end of while
 
     # if time slots are available then...
@@ -283,13 +284,23 @@ allslots <- function(idiary, per, dur, fsl, ICP_output_pc=NULL,
     freq <- sample(c(floor(freq_f), ceiling(freq_f)), size=1, 
                    prob=c(prob_freq_floor, prob_freq_ceiling), 
                    replace = TRUE)
-    
+
     # if first slot is not missing then...
     if (nrow(fsl)>0) { 
         # row index for first minute that activity occurs 
         fm <- idiary$Minutes[idiary$rind==tail(fsl$fslot,1)]   
         # next activity should occur after nm in col Minute
-        nm <- fm + per   
+        nm <- fm+per  # next minute is first minute plus periodicity
+
+        if (per>1187 & per<1582) {
+          fm_sub <- idiary[idiary$rind==tail(fsl$fslot,1),] # diary for row of day of first slot
+          fs_day <- fm_sub$Day.of.the.year # first slot day of year
+
+          nm_t <- idiary[min(which(idiary$Day.of.the.year > fs_day)), 'Minutes'] # idle time diary for next closest day
+          if(!is.na(nm_t)){ 
+            nm <- nm_t
+          } 
+        }
 
         # while loop as long as nm does not exceed last minute in year
         while (nm <= max(idiary$Minutes)){ 
@@ -338,10 +349,18 @@ allslots <- function(idiary, per, dur, fsl, ICP_output_pc=NULL,
                     # minute corresponding to ending idle time that day 
                     # (to prevent multiple assignments to same day)
                     lm <- id1$Minutes[nrow(id1)] + id1$Duration.min[nrow(id1)] 
-
+                    lm_day <- id1$Day.of.the.year[1] # day of the year on which last minute of activity occurs
+                    nm <- lm + per 
                     # set next minute at minute corresponding to final idle 
                     # slot on that day plus periodicity
-                    nm <- lm + per 
+
+                    if (per>1187 & per<1582) {
+                      nm_t <- idiary[min(which(idiary$Day.of.the.year > lm_day)), 'Minutes'] # idle time diary for next closest day
+                       # first idle time minutes on next day
+                      if(!is.na(nm_t)){ 
+                        nm <- nm_t
+                      } 
+                    } 
 
                     # loop over each idle time slot in that day
                     for (j in 1:fni) {  
@@ -390,7 +409,15 @@ allslots <- function(idiary, per, dur, fsl, ICP_output_pc=NULL,
                     # select n rows with largest Duration.hr, where n=max(freq,1)
                     id2 <- arrange(id1, desc(Duration.hr))[1:max(freq,1),] %>% arrange(rind)
                     lm <- tail(id2$Minutes,1) + tail(id2$Duration.min,1) # minute corresponding to ending idle time that day (to prevent multiple assignments to same day)
-                    nm <- lm + per # set next minute at minute corresponding to final idle slot on that day plus periodicity
+                    lm_day<-id2$Day.of.the.year[1] # day of the year on which last minute of activity occurs
+                    nm <- lm+per  # next minute is first minute plus periodicity
+
+                    if (per>1187 & per<1582) {
+                      nm_t <- idiary[min(which(idiary$Day.of.the.year > lm_day)),'Minutes'] # idle time diary for next closest day
+                      if(!is.na(nm_t)){ 
+                        nm <- nm_t
+                      } 
+                    } 
 
                     for (j1 in 1:max(freq, 1)) { # loop over each idle time slot
                         idle_hr <- id2$Duration.hr[j1]
@@ -417,6 +444,16 @@ allslots <- function(idiary, per, dur, fsl, ICP_output_pc=NULL,
             } # end of if statement for when timeslots are available
             else {
                 nm <- nm + per
+
+                if (per>1187 & per<1582) {
+                  lm_sub<-idiary[idiary$Minutes>=nm,] # diary for last minute of assigned slot
+                  lm_day<-lm_sub$Day.of.the.year[1] # first slot day of year
+                  nm_t <- idiary[min(which(idiary$Day.of.the.year > lm_day & idiary$Duration.hr-dur>=0.01)),'Minutes'] # idle time diary for next closest day
+                  if(!is.na(nm_t)){ 
+                    nm <- nm_t
+                  } 
+                } 
+                
                 # cat ("    time slot not available, nm=", nm - per, "\n")
             } # else statement for when timeslots are not available
         } # end of while 

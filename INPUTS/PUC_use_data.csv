@@ -314,7 +314,8 @@ PC.1100.060,PC.1100.060.099.F,"eye care and contacts , eye products NOC",P.PC.38
 PC.1200.010,#N/A,#N/A,P.PC.400,#N/A,#N/A,0,Personal,,0,NA,NA,0.5,0.5,0,NA,NA,NA,NA,NA,NA,NA
 PC.1200.010,PC.1200.010.099.F,"facial cleansing and moisturizing , face cleansing wipes NOC",P.PC.400.000,face cleansing wipes,0,1,Personal,I,0,NA,NA,1,1,1,364,0,3,0.3,0,5,1
 PC.1200.020,#N/A,#N/A,P.PC.410,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.29,0.81,0.1,NA,NA,NA,NA,NA,NA,NA
-PC.1200.020,PC.1200.020.050.F,"facial cleansing and moisturizing , face cream/moisturizer spray",P.PC.410.029,face cream/moisturizer spray,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,182,0,3,0.3,0,5,1
+PC.1200.020,PC.1200.020.050.F,"facial cleansing and moisturizing , face cream/moisturizer spray",P.PC.410.029,face cream/moisturizer spray,0,1,Personal,I,Skin Makeup,NA,NA,0.5,0.5,0.5,182,0,3,0.3,0,5,1
+PC.1200.020,PC.1200.020.099.F,"facial cleansing and moisturizing , face cream/moisturizer NOC",P.PC.410.999,face cream/moisturizer NOC,0,1,Personal,I,Skin Makeup,NA,NA,0.5,0.5,0.5,182,0,3,0.3,0,5,1
 PC.1200.030,#N/A,#N/A,P.PC.420,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.5,0.5,0,NA,NA,NA,NA,NA,NA,NA
 PC.1200.030,PC.1200.030.099.F,"facial cleansing and moisturizing , face mask NOC",P.PC.420.000,face mask,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,364,0,5,0.3,0,5,1
 PC.1200.040,#N/A,#N/A,P.PC.440,#N/A,#N/A,0,Personal,,0,NA,NA,0.23,0.73,0.1,NA,NA,NA,NA,NA,NA,NA
