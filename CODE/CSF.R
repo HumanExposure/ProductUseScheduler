@@ -18,13 +18,13 @@ CSF <- function(ICP_output_pc, ICP_output_cc, cluster_name){
     # all PUCs for a cluster before being sampled
     Cluster_bsampled_pc <- ICP_output_pc[ICP_output_pc$Clusters==cluster_name,]
 
-    max_freq_PUC <- Cluster_bsampled_pc[which(Cluster_bsampled_pc$new_freq==max(Cluster_bsampled_pc$new_freq)),]
-    non_freq_PUC <- Cluster_bsampled_pc[which(Cluster_bsampled_pc$new_freq!=max(Cluster_bsampled_pc$new_freq)),]
+    max_freq_PUC <- Cluster_bsampled_pc[which(Cluster_bsampled_pc$use_freq==max(Cluster_bsampled_pc$use_freq)),]
+    non_freq_PUC <- Cluster_bsampled_pc[which(Cluster_bsampled_pc$use_freq!=max(Cluster_bsampled_pc$use_freq)),]
 
     # if not all of the component PUCs have the same freq
     if (nrow(non_freq_PUC)>0){
         # add a frequency ratio between non-max freq VS max freq
-        non_freq_PUC$freq_ratio <- non_freq_PUC$new_freq/max(max_freq_PUC$new_freq)
+        non_freq_PUC$freq_ratio <- non_freq_PUC$use_freq/max(max_freq_PUC$use_freq)
 
         # generate a random number
         non_freq_PUC$rand <- runif(nrow(non_freq_PUC))
@@ -46,10 +46,10 @@ CSF <- function(ICP_output_pc, ICP_output_cc, cluster_name){
 
     Cluster_afsampled_pc$new_cluster_name <- new_cluster_name
 
-    new_aso <- sum(Cluster_afsampled_pc$new_aso)
+    use_aso <- sum(Cluster_afsampled_pc$use_aso)
     new_cluster_PUC <- Cluster_afsampled_pc$sheds_id
 
-    res <- list("dur"=new_aso,
+    res <- list("dur"=use_aso,
                 "new_cluster_PUC"=new_cluster_PUC,
                 "new_cluster_name"=new_cluster_name)
 

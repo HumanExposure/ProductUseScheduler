@@ -1,6 +1,7 @@
 # Agent based model setup  (ABS)
 # Function: Load and preprocess inputs and required libraries
 
+
 ###########################
 #### Beginning of ABS #####
 ###########################
@@ -15,10 +16,9 @@ ABS <- function(wd=NULL){
     }
 
     # load all modules
-    R_file_pool <- c("AAD.R", "CAA.R","CAD.R","CPG.R","CSF.R","HCP.R","HUP.R",
-                     "ICP.R","INACT.R","IIT.R","ISP.R","IUP.R","RID.R","RPS.R",
-                     "UPG.R")
-    
+    R_file_pool <- c("HCP.R", "HUP.R", "UPG.R", "CPS.R", "IUP.R", "ISP.R", 
+                     "CAA.R", "RID.R", "INACT.R", "IIT.R", "AAD.R", "CAD.R", "CSF.R")
+
     for (each_R_file in R_file_pool){
         tryCatch(source(paste0("./CODE/", each_R_file)),
              error=function(e) {stop(paste0(each_R_file, " is not available"))}
@@ -39,33 +39,17 @@ ABS <- function(wd=NULL){
     )
 
     # Seasonality_PUC: based on ent
-    Seasonality_PUC <- ent[,c("sheds_id", "sheds_product_category", "Seasonality", "WH", "Cool", "Cold")]
+    Seasonality_PUC <- ent[,c("PUCID_productype", "Seasonality", "Hot_Warm", "Cool", "Cold")]
     Seasonality_PUC <- Seasonality_PUC[which(Seasonality_PUC$Seasonality==1), ]
-
-    # product categories file; full list of possible PUCs
-    tryCatch(
-        hpf <- read.csv(file="./INPUTS/ABMCategorizations.csv", header=TRUE, sep=",", stringsAsFactors = FALSE),
-        error=function(e) {stop("ABMCategorizations.csv is not available")}
-    )
-
-
-    hpf_sub <- select(hpf,  SHEDSID,
-                            general_category,
-                            product_type,
-                            refined_product_type,
-                            Personal_or_Communal,
-                            Clusters,
-                            location=Use_locale,
-                            Indoor_outdoor=InOut,
-                            Appliances=Appliances,
-                            Impacted.by=Size_depend
-                    )
 
     # load inputs sheds_sheds_variables
     tryCatch(
         sheds_var_raw <- read.csv("./INPUTS/PUC_use_data.csv", header=TRUE, stringsAsFactors=FALSE),
         error=function(e) {stop("PUC_use_data.csv is not available")}
     )
+
+    product_refine_tbl <- filter(sheds_var_raw, refined==1) %>% select(PUCID_productype, PUCID_refined) %>% 
+                          left_join(select(ent, PUCID_productype, PUCID_PT_description), by="PUCID_productype")
 
     # load diary RDS file
     tryCatch(
@@ -74,12 +58,19 @@ ABS <- function(wd=NULL){
     )
     activity_diary_pool <- filter(activity_diary_pool, Day.of.the.year>0)
 
+    ################################################
+    # Call Household Characteristics Processor (HCP)
+    ################################################
+    HCP_output <- HCP(phf)
+
+
     return_variables <- list("phf"=phf,
                              "ent"=ent,
-                             "hpf"=hpf_sub,
                              "sheds_var_raw"=sheds_var_raw,
+                             "product_refine_tbl"=product_refine_tbl,
                              "activity_diary"=activity_diary_pool,
-                             "seasonality_PUC"=Seasonality_PUC
+                             "seasonality_PUC"=Seasonality_PUC,
+                             "HCP_output"=HCP_output
                             )
     return(return_variables)
 }

@@ -37,19 +37,18 @@ CAD <- function(rdiary, cluster_df){
 
             # cluster composition
             cluster_temp1 <- cluster_df[cluster_df$sheds_id %in% cluster_comp,]
-
             for (q in 1:nrow(cluster_temp1)){
                 cluster_temp2 <- cluster_temp
                 if (q==1){
                     cluster_temp2$Start.Time.hr.using.military.time <- cluster_temp$Start.Time.hr.using.military.time
                 } else{
-                    cluster_temp2$Start.Time.hr.using.military.time <- rdiary_cl_expand_t[q-1, "Start.Time.hr.using.military.time"]+cluster_temp1[q-1, "new_aso"]*duration_ratio/60
+                    cluster_temp2$Start.Time.hr.using.military.time <- rdiary_cl_expand_t[q-1, "Start.Time.hr.using.military.time"]+cluster_temp1[q-1, "use_aso"]*duration_ratio/60
                 }
 
-                cluster_temp2$Duration.hr <- cluster_temp1[q, "new_aso"]*duration_ratio/60
-                cluster_temp2$Duration.min <- cluster_temp1[q, "new_aso"]*duration_ratio
+                cluster_temp2$Duration.hr <- cluster_temp1[q, "use_aso"]*duration_ratio/60
+                cluster_temp2$Duration.min <- cluster_temp1[q, "use_aso"]*duration_ratio
                 cluster_temp2$sheds_id <- cluster_temp1[q, "sheds_id"]
-                cluster_temp2$product_type <- cluster_temp1[q, "product_type"]
+                cluster_temp2$product_type <- cluster_temp1[q, "sheds_id"] # no product type anymore
                 rdiary_cl_expand_t <- bind_rows(rdiary_cl_expand_t, cluster_temp2)
                 }
             rdiary_cl_expand <- bind_rows(rdiary_cl_expand, rdiary_cl_expand_t)

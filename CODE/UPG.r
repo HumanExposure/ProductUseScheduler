@@ -80,14 +80,18 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
     }
     # select the correct prevalence value
     if (age_group == "adult" && tolower(gender) == "f") {
-        sheds_prev_select <- sheds_var_raw[, c("source.id", "source.description", "Prev_F")]
+        # sheds_prev_select <- sheds_var_raw[, c("source.id", "source.description", "Prev_F")]
+        sheds_prev_select <- sheds_var_raw[, c("PUCID_refined", "New.Description", "Prev_F")]
+
     } else if (age_group == "adult" && tolower(gender) == "m") {
-        sheds_prev_select <- sheds_var_raw[, c("source.id", "source.description", "Prev_M")]
+        sheds_prev_select <- sheds_var_raw[, c("PUCID_refined", "New.Description", "Prev_M")]
+
     } else if (age_group == "children") {
-        sheds_prev_select <- sheds_var_raw[, c("source.id", "source.description", "Prev_child")]
+        sheds_prev_select <- sheds_var_raw[, c("PUCID_refined", "New.Description", "Prev_child")]
+
     }
 
-    use_prev_select <- sheds_prev_select[which(sheds_prev_select$source.id==sheds_id),]
+    use_prev_select <- sheds_prev_select[which(sheds_prev_select$PUCID_refined==sheds_id),]
     use_prev_val <- use_prev_select[,3] 
 
     if (use_prev_val<prev_thres){
@@ -105,9 +109,10 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
         } else{
             pctl <- 0
         }
-        
+
+
         sheds_var_raw <- ungroup(sheds_var_raw)
-        product_type_select <- sheds_var_raw[which(sheds_var_raw$source.id==sheds_id),]
+        product_type_select <- sheds_var_raw[which(sheds_var_raw$PUCID_refined==sheds_id),]
 
         ###################################################
         # mass (g)
@@ -131,6 +136,9 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
         use_ht_val <- ari_random(use_ht_select_mean, use_ht_select_sd, "ht", pctl)
         use_act_val <- product_type_select$AT
         use_aso_val <- use_ht_val + use_act_val
+        
+        io=product_type_select$indoor_outdoor
+        pc=product_type_select$personal_communal
 
         df_return <- data.frame("sheds_id" = as.character(sheds_id),
                                 "use_mass" = use_mass_val, 
@@ -141,6 +149,8 @@ UPG <- function(sheds_id, sheds_var_raw, house_size, gender, age_person, Persona
                                 "use_prev" = use_prev_val,
                                 "gender" = gender,
                                 "age_person" = age_person,
+                                "Personal_or_Communal"=pc,
+                                "Indoor_outdoor"=io,
                                 stringsAsFactors = FALSE)
     }
 

@@ -1,38 +1,56 @@
-# History files
-.Rhistory
-.Rapp.history
+# QA files
+QA_*.R
+QA_*.csv
 
-# Session Data files
-.RData
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Example code in package build process
-*-Ex.R
+# Folder config file
+Desktop.ini
 
-# Output files from R CMD build
-/*.tar.gz
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Output files from R CMD check
-/*.Rcheck/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+*.7z
 
-# RStudio files
-.Rproj.user/
+# Windows shortcuts
+*.lnk
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+# Doc folder
+DOC/
+QA/
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+# =========================
+# Operating System Files
+# =========================
 
-# knitr and R markdown default cache directories
-/*_cache/
-/cache/
+# OSX
+# =========================
 
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-.Rproj.user
+.DS_Store
+.AppleDouble
+.LSOverride
 
-##not including /input and /output directories
-/INPUTS/
-/OUTPUTS/
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
