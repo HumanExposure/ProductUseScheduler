@@ -57,3 +57,6 @@ Temporary Items
 
 #do not sync anything in output folder
 /OUTPUTS
+
+#do not sync pophouse.csv
+pophouse.csv
