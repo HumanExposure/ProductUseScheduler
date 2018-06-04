@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527887251522.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2951686463",
+    "id" : "D86DA12C",
+    "lastKnownWriteTime" : 1527887372,
+    "last_content_update" : 1527887372558,
+    "path" : "C:/Users/39492/Desktop/PUS Test/ProductUseScheduler/CODE/ABM_Main.R",
+    "project_path" : "CODE/ABM_Main.R",
+    "properties" : {
+        "cursorPosition" : "304,27",
+        "scrollLine" : "287"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
