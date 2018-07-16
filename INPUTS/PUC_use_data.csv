@@ -31,7 +31,7 @@ AC.0500.050,#N/A,#N/A,P.AC.070,#N/A,#N/A,0,Personal,,0,NA,NA,0.05,0.05,1,NA,NA,N
 AC.0500.050,AC.0500.050.099.F,"general arts and crafts supplies , craft kit NOC",P.AC.070.000,craft kit,0,1,Personal,I,0,NA,NA,1,1,1,364,0,30,1,0,0.1,1
 AC.0500.060,#N/A,#N/A,P.AC.120,#N/A,#N/A,0,Personal,,0,NA,NA,0.1,0.1,0.01,NA,NA,NA,NA,NA,NA,NA
 AC.0500.060,AC.0500.060.050.F,"general arts and crafts supplies , flocking spray",P.AC.120.000,flocking,0,1,Personal,I,0,NA,NA,1,1,1,3,1,10,1,0,140,1
-AC.0600.010,#N/A,#N/A,P.AC.150,#N/A,#N/A,0,Personal,,0,NA,NA,0.1,0.2,0.3,NA,NA,NA,NA,NA,NA,NA
+AC.0600.010,#N/A,#N/A,P.AC.150,#N/A,#N/A,0,Personal,,0,NA,NA,0.1,0.2,0,NA,NA,NA,NA,NA,NA,NA
 AC.0600.010,AC.0600.010.099.F,"gun cleaner , gun cleaner NOC",P.AC.150.000,gun cleaner,0,1,Personal,I,0,NA,NA,1,1,1,3,1,30,1,0,50,1
 AC.0700.020,#N/A,#N/A,P.AC.160,#N/A,#N/A,0,Personal,,0,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
 AC.0700.020,AC.0700.020.099.F,"home office , pens and markers NOC",P.AC.160.000,pens and markers,0,1,Personal,I,0,NA,NA,1,1,1,364,0,30,1,0,0.1,1
@@ -234,7 +234,7 @@ LY.0700.010,LY.0700.010.033.F,"pool , pool chemicals shock",P.LY.090.025,pool ch
 LY.0700.010,LY.0700.010.099.F,"pool , pool chemicals NOC",P.LY.090.025,pool chemicals shock,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
 LY.0800.010,#N/A,#N/A,P.LY.110,#N/A,#N/A,0,Communal,,Other Outdoor,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 LY.0800.010,LY.0800.010.099.F,"surface deicer , surface deicer NOC",P.LY.110.000,surface deicer,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,3,1,20,1,0,1000,1
-PC.0100.010,#N/A,#N/A,P.PC.010,#N/A,#N/A,0,Personal,,0,NA,NA,0.2,0.2,0,NA,NA,NA,NA,NA,NA,NA
+PC.0100.010,#N/A,#N/A,P.PC.010,#N/A,#N/A,0,Personal,,0,NA,NA,0.2,0.2,0.1,NA,NA,NA,NA,NA,NA,NA
 PC.0100.010,PC.0100.010.050.F,"acne treatment , acne spot treatment spray",P.PC.010.029,acne spot treatment spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,132,0.3,5,0.3,0,1.2,1
 PC.0100.010,PC.0100.010.099.F,"acne treatment , acne spot treatment NOC",P.PC.010.029,acne spot treatment spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,132,0.3,5,0.3,0,1.2,1
 PC.0100.020,#N/A,#N/A,P.PC.440,#N/A,#N/A,0,Personal,,0,NA,NA,0.23,0.73,0.1,NA,NA,NA,NA,NA,NA,NA
@@ -277,11 +277,11 @@ PC.0800.040,#N/A,#N/A,P.PC.060,#N/A,#N/A,0,Personal,,Baby Bathing,NA,NA,0.01,0.0
 PC.0800.040,PC.0800.040.001.F,"child specific , baby shampoo child",P.PC.060.000,baby shampoo,0,1,Personal,I,Baby Bathing,NA,NA,1,1,1,52,0.3,3,0.3,0,5,1
 PC.0800.050,#N/A,#N/A,P.PC.070,#N/A,#N/A,0,Personal,,Baby Bathing,NA,NA,0.01,0.01,0.73,NA,NA,NA,NA,NA,NA,NA
 PC.0800.050,PC.0800.050.001.F,"child specific , baby wash child",P.PC.070.000,baby wash,0,1,Personal,I,Baby Bathing,NA,NA,1,1,1,364,0,3,0.3,0,5,1
-PC.0800.060,#N/A,#N/A,P.PC.080,#N/A,#N/A,0,Communal,,0,0.15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PC.0800.060,#N/A,#N/A,P.PC.080,#N/A,#N/A,0,Communal,,0,0.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 PC.0800.060,PC.0800.060.001.F,"child specific , baby wipes child",P.PC.080.000,baby wipes,0,1,Communal,I,0,NA,1,0.2,0.8,0,364,0,3,0.3,0,5,1
 PC.0800.070,#N/A,#N/A,P.PC.110,#N/A,#N/A,0,Personal,,Bathing,NA,NA,0.05,0.05,1,NA,NA,NA,NA,NA,NA,NA
 PC.0800.070,PC.0800.070.001.F,"child specific , bath paints/crayons child",P.PC.110.000,bath paints/crayons,0,1,Personal,I,Bathing,NA,NA,1,1,1,120,0.3,20,0.3,0,0.1,1
-PC.0800.080,#N/A,#N/A,P.PC.300,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+PC.0800.080,#N/A,#N/A,P.PC.300,#N/A,#N/A,0,Communal,,0,0.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 PC.0800.080,PC.0800.080.001.F,"child specific , diaper cream child",P.PC.300.000,diaper cream,0,1,Communal,I,0,NA,1,0.2,0.8,0,730,0,2,0.3,0,3,1
 PC.0900.030,#N/A,#N/A,P.PC.260,#N/A,#N/A,0,Personal,,Dentures,NA,NA,0.1,0.1,0,NA,NA,NA,NA,NA,NA,NA
 PC.0900.030,PC.0900.030.099.F,"dental care , denture adhesive NOC",P.PC.260.000,denture adhesive,0,1,Personal,I,Dentures,NA,NA,1,1,1,364,0,3,0.3,0,20,1
@@ -334,7 +334,7 @@ PC.1700.010,PC.1700.010.051.F,"general moisturizing , hand/body lotion gel",P.PC
 PC.1700.010,PC.1700.010.057.F,"general moisturizing , hand/body lotion gel|spray",P.PC.630.008,hand/body lotion gel|spray,0,1,Personal,I,0,NA,NA,0.25,0.25,0.25,364,0,2,0.3,0,8,1
 PC.1700.010,PC.1700.010.099.F,"general moisturizing , hand/body lotion NOC",P.PC.630.008,hand/body lotion gel|spray,0,1,Personal,I,0,NA,NA,0.25,0.25,0.25,364,0,2,0.3,0,8,1
 PC.1700.010,PC.1700.010.050.F,"general moisturizing , hand/body lotion spray",P.PC.630.029,hand/body lotion spray,0,1,Personal,I,0,NA,NA,0.25,0.25,0.25,364,0,2,0.3,0,8,1
-PC.1800.010,#N/A,#N/A,P.PC.490,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.01,0.5,0,NA,NA,NA,NA,NA,NA,NA
+PC.1800.010,#N/A,#N/A,P.PC.490,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.01,0.5,0.2,NA,NA,NA,NA,NA,NA,NA
 PC.1800.010,PC.1800.010.099.F,"glitter , glitter NOC",P.PC.490.000,glitter,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,364,0,5,0.3,0,0.5,1
 PC.1900.010,#N/A,#N/A,P.PC.500,#N/A,#N/A,0,Personal,,Hair color,NA,NA,0.12,0.63,0,NA,NA,NA,NA,NA,NA,NA
 PC.1900.010,PC.1900.010.099.F,"hair coloring , hair bleach NOC",P.PC.500.000,hair bleach,0,1,Personal,I,Hair color,NA,NA,1,1,1,4,1,30,0.3,0,150,1
@@ -347,16 +347,16 @@ PC.1900.040,PC.1900.040.099.F,"hair coloring , hair color - professional NOC",P.
 PC.1900.050,#N/A,#N/A,#N/A,#N/A,#N/A,0,Personal,,Hair color,NA,NA,0.12,0.63,0,NA,NA,NA,NA,NA,NA,NA
 PC.1900.050,PC.1900.050.099.F,"hair coloring , hair color - temporary NOC",P.PC.510.030,hair color temporary,0,1,Personal,I,Hair color,NA,NA,0.5,0.5,0.5,4,1,30,0.3,0,150,1
 PC.1900.050,PC.1900.050.050.F,"hair coloring , hair color - temporary spray",P.PC.510.031,hair color temporary|spray,0,1,Personal,I,Hair color,NA,NA,0.5,0.5,0.5,4,1,30,0.3,0,150,1
-PC.1900.060,#N/A,#N/A,P.PC.520,#N/A,#N/A,0,Personal,,Hair color,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
+PC.1900.060,#N/A,#N/A,P.PC.520,#N/A,#N/A,0,Personal,,Hair color,NA,NA,0.12,0.63,0,NA,NA,NA,NA,NA,NA,NA
 PC.1900.060,PC.1900.060.099.F,"hair coloring , hair color activator NOC",P.PC.520.000,hair color activator,0,1,Personal,I,Hair color,NA,NA,1,1,1,300,0,10,0.3,0,12,1
-PC.1900.070,#N/A,#N/A,P.PC.530,#N/A,#N/A,0,Personal,,Hair color,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
+PC.1900.070,#N/A,#N/A,P.PC.530,#N/A,#N/A,0,Personal,,Hair color,NA,NA,0.12,0.63,0,NA,NA,NA,NA,NA,NA,NA
 PC.1900.070,PC.1900.070.099.F,"hair coloring , hair color developer NOC",P.PC.530.000,hair color developer,0,1,Personal,I,Hair color,NA,NA,1,1,1,300,0,10,0.3,0,12,1
-PC.1900.080,#N/A,#N/A,P.PC.540,#N/A,#N/A,0,Personal,,Hair color,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
+PC.1900.080,#N/A,#N/A,P.PC.540,#N/A,#N/A,0,Personal,,Hair color,NA,NA,0.12,0.63,0,NA,NA,NA,NA,NA,NA,NA
 PC.1900.080,PC.1900.080.099.F,"hair coloring , hair color toner NOC",P.PC.540.000,hair color toner,0,1,Personal,I,Hair color,NA,NA,1,1,1,300,0,10,0.3,0,12,1
-PC.2000.070,#N/A,#N/A,P.PC.310,#N/A,#N/A,0,Personal,,0,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
+PC.2000.070,#N/A,#N/A,P.PC.310,#N/A,#N/A,0,Personal,,0,NA,NA,0.05,0.4,0,NA,NA,NA,NA,NA,NA,NA
 PC.2000.070,PC.2000.070.050.F,"hair styling and care , dry shampoo spray",P.PC.310.029,dry shampoo spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,300,0,10,0.3,0,12,1
 PC.2000.070,PC.2000.070.099.F,"hair styling and care , dry shampoo NOC",P.PC.310.029,dry shampoo spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,300,0,10,0.3,0,12,1
-PC.2000.080,#N/A,#N/A,P.PC.320,#N/A,#N/A,0,Personal,,Hair treatment,NA,NA,1,1,1,NA,NA,NA,NA,NA,NA,NA
+PC.2000.080,#N/A,#N/A,P.PC.320,#N/A,#N/A,0,Personal,,Hair treatment,NA,NA,0.5,0.5,0.2,NA,NA,NA,NA,NA,NA,NA
 PC.2000.080,PC.2000.080.099.F,"hair styling and care , ethnic hair care NOC",P.PC.320.000,ethnic hair care,0,1,Personal,I,Hair treatment,NA,NA,1,1,1,300,0,10,0.3,0,12,1
 PC.2000.090,#N/A,#N/A,P.PC.550,#N/A,#N/A,0,Personal,,Hair treatment,NA,NA,0.56,0.92,0.6,NA,NA,NA,NA,NA,NA,NA
 PC.2000.090,PC.2000.090.050.F,"hair styling and care , hair conditioner spray",P.PC.550.029,hair conditioner spray,0,1,Personal,I,Hair treatment,NA,NA,0.5,0.5,0.5,255.5,0,4,0.3,0,15,1
@@ -409,11 +409,11 @@ PC.2300.070,#N/A,#N/A,P.PC.470,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.05,0.65
 PC.2300.070,PC.2300.070.099.F,"make-up and related , foundation/concealer NOC",P.PC.470.000,foundation/concealer,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,364,0,5,0.3,0,2,1
 PC.2300.080,#N/A,#N/A,P.PC.660,#N/A,#N/A,0,Personal,,0,NA,NA,0.64,0.95,0.6,NA,NA,NA,NA,NA,NA,NA
 PC.2300.080,PC.2300.080.099.F,"make-up and related , lip balm NOC",P.PC.660.000,lip balm,0,1,Personal,I,0,NA,NA,1,1,1,540,0,1,0.3,0,2,1
-PC.2300.090,#N/A,#N/A,P.PC.670,#N/A,#N/A,0,Personal,,0,NA,NA,0.64,0.95,0.6,NA,NA,NA,NA,NA,NA,NA
+PC.2300.090,#N/A,#N/A,P.PC.670,#N/A,#N/A,0,Personal,,0,NA,NA,0.64,0.95,0.1,NA,NA,NA,NA,NA,NA,NA
 PC.2300.090,PC.2300.090.099.F,"make-up and related , lip color NOC",P.PC.670.000,lip color,0,1,Personal,I,0,NA,NA,1,1,1,540,0,1,0.3,0,2,1
-PC.2300.100,#N/A,#N/A,P.PC.680,#N/A,#N/A,0,Personal,,0,NA,NA,0.64,0.95,0.6,NA,NA,NA,NA,NA,NA,NA
+PC.2300.100,#N/A,#N/A,P.PC.680,#N/A,#N/A,0,Personal,,0,NA,NA,0.64,0.95,0.1,NA,NA,NA,NA,NA,NA,NA
 PC.2300.100,PC.2300.100.099.F,"make-up and related , lip gloss NOC",P.PC.680.000,lip gloss,0,1,Personal,I,0,NA,NA,1,1,1,540,0,1,0.3,0,2,1
-PC.2300.110,#N/A,#N/A,P.PC.690,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.64,0.95,0.6,NA,NA,NA,NA,NA,NA,NA
+PC.2300.110,#N/A,#N/A,P.PC.690,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.64,0.95,0.1,NA,NA,NA,NA,NA,NA,NA
 PC.2300.110,PC.2300.110.099.F,"make-up and related , lip liner NOC",P.PC.690.000,lip liner,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,540,0,1,0.3,0,2,1
 PC.2300.120,#N/A,#N/A,P.PC.700,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.05,0.65,0,NA,NA,NA,NA,NA,NA,NA
 PC.2300.120,PC.2300.120.099.F,"make-up and related , makeup primer NOC",P.PC.700.000,makeup primer,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,364,0,5,0.3,0,2,1

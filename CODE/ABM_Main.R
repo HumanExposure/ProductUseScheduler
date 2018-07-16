@@ -2,6 +2,7 @@
 # ABM is executed by calling ABM_Runner() 
 ##############################################
 
+rm(list=ls())
 
 ###################################
 #### Beginning of ABM_Runner ######
@@ -24,22 +25,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   ##################
   # setup ABM inputs
   ##################
-  setwd(pth_str)
-  tryCatch(source("./CODE/ABS.R"),
-           error=function(e) {stop("ABS.R is not available")}
-  )
-  ABSoutput <- ABS()
-  phf <- ABSoutput$phf                            # population and housing generator output file
-  ent <- ABSoutput$ent                            # ever never table
-  sheds_var_raw <- ABSoutput$sheds_var_raw        # inputs sheds_sheds_variables both product and refined levels
-  product_refine_tbl <- ABSoutput$product_refine_tbl  # a table with product and refined product links
-  activity_diary <- ABSoutput$activity_diary      # people activity diary
-  seasonality_PUC <- ABSoutput$seasonality_PUC    # PUC seasonality
   
-  ################################################
-  # Household Characteristics Processor (HCP)
-  ################################################
-  HCP_output <- ABSoutput$HCP_output
   
   ##########################
   ## for a given household 
@@ -281,42 +267,75 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 #### End of ABM_Runner
 ######################
 
-# pth_str <- "D:/Dropbox/_ICF_project/WA 2-75/Agent-Based Models/Modular_Structure/ProductUseScheduler/"
-# household_number <- 2
-# set.seed(1234)
 
-# for (zz in (1:10)){
-#  ABM_Runner(pth_str,zz)
-# }
 
+
+# declare working folder
+set.seed(1234)
+pth_str <- "C:/Users/13963/Documents/ABM/2018/ProductUseScheduler_07152018/"
+
+setwd(pth_str)
+tryCatch(source("./CODE/ABS.R"),
+         error=function(e) {stop("ABS.R is not available")}
+)
+ABSoutput <- ABS()
+phf <- ABSoutput$phf                            # population and housing generator output file
+ent <- ABSoutput$ent                            # ever never table
+sheds_var_raw <- ABSoutput$sheds_var_raw        # inputs sheds_sheds_variables both product and refined levels
+product_refine_tbl <- ABSoutput$product_refine_tbl  # a table with product and refined product links
+activity_diary <- ABSoutput$activity_diary      # people activity diary
+seasonality_PUC <- ABSoutput$seasonality_PUC    # PUC seasonality
 
 ################################################
-# Example run_mode 3 
-# parallel, directly specify household numbers
+# Household Characteristics Processor (HCP)
 ################################################
+HCP_output <- ABSoutput$HCP_output
+
+# directly specify household numbers
+
+##### TWO RUN OPTIONS ARE AVAILABLE BELOW. COMMENT OUT THE VERSION NOT BEING USED.
+
+
+### NON PARALLEL VERSION  ###############
+
+# house_list <- 1:10
+# for(i in house_list){
+#   tryCatch({
+#   ABM_Runner(pth_str,i)},
+#   error=function(e){
+#     tryCatch({
+#       ABM_Runner(pth_str,i)},
+#       error=function(e){ABM_Runner(pth_str,i)}) # end of 2nd error function and 2nd tryCatch
+#   }) # end of 1st error function and 1st tryCatch
+# }# end of for loop
+
+
+###############PARALLEL VERSION ########
+
+house_list <- 1:10
+
 library(foreach)
 library(doParallel)
 
-# register number of cores (total #CPU-2)
-cl <- makeCluster(detectCores() - 4)
-registerDoParallel(cl, cores = detectCores() - 4)
-
-# declare working folder
-pth_str <- "ABC/your_path/"
+# register number of cores (total #CPU-1)
+cl <- makeCluster(detectCores() - 1)
+registerDoParallel(cl, cores = detectCores() - 1)
 
 
-
-# directly specify household numbers
-house_list <- 1:4
-
-set.seed(1234)
-# Call ABM runner
-out <- foreach(i = 1:length(house_list)) %dopar% {
+out <- foreach(i = 1:length(house_list),.packages='dplyr') %dopar% {
   res <- tryCatch({
+    set.seed(i*97)
     ABM_Runner(pth_str, house_list[i])
-  }, error=function(e) print(e))
-}
+  }, error=function(e){ # start of 1st error function
+    tryCatch({
+      set.seed(i*98)
+      ABM_Runner(pth_str, house_list[i])
+    }, error=function(e){ # start of 2nd error function
+      set.seed(i*99)
+      ABM_Runner(pth_str,house_list[i])})} # end of 2nd error function, 2nd try-catch, 1st error function
+  ) # end of 1st try catch
+} # end of do-par loop
+
 
 on.exit(stopCluster(cl))
 
-# ABM_Runner(pth_str, 3) # test
