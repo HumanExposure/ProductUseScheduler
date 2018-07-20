@@ -37,6 +37,8 @@ ABS <- function(wd=NULL){
         ent <- read.csv(file="./INPUTS/FullENT.csv", header=TRUE, sep=",", stringsAsFactors = FALSE),
          error=function(e) {stop("FullENT.csv is not available")}
     )
+    # rename ent columns from pretty input names to code names
+    names(ent)<-c("PUCID_productype","PUCID_PT_description","NO2017","HUP","IUP","Residential","Demographic","Seasonality","M","F","W","B","A","N","P","O","age0_5","age6_12","age13_15","age16_18","age19_49","age50plus","kownrent","sewdis","dishwash","stoven","cars","pcprint","swim","yard","Hot_Warm","Cool","Cold","personal_communal") 
 
     # Seasonality_PUC: based on ent
     Seasonality_PUC <- ent[,c("PUCID_productype", "Seasonality", "Hot_Warm", "Cool", "Cold")]
