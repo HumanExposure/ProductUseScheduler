@@ -54,4 +54,13 @@ QA/
 Network Trash Folder
 Temporary Items
 .apdisk
+
 .Rproj.user
+
+
+#do not sync anything in output folder
+/OUTPUTS
+
+#do not sync pophouse.csv
+pophouse.csv
+
