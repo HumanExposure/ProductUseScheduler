@@ -40,200 +40,200 @@ AC.0700.030,AC.0700.030.099.F,"home office , white out NOC",P.HO.030.000,white o
 AC.0800.010,#N/A,#N/A,P.AC.140,#N/A,#N/A,0,Personal,,0,NA,NA,0.01,0.01,0.01,NA,NA,NA,NA,NA,NA,NA
 AC.0800.010,AC.0800.010.099.F,"pottery making , glaze NOC",P.AC.140.000,glaze,0,1,Personal,I,0,NA,NA,1,1,1,12,0.3,30,1,90,100,1
 CP.0100.010,#N/A,#N/A,P.IH.010,#N/A,#N/A,0,Communal,,0,0.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0100.010,CP.0100.010.051.F,"air freshener , air freshener gel",P.IH.010.007,air freshener gel,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,1,0.6,0,5,1
-CP.0100.010,CP.0100.010.052.F,"air freshener , air freshener liquid",P.IH.010.013,air freshener liquid,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,1,0.6,0,5,1
-CP.0100.010,CP.0100.010.054.F,"air freshener , air freshener oil or diffuse",P.IH.010.016,air freshener oil or diffuse,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,3,0.6,0,5,1
-CP.0100.010,CP.0100.010.099.F,"air freshener , air freshener NOC",P.IH.010.016,air freshener oil or diffuse,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,3,0.6,0,5,1
-CP.0100.010,CP.0100.010.050.F,"air freshener , air freshener spray",P.IH.010.029,air freshener spray,0,1,Communal,I,0,NA,0.2,0.2,0.8,0,364,0,3,0.6,0,5,1
+CP.0100.010,CP.0100.010.051.F,"air freshener , air freshener gel",P.IH.010.007,air freshener gel,0,1,Communal,I,0,NA,0.2,0.25,0.75,0,364,0,1,0.6,0,5,1
+CP.0100.010,CP.0100.010.052.F,"air freshener , air freshener liquid",P.IH.010.013,air freshener liquid,0,1,Communal,I,0,NA,0.2,0.25,0.75,0,364,0,1,0.6,0,5,1
+CP.0100.010,CP.0100.010.054.F,"air freshener , air freshener oil or diffuse",P.IH.010.016,air freshener oil or diffuse,0,1,Communal,I,0,NA,0.2,0.25,0.75,0,364,0,3,0.6,0,5,1
+CP.0100.010,CP.0100.010.099.F,"air freshener , air freshener NOC",P.IH.010.016,air freshener oil or diffuse,0,1,Communal,I,0,NA,0.2,0.25,0.75,0,364,0,3,0.6,0,5,1
+CP.0100.010,CP.0100.010.050.F,"air freshener , air freshener spray",P.IH.010.029,air freshener spray,0,1,Communal,I,0,NA,0.2,0.25,0.75,0,364,0,3,0.6,0,5,1
 CP.0200.010,#N/A,#N/A,P.IH.040,#N/A,#N/A,0,Communal,,0,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0200.010,CP.0200.010.050.F,"bathroom , bathroom cleaner spray",P.IH.040.029,bathroom cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,100,0.3,20,0.6,0,50,1
-CP.0200.010,CP.0200.010.099.F,"bathroom , bathroom cleaner NOC",P.IH.040.029,bathroom cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,100,0.3,20,0.6,0,50,1
+CP.0200.010,CP.0200.010.050.F,"bathroom , bathroom cleaner spray",P.IH.040.029,bathroom cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,100,0.3,20,0.6,0,50,1
+CP.0200.010,CP.0200.010.099.F,"bathroom , bathroom cleaner NOC",P.IH.040.029,bathroom cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,100,0.3,20,0.6,0,50,1
 CP.0300.010,#N/A,#N/A,P.IH.070,#N/A,#N/A,0,Communal,,Carpet cleaning,0.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0300.010,CP.0300.010.050.F,"carpet and floor , carpet cleaner spray",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.2,0.8,0,12,0.3,30,0.6,0,200,1
-CP.0300.010,CP.0300.010.099.F,"carpet and floor , carpet cleaner NOC",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.2,0.8,0,12,0.3,30,0.6,0,200,1
+CP.0300.010,CP.0300.010.050.F,"carpet and floor , carpet cleaner spray",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.25,0.75,0,12,0.3,30,0.6,0,200,1
+CP.0300.010,CP.0300.010.099.F,"carpet and floor , carpet cleaner NOC",P.IH.070.029,carpet cleaner spray,0,1,Communal,I,Carpet cleaning,NA,0.5,0.25,0.75,0,12,0.3,30,0.6,0,200,1
 CP.0300.020,#N/A,#N/A,P.IH.080,#N/A,#N/A,0,Communal,,Carpet cleaning,0.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0300.020,CP.0300.020.099.F,"carpet and floor , carpet deodorizer NOC",P.IH.080.000,carpet deodorizer,0,1,Communal,I,Carpet cleaning,NA,1,0.2,0.8,0,12,0.3,30,0.6,0,500,1
+CP.0300.020,CP.0300.020.099.F,"carpet and floor , carpet deodorizer NOC",P.IH.080.000,carpet deodorizer,0,1,Communal,I,Carpet cleaning,NA,1,0.25,0.75,0,12,0.3,30,0.6,0,500,1
 CP.0300.030,#N/A,#N/A,P.IH.190,#N/A,#N/A,0,Communal,,Home cleaning,0.69,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0300.030,CP.0300.030.099.F,"carpet and floor , floor cleaner NOC",P.IH.190.000,floor cleaner,0,1,Communal,I,Home cleaning,NA,1,0.2,0.8,0,100,0.3,30,0.6,0,600,1
+CP.0300.030,CP.0300.030.099.F,"carpet and floor , floor cleaner NOC",P.IH.190.000,floor cleaner,0,1,Communal,I,Home cleaning,NA,1,0.25,0.75,0,100,0.3,30,0.6,0,600,1
 CP.0300.040,#N/A,#N/A,P.IH.200,#N/A,#N/A,0,Communal,,Home cleaning,0.69,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0300.040,CP.0300.040.099.F,"carpet and floor , floor polish NOC",P.IH.200.000,floor polish,0,1,Communal,I,Home cleaning,NA,1,0.2,0.8,0,2,1,30,0.6,0,550,1
+CP.0300.040,CP.0300.040.099.F,"carpet and floor , floor polish NOC",P.IH.200.000,floor polish,0,1,Communal,I,Home cleaning,NA,1,0.25,0.75,0,2,1,30,0.6,0,550,1
 CP.0400.020,#N/A,#N/A,P.IH.020,#N/A,#N/A,0,Communal,,Dishwashing,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0400.020,CP.0400.020.099.F,"dishwasher and dishes , automatic dishwashing additive NOC",P.IH.020.000,automatic dishwashing additive,0,1,Communal,I,Dishwashing,NA,1,0.2,0.8,0,364,0,3,0.6,0,20,1
+CP.0400.020,CP.0400.020.099.F,"dishwasher and dishes , automatic dishwashing additive NOC",P.IH.020.000,automatic dishwashing additive,0,1,Communal,I,Dishwashing,NA,1,0.25,0.75,0,364,0,3,0.6,0,20,1
 CP.0400.030,#N/A,#N/A,P.IH.030,#N/A,#N/A,0,Communal,,Dishwashing,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0400.030,CP.0400.030.051.F,"dishwasher and dishes , automatic dishwashing detergent gel",P.IH.030.007,automatic dishwashing detergent gel,0,1,Communal,I,Dishwashing,NA,0.33,0.2,0.8,0,364,0,3,0.6,0,50,1
-CP.0400.030,CP.0400.030.053.F,"dishwasher and dishes , automatic dishwashing detergent powder",P.IH.030.023,automatic dishwashing detergent powder,0,1,Communal,I,Dishwashing,NA,0.33,0.2,0.8,0,364,0,3,0.6,0,200,1
-CP.0400.030,CP.0400.030.099.F,"dishwasher and dishes , automatic dishwashing detergent NOC",P.IH.030.023,automatic dishwashing detergent powder,0,1,Communal,I,Dishwashing,NA,0.34,0.2,0.8,0,364,0,3,0.6,0,200,1
+CP.0400.030,CP.0400.030.051.F,"dishwasher and dishes , automatic dishwashing detergent gel",P.IH.030.007,automatic dishwashing detergent gel,0,1,Communal,I,Dishwashing,NA,0.33,0.25,0.75,0,364,0,3,0.6,0,50,1
+CP.0400.030,CP.0400.030.053.F,"dishwasher and dishes , automatic dishwashing detergent powder",P.IH.030.023,automatic dishwashing detergent powder,0,1,Communal,I,Dishwashing,NA,0.33,0.25,0.75,0,364,0,3,0.6,0,200,1
+CP.0400.030,CP.0400.030.099.F,"dishwasher and dishes , automatic dishwashing detergent NOC",P.IH.030.023,automatic dishwashing detergent powder,0,1,Communal,I,Dishwashing,NA,0.34,0.25,0.75,0,364,0,3,0.6,0,200,1
 CP.0400.040,#N/A,#N/A,P.IH.090,#N/A,#N/A,0,Communal,,0,0.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0400.040,CP.0400.040.099.F,"dishwasher and dishes , dish soap NOC",P.IH.090.000,dish soap,0,1,Communal,I,0,NA,1,0.2,0.8,0,462,0,30,0.6,0,100,1
+CP.0400.040,CP.0400.040.099.F,"dishwasher and dishes , dish soap NOC",P.IH.090.000,dish soap,0,1,Communal,I,0,NA,1,0.25,0.75,0,462,0,30,0.6,0,100,1
 CP.0500.010,#N/A,#N/A,P.IH.110,#N/A,#N/A,0,Communal,,Home cleaning,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0500.010,CP.0500.010.099.F,"drain , drain NOC",P.IH.110.000,drain,0,1,Communal,I,Home cleaning,NA,1,0.2,0.8,0,4,1,15,0.6,0,500,1
+CP.0500.010,CP.0500.010.099.F,"drain , drain NOC",P.IH.110.000,drain,0,1,Communal,I,Home cleaning,NA,1,0.25,0.75,0,4,1,15,0.6,0,500,1
 CP.0600.010,#N/A,#N/A,P.IH.180,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0600.010,CP.0600.010.099.F,"fireplace , fireplace NOC",P.IH.180.000,fireplace,0,1,Communal,I,0,NA,1,0.2,0.8,0,2,1,30,0.6,0,50,1
+CP.0600.010,CP.0600.010.099.F,"fireplace , fireplace NOC",P.IH.180.000,fireplace,0,1,Communal,I,0,NA,1,0.25,0.75,0,2,1,30,0.6,0,50,1
 CP.0700.010,#N/A,#N/A,P.IH.050,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0700.010,CP.0700.010.099.F,"general household cleaning , bleach NOC",P.IH.050.000,bleach,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,104,0.3,3,0.6,0,50,1
+CP.0700.010,CP.0700.010.099.F,"general household cleaning , bleach NOC",P.IH.050.000,bleach,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,104,0.3,3,0.6,0,50,1
 CP.0700.020,#N/A,#N/A,P.IH.100,#N/A,#N/A,0,Communal,,Home cleaning,0.57,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0700.020,CP.0700.020.050.F,"general household cleaning , disinfectant spray",P.IH.100.029,disinfectant spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,364,0,5,0.6,0,23,1
-CP.0700.020,CP.0700.020.099.F,"general household cleaning , disinfectant NOC",P.IH.100.029,disinfectant spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,364,0,5,0.6,0,23,1
+CP.0700.020,CP.0700.020.050.F,"general household cleaning , disinfectant spray",P.IH.100.029,disinfectant spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,364,0,5,0.6,0,23,1
+CP.0700.020,CP.0700.020.099.F,"general household cleaning , disinfectant NOC",P.IH.100.029,disinfectant spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,364,0,5,0.6,0,23,1
 CP.0700.030,#N/A,#N/A,P.IH.210,#N/A,#N/A,0,Communal,,Home cleaning,0.88,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0700.030,CP.0700.030.050.F,"general household cleaning , glass cleaner spray",P.IH.210.029,glass cleaner-spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,72,0.3,20,0.6,0,20,1
-CP.0700.030,CP.0700.030.099.F,"general household cleaning , glass cleaner NOC",P.IH.210.029,glass cleaner-spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,72,0.3,20,0.6,0,20,1
+CP.0700.030,CP.0700.030.050.F,"general household cleaning , glass cleaner spray",P.IH.210.029,glass cleaner-spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,72,0.3,20,0.6,0,20,1
+CP.0700.030,CP.0700.030.099.F,"general household cleaning , glass cleaner NOC",P.IH.210.029,glass cleaner-spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,72,0.3,20,0.6,0,20,1
 CP.0700.040,#N/A,#N/A,P.IH.340,#N/A,#N/A,0,Communal,,0,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0700.040,CP.0700.040.050.F,"general household cleaning , surface cleaner spray",P.IH.340.029,surface cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,364,0,15,0.6,0,20,1
-CP.0700.040,CP.0700.040.099.F,"general household cleaning , surface cleaner NOC",P.IH.340.029,surface cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,364,0,15,0.6,0,20,1
+CP.0700.040,CP.0700.040.050.F,"general household cleaning , surface cleaner spray",P.IH.340.029,surface cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,364,0,15,0.6,0,20,1
+CP.0700.040,CP.0700.040.099.F,"general household cleaning , surface cleaner NOC",P.IH.340.029,surface cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,364,0,15,0.6,0,20,1
 CP.0800.010,#N/A,#N/A,P.IH.220,#N/A,#N/A,0,Personal,,0,NA,NA,0.3,0.3,0.3,NA,NA,NA,NA,NA,NA,NA
 CP.0800.010,CP.0800.010.099.F,"hand cleaner , hand cleaner NOC",P.IH.220.000,hand cleaner,0,1,Personal,I,0,NA,NA,1,1,1,52,0.3,2,0.6,0,20,1
 CP.0900.010,#N/A,#N/A,P.IH.230,#N/A,#N/A,0,Communal,,Home cleaning,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.0900.010,CP.0900.010.050.F,"heavy duty cleaner , heavy duty cleaner spray",P.IH.230.029,heavy duty cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,180,0.3,30,0.6,0,50,1
-CP.0900.010,CP.0900.010.099.F,"heavy duty cleaner , heavy duty cleaner NOC",P.IH.230.029,heavy duty cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,180,0.3,30,0.6,0,50,1
+CP.0900.010,CP.0900.010.050.F,"heavy duty cleaner , heavy duty cleaner spray",P.IH.230.029,heavy duty cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,180,0.3,30,0.6,0,50,1
+CP.0900.010,CP.0900.010.099.F,"heavy duty cleaner , heavy duty cleaner NOC",P.IH.230.029,heavy duty cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,180,0.3,30,0.6,0,50,1
 CP.1000.010,#N/A,#N/A,P.IH.240,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1000.010,CP.1000.010.050.F,"houseplant care , houseplant care spray",P.IH.240.029,houseplant care spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,10,0.6,0,20,1
-CP.1000.010,CP.1000.010.099.F,"houseplant care , houseplant care NOC",P.IH.240.029,houseplant care spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,10,0.6,0,20,1
+CP.1000.010,CP.1000.010.050.F,"houseplant care , houseplant care spray",P.IH.240.029,houseplant care spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,52,0.3,10,0.6,0,20,1
+CP.1000.010,CP.1000.010.099.F,"houseplant care , houseplant care NOC",P.IH.240.029,houseplant care spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,52,0.3,10,0.6,0,20,1
 CP.1100.010,#N/A,#N/A,P.IH.250,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1100.010,CP.1100.010.099.F,"lamp oil/lighter fluid , lamp oil/lighter fluid NOC",P.IH.250.000,lamp oil/lighter fluid,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,5,0.6,5,10,1
+CP.1100.010,CP.1100.010.099.F,"lamp oil/lighter fluid , lamp oil/lighter fluid NOC",P.IH.250.000,lamp oil/lighter fluid,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,5,0.6,5,10,1
 CP.1200.010,#N/A,#N/A,P.IH.120,#N/A,#N/A,0,Communal,,Laundry,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.010,CP.1200.010.099.F,"laundry and fabric treatment , dry cleaner NOC",P.IH.120.000,dry cleaner,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,12,0.3,5,0.6,0,3,1
+CP.1200.010,CP.1200.010.099.F,"laundry and fabric treatment , dry cleaner NOC",P.IH.120.000,dry cleaner,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,12,0.3,5,0.6,0,3,1
 CP.1200.020,#N/A,#N/A,P.IH.130,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.020,CP.1200.020.099.F,"laundry and fabric treatment , dryer sheets NOC",P.IH.130.000,dryer sheets,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,364,0,1,0.6,60,200,1
+CP.1200.020,CP.1200.020.099.F,"laundry and fabric treatment , dryer sheets NOC",P.IH.130.000,dryer sheets,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,364,0,1,0.6,60,200,1
 CP.1200.030,#N/A,#N/A,P.IH.150,#N/A,#N/A,0,Communal,,Laundry,0.7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.030,CP.1200.030.099.F,"laundry and fabric treatment , fabric deodorizer NOC",P.IH.150.000,fabric deodorizer,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,104,0.3,15,0.6,0,50,1
+CP.1200.030,CP.1200.030.099.F,"laundry and fabric treatment , fabric deodorizer NOC",P.IH.150.000,fabric deodorizer,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,104,0.3,15,0.6,0,50,1
 CP.1200.040,#N/A,#N/A,P.IH.160,#N/A,#N/A,0,Communal,,Laundry,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.040,CP.1200.040.099.F,"laundry and fabric treatment , fabric protectant NOC",P.IH.160.000,fabric protectant,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,12,0.3,10,0.6,0,20,1
+CP.1200.040,CP.1200.040.099.F,"laundry and fabric treatment , fabric protectant NOC",P.IH.160.000,fabric protectant,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,12,0.3,10,0.6,0,20,1
 CP.1200.050,#N/A,#N/A,P.IH.170,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.050,CP.1200.050.099.F,"laundry and fabric treatment , fabric softener NOC",P.IH.170.000,fabric softener,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,104,0.3,5,0.6,0,100,1
+CP.1200.050,CP.1200.050.099.F,"laundry and fabric treatment , fabric softener NOC",P.IH.170.000,fabric softener,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,104,0.3,5,0.6,0,100,1
 CP.1200.060,#N/A,#N/A,P.IH.260,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.060,CP.1200.060.052.F,"laundry and fabric treatment , laundry detergent liquid",P.IH.260.013,laundry detergent liquid,0,1,Communal,I,Laundry,NA,0.33,0.2,0.8,0,364,0,3,0.6,10,200,1
-CP.1200.060,CP.1200.060.053.F,"laundry and fabric treatment , laundry detergent powder",P.IH.260.023,laundry detergent powder,0,1,Communal,I,Laundry,NA,0.33,0.2,0.8,0,364,0,3,0.6,10,200,1
-CP.1200.060,CP.1200.060.099.F,"laundry and fabric treatment , laundry detergent NOC",P.IH.260.023,laundry detergent powder,0,1,Communal,I,Laundry,NA,0.34,0.2,0.8,0,364,0,3,0.6,10,200,1
+CP.1200.060,CP.1200.060.052.F,"laundry and fabric treatment , laundry detergent liquid",P.IH.260.013,laundry detergent liquid,0,1,Communal,I,Laundry,NA,0.33,0.25,0.75,0,364,0,3,0.6,10,200,1
+CP.1200.060,CP.1200.060.053.F,"laundry and fabric treatment , laundry detergent powder",P.IH.260.023,laundry detergent powder,0,1,Communal,I,Laundry,NA,0.33,0.25,0.75,0,364,0,3,0.6,10,200,1
+CP.1200.060,CP.1200.060.099.F,"laundry and fabric treatment , laundry detergent NOC",P.IH.260.023,laundry detergent powder,0,1,Communal,I,Laundry,NA,0.34,0.25,0.75,0,364,0,3,0.6,10,200,1
 CP.1200.070,#N/A,#N/A,P.IH.270,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.070,CP.1200.070.099.F,"laundry and fabric treatment , laundry fragrance NOC",P.IH.270.000,laundry fragrance,0,1,Communal,I,Laundry,NA,1,0.2,0.8,0,128,0.3,3,0.6,10,5,1
+CP.1200.070,CP.1200.070.099.F,"laundry and fabric treatment , laundry fragrance NOC",P.IH.270.000,laundry fragrance,0,1,Communal,I,Laundry,NA,1,0.25,0.75,0,128,0.3,3,0.6,10,5,1
 CP.1200.080,#N/A,#N/A,P.IH.280,#N/A,#N/A,0,Communal,,Laundry,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.080,CP.1200.080.050.F,"laundry and fabric treatment , laundry stain remover spray",P.IH.280.029,laundry stain remover spray,0,1,Communal,I,Laundry,NA,0.5,0.2,0.8,0,128,0.3,3,0.6,10,5,1
-CP.1200.080,CP.1200.080.099.F,"laundry and fabric treatment , laundry stain remover NOC",P.IH.280.029,laundry stain remover spray,0,1,Communal,I,Laundry,NA,0.5,0.2,0.8,0,128,0.3,3,0.6,10,5,1
+CP.1200.080,CP.1200.080.050.F,"laundry and fabric treatment , laundry stain remover spray",P.IH.280.029,laundry stain remover spray,0,1,Communal,I,Laundry,NA,0.5,0.25,0.75,0,128,0.3,3,0.6,10,5,1
+CP.1200.080,CP.1200.080.099.F,"laundry and fabric treatment , laundry stain remover NOC",P.IH.280.029,laundry stain remover spray,0,1,Communal,I,Laundry,NA,0.5,0.25,0.75,0,128,0.3,3,0.6,10,5,1
 CP.1200.090,#N/A,#N/A,P.IH.290,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1200.090,CP.1200.090.050.F,"laundry and fabric treatment , laundry starch spray",P.IH.290.029,laundry starch-spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,26,0.3,3,0.6,30,4.5,1
-CP.1200.090,CP.1200.090.099.F,"laundry and fabric treatment , laundry starch NOC",P.IH.290.029,laundry starch-spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,26,0.3,3,0.6,30,4.5,1
+CP.1200.090,CP.1200.090.050.F,"laundry and fabric treatment , laundry starch spray",P.IH.290.029,laundry starch-spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,26,0.3,3,0.6,30,4.5,1
+CP.1200.090,CP.1200.090.099.F,"laundry and fabric treatment , laundry starch NOC",P.IH.290.029,laundry starch-spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,26,0.3,3,0.6,30,4.5,1
 CP.1300.010,#N/A,#N/A,P.IH.300,#N/A,#N/A,0,Communal,,0,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1300.010,CP.1300.010.099.F,"lime remover , lime remover NOC",P.IH.300.000,lime remover,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,10,0.6,0,50,1
+CP.1300.010,CP.1300.010.099.F,"lime remover , lime remover NOC",P.IH.300.000,lime remover,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,10,0.6,0,50,1
 CP.1400.010,#N/A,#N/A,P.IH.310,#N/A,#N/A,0,Communal,,Home cleaning,0.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1400.010,CP.1400.010.099.F,"metal specific , metal polish NOC",P.IH.310.000,metal polish,0,1,Communal,I,Home cleaning,NA,1,0.2,0.8,0,12,0.3,10,0.6,0,50,1
+CP.1400.010,CP.1400.010.099.F,"metal specific , metal polish NOC",P.IH.310.000,metal polish,0,1,Communal,I,Home cleaning,NA,1,0.25,0.75,0,12,0.3,10,0.6,0,50,1
 CP.1500.010,#N/A,#N/A,P.IH.320,#N/A,#N/A,0,Communal,,Home cleaning,0.38,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1500.010,CP.1500.010.050.F,"oven , oven cleaner spray",P.IH.320.029,oven cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,26,0.3,20,0.6,0,30,1
-CP.1500.010,CP.1500.010.099.F,"oven , oven cleaner NOC",P.IH.320.029,oven cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,26,0.3,20,0.6,0,30,1
+CP.1500.010,CP.1500.010.050.F,"oven , oven cleaner spray",P.IH.320.029,oven cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,26,0.3,20,0.6,0,30,1
+CP.1500.010,CP.1500.010.099.F,"oven , oven cleaner NOC",P.IH.320.029,oven cleaner spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,26,0.3,20,0.6,0,30,1
 CP.1600.010,#N/A,#N/A,P.IH.330,#N/A,#N/A,0,Communal,,0,0.12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1600.010,CP.1600.010.099.F,"shoes , shoe polish or protectant NOC",P.IH.330.000,shoe polish or protectant,0,1,Communal,I,0,NA,1,0.2,0.8,0,11,1,10,0.6,0,5,1
+CP.1600.010,CP.1600.010.099.F,"shoes , shoe polish or protectant NOC",P.IH.330.000,shoe polish or protectant,0,1,Communal,I,0,NA,1,0.25,0.75,0,11,1,10,0.6,0,5,1
 CP.1700.010,#N/A,#N/A,P.IH.350,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1700.010,CP.1700.010.099.F,"upholstery specific , upholstery cleaner NOC",P.IH.350.000,upholstery cleaner,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,20,0.6,0,50,1
+CP.1700.010,CP.1700.010.099.F,"upholstery specific , upholstery cleaner NOC",P.IH.350.000,upholstery cleaner,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,20,0.6,0,50,1
 CP.1800.010,#N/A,#N/A,P.IH.360,#N/A,#N/A,0,Communal,,Home cleaning,0.64,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-CP.1800.010,CP.1800.010.050.F,"wood specific , wood polish spray",P.IH.360.029,wood polish spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,30,0.3,20,0.6,20,300,1
-CP.1800.010,CP.1800.010.099.F,"wood specific , wood polish NOC",P.IH.360.029,wood polish spray,0,1,Communal,I,Home cleaning,NA,0.5,0.2,0.8,0,30,0.3,20,0.6,20,300,1
+CP.1800.010,CP.1800.010.050.F,"wood specific , wood polish spray",P.IH.360.029,wood polish spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,30,0.3,20,0.6,20,300,1
+CP.1800.010,CP.1800.010.099.F,"wood specific , wood polish NOC",P.IH.360.029,wood polish spray,0,1,Communal,I,Home cleaning,NA,0.5,0.25,0.75,0,30,0.3,20,0.6,20,300,1
 EL.0300.050,#N/A,#N/A,P.HO.010,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-EL.0300.050,EL.0300.050.099.F,"computers and accessories/supplies , printer ink NOC",P.HO.010.000,printer ink,0,1,Communal,I,0,NA,1,0.2,0.8,0,104,0.3,5,0.3,0,1,1
+EL.0300.050,EL.0300.050.099.F,"computers and accessories/supplies , printer ink NOC",P.HO.010.000,printer ink,0,1,Communal,I,0,NA,1,0.25,0.75,0,104,0.3,5,0.3,0,1,1
 EL.0300.060,#N/A,#N/A,P.HO.020,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-EL.0300.060,EL.0300.060.099.F,"computers and accessories/supplies , printer toner NOC",P.HO.020.000,printer toner,0,1,Communal,I,0,NA,1,0.2,0.8,0,104,0.3,5,0.3,0,1,1
+EL.0300.060,EL.0300.060.099.F,"computers and accessories/supplies , printer toner NOC",P.HO.020.000,printer toner,0,1,Communal,I,0,NA,1,0.25,0.75,0,104,0.3,5,0.3,0,1,1
 EL.0400.010,#N/A,#N/A,P.IH.140,#N/A,#N/A,0,Communal,,0,0.13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-EL.0400.010,EL.0400.010.050.F,"electronics cleaner , electronics cleaner spray",P.IH.140.029,electronics cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,13,0.3,10,0.6,0,9,1
-EL.0400.010,EL.0400.010.099.F,"electronics cleaner , electronics cleaner NOC",P.IH.140.029,electronics cleaner spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,13,0.3,10,0.6,0,9,1
+EL.0400.010,EL.0400.010.050.F,"electronics cleaner , electronics cleaner spray",P.IH.140.029,electronics cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,13,0.3,10,0.6,0,9,1
+EL.0400.010,EL.0400.010.099.F,"electronics cleaner , electronics cleaner NOC",P.IH.140.029,electronics cleaner spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,13,0.3,10,0.6,0,9,1
 HM.0100.010,#N/A,#N/A,P.HM.010,#N/A,#N/A,0,Communal,,0,0.24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0100.010,HM.0100.010.050.F,"adhesives and adhesive removers , adhesive remover spray",P.HM.010.029,adhesive remover-spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,1,1,60,0.6,0,500,1
-HM.0100.010,HM.0100.010.099.F,"adhesives and adhesive removers , adhesive remover NOC",P.HM.010.029,adhesive remover-spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,1,1,60,0.6,0,500,1
+HM.0100.010,HM.0100.010.050.F,"adhesives and adhesive removers , adhesive remover spray",P.HM.010.029,adhesive remover-spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,1,1,60,0.6,0,500,1
+HM.0100.010,HM.0100.010.099.F,"adhesives and adhesive removers , adhesive remover NOC",P.HM.010.029,adhesive remover-spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,1,1,60,0.6,0,500,1
 HM.0100.020,#N/A,#N/A,P.HM.110,#N/A,#N/A,0,Communal,,0,0.61,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0100.020,HM.0100.020.050.F,"adhesives and adhesive removers , multipurpose adhesive spray",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,20,1,0,10,1
-HM.0100.020,HM.0100.020.099.F,"adhesives and adhesive removers , multipurpose adhesive NOC",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,52,0.3,20,1,0,10,1
+HM.0100.020,HM.0100.020.050.F,"adhesives and adhesive removers , multipurpose adhesive spray",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,52,0.3,20,1,0,10,1
+HM.0100.020,HM.0100.020.099.F,"adhesives and adhesive removers , multipurpose adhesive NOC",P.HM.110.029,multipurpose adhesive spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,52,0.3,20,1,0,10,1
 HM.0100.030,#N/A,#N/A,P.HM.280,#N/A,#N/A,0,Communal,,0,0.61,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0100.030,HM.0100.030.099.F,"adhesives and adhesive removers , wood adhesive NOC",P.HM.280.000,wood adhesive,0,1,Communal,I,0,NA,1,0.2,0.8,0,0.5,1,60,0.6,0,100,1
+HM.0100.030,HM.0100.030.099.F,"adhesives and adhesive removers , wood adhesive NOC",P.HM.280.000,wood adhesive,0,1,Communal,I,0,NA,1,0.25,0.75,0,0.5,1,60,0.6,0,100,1
 HM.0400.010,#N/A,#N/A,P.HM.020,#N/A,#N/A,0,Communal,,0,0.61,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0400.010,HM.0400.010.099.F,"caulk/sealant , caulk/sealant NOC",P.HM.020.000,caulk/sealant,0,1,Communal,I,0,NA,1,0.2,0.8,0,3,1,15,1,30,75,1
+HM.0400.010,HM.0400.010.099.F,"caulk/sealant , caulk/sealant NOC",P.HM.020.000,caulk/sealant,0,1,Communal,I,0,NA,1,0.25,0.75,0,3,1,15,1,30,75,1
 HM.0500.010,#N/A,#N/A,P.HM.030,#N/A,#N/A,0,Communal,,0,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0500.010,HM.0500.010.099.F,"concrete , concrete NOC",P.HM.030.000,concrete,0,1,Communal,O,0,NA,1,0.8,0.2,0,1,1,60,0.6,30,8000,1
+HM.0500.010,HM.0500.010.099.F,"concrete , concrete NOC",P.HM.030.000,concrete,0,1,Communal,O,0,NA,1,0.66,0.34,0,1,1,60,0.6,30,8000,1
 HM.0600.010,#N/A,#N/A,P.HM.040,#N/A,#N/A,0,Communal,,0,0.08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0600.010,HM.0600.010.050.F,"corrosion protection , corrosion protection spray",P.HM.040.029,corrosion protection spray,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,6,1,20,1,0,90,1
-HM.0600.010,HM.0600.010.099.F,"corrosion protection , corrosion protection NOC",P.HM.040.029,corrosion protection spray,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,6,1,20,1,0,90,1
+HM.0600.010,HM.0600.010.050.F,"corrosion protection , corrosion protection spray",P.HM.040.029,corrosion protection spray,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,6,1,20,1,0,90,1
+HM.0600.010,HM.0600.010.099.F,"corrosion protection , corrosion protection NOC",P.HM.040.029,corrosion protection spray,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,6,1,20,1,0,90,1
 HM.0700.010,#N/A,#N/A,P.HM.050,#N/A,#N/A,0,Communal,,0,0.28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0700.010,HM.0700.010.099.F,"degreaser , degreaser NOC",P.HM.050.000,degreaser,0,1,Communal,I,0,NA,1,0.2,0.8,0,15,0.3,30,1,0,100,1
+HM.0700.010,HM.0700.010.099.F,"degreaser , degreaser NOC",P.HM.050.000,degreaser,0,1,Communal,I,0,NA,1,0.25,0.75,0,15,0.3,30,1,0,100,1
 HM.0800.010,#N/A,#N/A,P.HM.060,#N/A,#N/A,0,Communal,,0,0.43,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.0800.010,HM.0800.010.050.F,"finish , finish spray",P.HM.060.029,finish spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,2,1,60,0.6,0,1000,1
-HM.0800.010,HM.0800.010.099.F,"finish , finish NOC",P.HM.060.029,finish spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,2,1,60,0.6,0,1000,1
+HM.0800.010,HM.0800.010.050.F,"finish , finish spray",P.HM.060.029,finish spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,2,1,60,0.6,0,1000,1
+HM.0800.010,HM.0800.010.099.F,"finish , finish NOC",P.HM.060.029,finish spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,2,1,60,0.6,0,1000,1
 HM.1000.010,#N/A,#N/A,P.HM.230,#N/A,#N/A,0,Communal,,0,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1000.010,HM.1000.010.099.F,"insulation , spray foam NOC",P.HM.230.000,spray foam,0,1,Communal,I,0,NA,1,0.2,0.8,0,0.2,1,30,1,0,825,1
+HM.1000.010,HM.1000.010.099.F,"insulation , spray foam NOC",P.HM.230.000,spray foam,0,1,Communal,I,0,NA,1,0.25,0.75,0,0.2,1,30,1,0,825,1
 HM.1200.010,#N/A,#N/A,P.HM.080,#N/A,#N/A,0,Communal,,0,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1200.010,HM.1200.010.099.F,"lock deicer , lock deicer NOC",P.HM.080.000,lock deicer,0,1,Communal,O,0,NA,1,0.8,0.2,0,4,1,5,1,0,20,1
+HM.1200.010,HM.1200.010.099.F,"lock deicer , lock deicer NOC",P.HM.080.000,lock deicer,0,1,Communal,O,0,NA,1,0.66,0.34,0,4,1,5,1,0,20,1
 HM.1300.010,#N/A,#N/A,P.HM.090,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1300.010,HM.1300.010.050.F,"lubricant , lubricant spray",P.HM.090.029,lubricant spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,10,1,10,1,0,30,1
-HM.1300.010,HM.1300.010.099.F,"lubricant , lubricant NOC",P.HM.090.029,lubricant spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,10,1,10,1,0,30,1
+HM.1300.010,HM.1300.010.050.F,"lubricant , lubricant spray",P.HM.090.029,lubricant spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,10,1,10,1,0,30,1
+HM.1300.010,HM.1300.010.099.F,"lubricant , lubricant NOC",P.HM.090.029,lubricant spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,10,1,10,1,0,30,1
 HM.1400.010,#N/A,#N/A,P.HM.120,#N/A,#N/A,0,Communal,,Painting,0.44,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.010,HM.1400.010.040.F,"paint/stain and related products , paint exterior",P.HM.120.005,paint exterior,0,1,Communal,O,Painting,NA,0.25,0.8,0.2,0,2,1,120,0.6,30,3000,1
-HM.1400.010,HM.1400.010.041.F,"paint/stain and related products , paint interior",P.HM.120.009,paint interior,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,2,1,120,0.6,30,1000,1
-HM.1400.010,HM.1400.010.050.F,"paint/stain and related products , paint spray",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,4,1,30,1,30,180,1
-HM.1400.010,HM.1400.010.099.F,"paint/stain and related products , paint NOC",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,4,1,30,1,30,180,1
+HM.1400.010,HM.1400.010.040.F,"paint/stain and related products , paint exterior",P.HM.120.005,paint exterior,0,1,Communal,O,Painting,NA,0.25,0.66,0.34,0,2,1,120,0.6,30,3000,1
+HM.1400.010,HM.1400.010.041.F,"paint/stain and related products , paint interior",P.HM.120.009,paint interior,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,2,1,120,0.6,30,1000,1
+HM.1400.010,HM.1400.010.050.F,"paint/stain and related products , paint spray",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,4,1,30,1,30,180,1
+HM.1400.010,HM.1400.010.099.F,"paint/stain and related products , paint NOC",P.HM.120.029,paint spray,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,4,1,30,1,30,180,1
 HM.1400.020,#N/A,#N/A,P.HM.130,#N/A,#N/A,0,Communal,,Painting,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.020,HM.1400.020.050.F,"paint/stain and related products , paint cleaner spray",P.HM.130.029,paint cleaner-spray,0,1,Communal,I,Painting,NA,0.5,0.2,0.8,0,12,0.3,10,1,0,50,1
-HM.1400.020,HM.1400.020.099.F,"paint/stain and related products , paint cleaner NOC",P.HM.130.029,paint cleaner-spray,0,1,Communal,I,Painting,NA,0.5,0.2,0.8,0,12,0.3,10,1,0,50,1
+HM.1400.020,HM.1400.020.050.F,"paint/stain and related products , paint cleaner spray",P.HM.130.029,paint cleaner-spray,0,1,Communal,I,Painting,NA,0.5,0.25,0.75,0,12,0.3,10,1,0,50,1
+HM.1400.020,HM.1400.020.099.F,"paint/stain and related products , paint cleaner NOC",P.HM.130.029,paint cleaner-spray,0,1,Communal,I,Painting,NA,0.5,0.25,0.75,0,12,0.3,10,1,0,50,1
 HM.1400.030,#N/A,#N/A,P.HM.140,#N/A,#N/A,0,Communal,,Painting,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.030,HM.1400.030.099.F,"paint/stain and related products , paint texture NOC",P.HM.140.000,paint texture,0,1,Communal,I,Painting,NA,1,0.2,0.8,0,0.5,1,120,1,10,200,1
+HM.1400.030,HM.1400.030.099.F,"paint/stain and related products , paint texture NOC",P.HM.140.000,paint texture,0,1,Communal,I,Painting,NA,1,0.25,0.75,0,0.5,1,120,1,10,200,1
 HM.1400.040,#N/A,#N/A,P.HM.150,#N/A,#N/A,0,Communal,,Painting,0.36,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.040,HM.1400.040.099.F,"paint/stain and related products , paint thinner NOC",P.HM.150.000,paint thinner,0,1,Communal,I,Painting,NA,1,0.2,0.8,0,3,1,10,1,0,500,1
+HM.1400.040,HM.1400.040.099.F,"paint/stain and related products , paint thinner NOC",P.HM.150.000,paint thinner,0,1,Communal,I,Painting,NA,1,0.25,0.75,0,3,1,10,1,0,500,1
 HM.1400.050,#N/A,#N/A,P.HM.180,#N/A,#N/A,0,Communal,,Painting,0.14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.050,HM.1400.050.040.F,"paint/stain and related products , primer exterior",P.HM.180.005,primer exterior,0,1,Communal,O,Painting,NA,0.25,0.8,0.2,0,3.5,1,90,0.6,30,550,1
-HM.1400.050,HM.1400.050.041.F,"paint/stain and related products , primer interior",P.HM.180.009,primer interior,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,550,1
-HM.1400.050,HM.1400.050.050.F,"paint/stain and related products , primer spray",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,250,1
-HM.1400.050,HM.1400.050.099.F,"paint/stain and related products , primer NOC",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.2,0.8,0,3.5,1,90,0.6,30,250,1
+HM.1400.050,HM.1400.050.040.F,"paint/stain and related products , primer exterior",P.HM.180.005,primer exterior,0,1,Communal,O,Painting,NA,0.25,0.66,0.34,0,3.5,1,90,0.6,30,550,1
+HM.1400.050,HM.1400.050.041.F,"paint/stain and related products , primer interior",P.HM.180.009,primer interior,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,3.5,1,90,0.6,30,550,1
+HM.1400.050,HM.1400.050.050.F,"paint/stain and related products , primer spray",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,3.5,1,90,0.6,30,250,1
+HM.1400.050,HM.1400.050.099.F,"paint/stain and related products , primer NOC",P.HM.180.029,primer spray,0,1,Communal,I,Painting,NA,0.25,0.25,0.75,0,3.5,1,90,0.6,30,250,1
 HM.1400.060,#N/A,#N/A,P.HM.240,#N/A,#N/A,0,Communal,,0,0.43,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.060,HM.1400.060.040.F,"paint/stain and related products , stain exterior",P.HM.240.005,stain exterior,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,2,1,90,0.6,0,2000,1
-HM.1400.060,HM.1400.060.099.F,"paint/stain and related products , stain NOC",P.HM.240.005,stain exterior,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,2,1,90,0.6,0,2000,1
+HM.1400.060,HM.1400.060.040.F,"paint/stain and related products , stain exterior",P.HM.240.005,stain exterior,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,2,1,90,0.6,0,2000,1
+HM.1400.060,HM.1400.060.099.F,"paint/stain and related products , stain NOC",P.HM.240.005,stain exterior,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,2,1,90,0.6,0,2000,1
 HM.1400.070,#N/A,#N/A,P.HM.250,#N/A,#N/A,0,Communal,,Painting,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1400.070,HM.1400.070.050.F,"paint/stain and related products , stripper spray",P.HM.250.029,stripper spray,0,1,Communal,I,Painting,NA,0.5,0.2,0.8,0,2,1,90,0.6,0,500,1
-HM.1400.070,HM.1400.070.099.F,"paint/stain and related products , stripper NOC",P.HM.250.029,stripper spray,0,1,Communal,I,Painting,NA,0.5,0.2,0.8,0,2,1,90,0.6,0,500,1
+HM.1400.070,HM.1400.070.050.F,"paint/stain and related products , stripper spray",P.HM.250.029,stripper spray,0,1,Communal,I,Painting,NA,0.5,0.25,0.75,0,2,1,90,0.6,0,500,1
+HM.1400.070,HM.1400.070.099.F,"paint/stain and related products , stripper NOC",P.HM.250.029,stripper spray,0,1,Communal,I,Painting,NA,0.5,0.25,0.75,0,2,1,90,0.6,0,500,1
 HM.1500.010,#N/A,#N/A,P.HM.160,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1500.010,HM.1500.010.099.F,"patch and repair , patch and repair NOC",P.HM.160.000,patch and repair,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,30,1,0,200,1
+HM.1500.010,HM.1500.010.099.F,"patch and repair , patch and repair NOC",P.HM.160.000,patch and repair,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,30,1,0,200,1
 HM.1500.020,#N/A,#N/A,P.HM.190,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1500.020,HM.1500.020.099.F,"patch and repair , putty or filler NOC",P.HM.190.000,putty or filler,0,1,Communal,I,0,NA,1,0.2,0.8,0,3,1,30,1,0,100,1
+HM.1500.020,HM.1500.020.099.F,"patch and repair , putty or filler NOC",P.HM.190.000,putty or filler,0,1,Communal,I,0,NA,1,0.25,0.75,0,3,1,30,1,0,100,1
 HM.1600.010,#N/A,#N/A,P.HM.170,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1600.010,HM.1600.010.099.F,"plumbing , plumbing NOC",P.HM.170.000,plumbing,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,60,0.6,0,50,1
+HM.1600.010,HM.1600.010.099.F,"plumbing , plumbing NOC",P.HM.170.000,plumbing,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,60,0.6,0,50,1
 HM.1700.010,#N/A,#N/A,P.HM.200,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1700.010,HM.1700.010.099.F,"refrigerant , refrigerant NOC",P.HM.200.000,refrigerant,0,1,Communal,I,0,NA,1,0.2,0.8,0,1,1,10,1,10,2,1
+HM.1700.010,HM.1700.010.099.F,"refrigerant , refrigerant NOC",P.HM.200.000,refrigerant,0,1,Communal,I,0,NA,1,0.25,0.75,0,1,1,10,1,10,2,1
 HM.1800.010,#N/A,#N/A,P.HM.210,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1800.010,HM.1800.010.099.F,"roof , roof NOC",P.HM.210.000,roof,0,1,Communal,O,0,NA,1,0.8,0.2,0,0.05,1,360,0.6,0,5000,1
+HM.1800.010,HM.1800.010.099.F,"roof , roof NOC",P.HM.210.000,roof,0,1,Communal,O,0,NA,1,0.66,0.34,0,0.05,1,360,0.6,0,5000,1
 HM.1900.010,#N/A,#N/A,P.HM.220,#N/A,#N/A,0,Communal,,0,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.1900.010,HM.1900.010.099.F,"septic system , septic system NOC",P.HM.220.000,septic system,0,1,Communal,I,0,NA,1,0.2,0.8,0,4,1,20,1,0,500,1
+HM.1900.010,HM.1900.010.099.F,"septic system , septic system NOC",P.HM.220.000,septic system,0,1,Communal,I,0,NA,1,0.25,0.75,0,4,1,20,1,0,500,1
 HM.2000.040,#N/A,#N/A,P.HM.260,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.2000.040,HM.2000.040.040.F,"surface sealers , surface sealer exterior",P.HM.260.005,surface sealer exterior,0,1,Communal,O,0,NA,0.33,0.8,0.2,0,0.2,1,60,0.6,30,2250,1
-HM.2000.040,HM.2000.040.050.F,"surface sealers , surface sealer spray",P.HM.260.029,surface sealer spray,0,1,Communal,I,0,NA,0.33,0.2,0.8,0,1,1,30,1,30,100,1
-HM.2000.040,HM.2000.040.099.F,"surface sealers , surface sealer NOC",P.HM.260.029,surface sealer spray,0,1,Communal,I,0,NA,0.34,0.2,0.8,0,1,1,30,1,30,100,1
+HM.2000.040,HM.2000.040.040.F,"surface sealers , surface sealer exterior",P.HM.260.005,surface sealer exterior,0,1,Communal,O,0,NA,0.33,0.66,0.34,0,0.2,1,60,0.6,30,2250,1
+HM.2000.040,HM.2000.040.050.F,"surface sealers , surface sealer spray",P.HM.260.029,surface sealer spray,0,1,Communal,I,0,NA,0.33,0.25,0.75,0,1,1,30,1,30,100,1
+HM.2000.040,HM.2000.040.099.F,"surface sealers , surface sealer NOC",P.HM.260.029,surface sealer spray,0,1,Communal,I,0,NA,0.34,0.25,0.75,0,1,1,30,1,30,100,1
 HM.2100.010,#N/A,#N/A,P.HM.070,#N/A,#N/A,0,Communal,,0,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.2100.010,HM.2100.010.099.F,"tiling , grout sealer NOC",P.HM.070.000,grout sealer,0,1,Communal,O,0,NA,1,0.8,0.2,0,1,1,30,1,0,200,1
+HM.2100.010,HM.2100.010.099.F,"tiling , grout sealer NOC",P.HM.070.000,grout sealer,0,1,Communal,O,0,NA,1,0.66,0.34,0,1,1,30,1,0,200,1
 HM.2100.020,#N/A,#N/A,P.HM.100,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.2100.020,HM.2100.020.099.F,"tiling , mortar or grout NOC",P.HM.100.000,mortar or grout,0,1,Communal,O,0,NA,1,0.8,0.2,0,0.2,1,360,0.6,0,15000,1
+HM.2100.020,HM.2100.020.099.F,"tiling , mortar or grout NOC",P.HM.100.000,mortar or grout,0,1,Communal,O,0,NA,1,0.66,0.34,0,0.2,1,360,0.6,0,15000,1
 HM.2400.010,#N/A,#N/A,P.HM.270,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-HM.2400.010,HM.2400.010.099.F,"welding , welding NOC",P.HM.270.000,welding,0,1,Communal,OO,0,NA,1,0.8,0.2,0,4,1,60,1,0,20,1
+HM.2400.010,HM.2400.010.099.F,"welding , welding NOC",P.HM.270.000,welding,0,1,Communal,OO,0,NA,1,0.66,0.34,0,4,1,60,1,0,20,1
 LY.0100.010,#N/A,#N/A,P.LY.010,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0100.010,LY.0100.010.040.F,"cleaner , cleaner exterior",P.LY.010.005,cleaner exterior,0,1,Communal,I,0,NA,1,0.2,0.8,0,1,1,60,0.6,0,1000,1
+LY.0100.010,LY.0100.010.040.F,"cleaner , cleaner exterior",P.LY.010.005,cleaner exterior,0,1,Communal,I,0,NA,1,0.25,0.75,0,1,1,60,0.6,0,1000,1
 LY.0200.010,#N/A,#N/A,P.LY.040,#N/A,#N/A,0,Communal,,0,0.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0200.010,LY.0200.010.099.F,"grill/camping fuel , grill/camping fuel NOC",P.LY.040.000,grill/camping fuel,0,1,Communal,O,0,NA,1,0.8,0.2,0,12,0.3,10,1,50,20,1
+LY.0200.010,LY.0200.010.099.F,"grill/camping fuel , grill/camping fuel NOC",P.LY.040.000,grill/camping fuel,0,1,Communal,O,0,NA,1,0.66,0.34,0,12,0.3,10,1,50,20,1
 LY.0300.010,#N/A,#N/A,P.LY.050,#N/A,#N/A,0,Communal,,Lawn Product,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0300.010,LY.0300.010.050.F,"herbicide , herbicide spray",P.LY.050.029,herbicide spray,0,1,Communal,O,Lawn Product,NA,0.5,0.8,0.2,0,2,1,5,1,0,10000,1
-LY.0300.010,LY.0300.010.099.F,"herbicide , herbicide NOC",P.LY.050.029,herbicide spray,0,1,Communal,O,Lawn Product,NA,0.5,0.8,0.2,0,2,1,5,1,0,10000,1
+LY.0300.010,LY.0300.010.050.F,"herbicide , herbicide spray",P.LY.050.029,herbicide spray,0,1,Communal,O,Lawn Product,NA,0.5,0.66,0.34,0,2,1,5,1,0,10000,1
+LY.0300.010,LY.0300.010.099.F,"herbicide , herbicide NOC",P.LY.050.029,herbicide spray,0,1,Communal,O,Lawn Product,NA,0.5,0.66,0.34,0,2,1,5,1,0,10000,1
 LY.0400.010,#N/A,#N/A,P.LY.060,#N/A,#N/A,0,Communal,,Lawn Product,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0400.010,LY.0400.010.099.F,"lawn fertilizer , lawn fertilizer NOC",P.LY.060.000,lawn fertilizer,0,1,Communal,O,Lawn Product,NA,1,0.8,0.2,0,2,1,30,1,0,5000,1
+LY.0400.010,LY.0400.010.099.F,"lawn fertilizer , lawn fertilizer NOC",P.LY.060.000,lawn fertilizer,0,1,Communal,O,Lawn Product,NA,1,0.66,0.34,0,2,1,30,1,0,5000,1
 LY.0500.010,#N/A,#N/A,P.LY.070,#N/A,#N/A,0,Communal,,Lawn Product,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0500.010,LY.0500.010.099.F,"lawnmower , lawnmower fluids NOC",P.LY.070.000,lawnmower fluids,0,1,Communal,O,Lawn Product,NA,1,0.8,0.2,0,12,0.3,5,1,40,100,1
+LY.0500.010,LY.0500.010.099.F,"lawnmower , lawnmower fluids NOC",P.LY.070.000,lawnmower fluids,0,1,Communal,O,Lawn Product,NA,1,0.66,0.34,0,12,0.3,5,1,40,100,1
 LY.0600.010,#N/A,#N/A,P.LY.020,#N/A,#N/A,0,Communal,,Other Outdoor,0.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0600.010,LY.0600.010.099.F,"plants and garden , garden care NOC",P.LY.020.000,garden care,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,12,0.3,30,1,30,100,1
+LY.0600.010,LY.0600.010.099.F,"plants and garden , garden care NOC",P.LY.020.000,garden care,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,12,0.3,30,1,30,100,1
 LY.0600.020,#N/A,#N/A,P.LY.030,#N/A,#N/A,0,Communal,,Other Outdoor,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0600.020,LY.0600.020.099.F,"plants and garden , garden fertilizer NOC",P.LY.030.000,garden fertilizer,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,4,1,30,1,0,10000,1
+LY.0600.020,LY.0600.020.099.F,"plants and garden , garden fertilizer NOC",P.LY.030.000,garden fertilizer,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,4,1,30,1,0,10000,1
 LY.0600.030,#N/A,#N/A,P.LY.080,#N/A,#N/A,0,Communal,,Other Outdoor,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0600.030,LY.0600.030.099.F,"plants and garden , mulch NOC",P.LY.080.000,mulch,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,4,1,30,1,0,10000,1
+LY.0600.030,LY.0600.030.099.F,"plants and garden , mulch NOC",P.LY.080.000,mulch,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,4,1,30,1,0,10000,1
 LY.0600.040,#N/A,#N/A,P.LY.100,#N/A,#N/A,0,Communal,,Other Outdoor,0.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0600.040,LY.0600.040.099.F,"plants and garden , potting soil NOC",P.LY.100.000,potting soil,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,12,0.3,30,1,0,250,1
+LY.0600.040,LY.0600.040.099.F,"plants and garden , potting soil NOC",P.LY.100.000,potting soil,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,12,0.3,30,1,0,250,1
 LY.0600.050,#N/A,#N/A,P.LY.120,#N/A,#N/A,0,Communal,,Other Outdoor,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0600.050,LY.0600.050.099.F,"plants and garden , trees NOC",P.LY.120.000,trees,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,4,1,10,1,5,100,1
+LY.0600.050,LY.0600.050.099.F,"plants and garden , trees NOC",P.LY.120.000,trees,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,4,1,10,1,5,100,1
 LY.0700.010,#N/A,#N/A,P.LY.090,#N/A,#N/A,0,Communal,,Pool,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0700.010,LY.0700.010.030.F,"pool , pool chemicals algaecide",P.LY.090.002,pool chemicals algaecide,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
-LY.0700.010,LY.0700.010.031.F,"pool , pool chemicals chlorinating",P.LY.090.003,pool chemicals chlorinating,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
-LY.0700.010,LY.0700.010.032.F,"pool , pool chemicals ph control",P.LY.090.022,pool chemicals ph control,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
-LY.0700.010,LY.0700.010.033.F,"pool , pool chemicals shock",P.LY.090.025,pool chemicals shock,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
-LY.0700.010,LY.0700.010.099.F,"pool , pool chemicals NOC",P.LY.090.025,pool chemicals shock,0,1,Communal,O,Pool,NA,0.2,0.8,0.2,0,28,0.3,5,1,0,500,1
+LY.0700.010,LY.0700.010.030.F,"pool , pool chemicals algaecide",P.LY.090.002,pool chemicals algaecide,0,1,Communal,O,Pool,NA,0.2,0.66,0.34,0,28,0.3,5,1,0,500,1
+LY.0700.010,LY.0700.010.031.F,"pool , pool chemicals chlorinating",P.LY.090.003,pool chemicals chlorinating,0,1,Communal,O,Pool,NA,0.2,0.66,0.34,0,28,0.3,5,1,0,500,1
+LY.0700.010,LY.0700.010.032.F,"pool , pool chemicals ph control",P.LY.090.022,pool chemicals ph control,0,1,Communal,O,Pool,NA,0.2,0.66,0.34,0,28,0.3,5,1,0,500,1
+LY.0700.010,LY.0700.010.033.F,"pool , pool chemicals shock",P.LY.090.025,pool chemicals shock,0,1,Communal,O,Pool,NA,0.2,0.66,0.34,0,28,0.3,5,1,0,500,1
+LY.0700.010,LY.0700.010.099.F,"pool , pool chemicals NOC",P.LY.090.025,pool chemicals shock,0,1,Communal,O,Pool,NA,0.2,0.66,0.34,0,28,0.3,5,1,0,500,1
 LY.0800.010,#N/A,#N/A,P.LY.110,#N/A,#N/A,0,Communal,,Other Outdoor,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-LY.0800.010,LY.0800.010.099.F,"surface deicer , surface deicer NOC",P.LY.110.000,surface deicer,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,3,1,20,1,0,1000,1
+LY.0800.010,LY.0800.010.099.F,"surface deicer , surface deicer NOC",P.LY.110.000,surface deicer,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,3,1,20,1,0,1000,1
 PC.0100.010,#N/A,#N/A,P.PC.010,#N/A,#N/A,0,Personal,,0,NA,NA,0.2,0.2,0.1,NA,NA,NA,NA,NA,NA,NA
 PC.0100.010,PC.0100.010.050.F,"acne treatment , acne spot treatment spray",P.PC.010.029,acne spot treatment spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,132,0.3,5,0.3,0,1.2,1
 PC.0100.010,PC.0100.010.099.F,"acne treatment , acne spot treatment NOC",P.PC.010.029,acne spot treatment spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,132,0.3,5,0.3,0,1.2,1
@@ -278,11 +278,11 @@ PC.0800.040,PC.0800.040.001.F,"child specific , baby shampoo child",P.PC.060.000
 PC.0800.050,#N/A,#N/A,P.PC.070,#N/A,#N/A,0,Personal,,Baby Bathing,NA,NA,0.01,0.01,0.73,NA,NA,NA,NA,NA,NA,NA
 PC.0800.050,PC.0800.050.001.F,"child specific , baby wash child",P.PC.070.000,baby wash,0,1,Personal,I,Baby Bathing,NA,NA,1,1,1,364,0,3,0.3,0,5,1
 PC.0800.060,#N/A,#N/A,P.PC.080,#N/A,#N/A,0,Communal,,0,0.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PC.0800.060,PC.0800.060.001.F,"child specific , baby wipes child",P.PC.080.000,baby wipes,0,1,Communal,I,0,NA,1,0.2,0.8,0,364,0,3,0.3,0,5,1
+PC.0800.060,PC.0800.060.001.F,"child specific , baby wipes child",P.PC.080.000,baby wipes,0,1,Communal,I,0,NA,1,0.25,0.75,0,364,0,3,0.3,0,5,1
 PC.0800.070,#N/A,#N/A,P.PC.110,#N/A,#N/A,0,Personal,,Bathing,NA,NA,0.05,0.05,1,NA,NA,NA,NA,NA,NA,NA
 PC.0800.070,PC.0800.070.001.F,"child specific , bath paints/crayons child",P.PC.110.000,bath paints/crayons,0,1,Personal,I,Bathing,NA,NA,1,1,1,120,0.3,20,0.3,0,0.1,1
 PC.0800.080,#N/A,#N/A,P.PC.300,#N/A,#N/A,0,Communal,,0,0.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PC.0800.080,PC.0800.080.001.F,"child specific , diaper cream child",P.PC.300.000,diaper cream,0,1,Communal,I,0,NA,1,0.2,0.8,0,730,0,2,0.3,0,3,1
+PC.0800.080,PC.0800.080.001.F,"child specific , diaper cream child",P.PC.300.000,diaper cream,0,1,Communal,I,0,NA,1,0.25,0.75,0,730,0,2,0.3,0,3,1
 PC.0900.030,#N/A,#N/A,P.PC.260,#N/A,#N/A,0,Personal,,Dentures,NA,NA,0.1,0.1,0,NA,NA,NA,NA,NA,NA,NA
 PC.0900.030,PC.0900.030.099.F,"dental care , denture adhesive NOC",P.PC.260.000,denture adhesive,0,1,Personal,I,Dentures,NA,NA,1,1,1,364,0,3,0.3,0,20,1
 PC.0900.040,#N/A,#N/A,P.PC.270,#N/A,#N/A,0,Personal,,Dentures,NA,NA,0.1,0.1,0,NA,NA,NA,NA,NA,NA,NA
@@ -395,7 +395,7 @@ PC.2200.010,PC.2200.010.099.F,"liniment , liniment NOC",P.PC.650.000,liniment,0,
 PC.2300.010,#N/A,#N/A,P.PC.140,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.05,0.65,0,NA,NA,NA,NA,NA,NA,NA
 PC.2300.010,PC.2300.010.099.F,"make-up and related , blush/bronzer NOC",P.PC.140.000,blush/bronzer,0,1,Personal,I,Skin Makeup,NA,NA,1,1,1,364,0,5,0.3,0,2,1
 PC.2300.020,#N/A,#N/A,P.PC.250,#N/A,#N/A,0,Communal,,0,0.03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PC.2300.020,PC.2300.020.099.F,"make-up and related , cosmetic tool cleaner NOC",P.PC.250.000,cosmetic tool cleaner,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,10,0.3,0,30,1
+PC.2300.020,PC.2300.020.099.F,"make-up and related , cosmetic tool cleaner NOC",P.PC.250.000,cosmetic tool cleaner,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,10,0.3,0,30,1
 PC.2300.030,#N/A,#N/A,P.PC.360,#N/A,#N/A,0,Personal,,Skin Makeup,NA,NA,0.01,0.79,0.02,NA,NA,NA,NA,NA,NA,NA
 PC.2300.030,PC.2300.030.052.F,"make-up and related , eye liner liquid",P.PC.360.013,eye liner liquid,0,1,Personal,I,Skin Makeup,NA,NA,0.5,0.5,0.5,364,0,2,0.3,0,0.005,1
 PC.2300.030,PC.2300.030.099.F,"make-up and related , eye liner NOC",P.PC.360.013,eye liner liquid,0,1,Personal,I,Skin Makeup,NA,NA,0.5,0.5,0.5,364,0,2,0.3,0,0.005,1
@@ -442,7 +442,7 @@ PC.2600.010,PC.2600.010.099.F,"sexual wellness , sexual wellness NOC",P.PC.810.0
 PC.2700.040,#N/A,#N/A,P.PC.020,#N/A,#N/A,0,Personal,,0,NA,NA,0.2,0,0,NA,NA,NA,NA,NA,NA,NA
 PC.2700.040,PC.2700.040.099.F,"shaving and hair removal , aftershave  NOC",P.PC.020.000,aftershave,0,1,Personal,I,0,NA,NA,1,1,1,132,0.3,5,0.3,0,1.2,1
 PC.2700.050,#N/A,#N/A,P.PC.230,#N/A,#N/A,0,Communal,,0,0.03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PC.2700.050,PC.2700.050.099.F,"shaving and hair removal , clipper lubricant/cleaner  NOC",P.PC.230.000,clipper lubricant/cleaner,0,1,Communal,I,0,NA,1,0.2,0.8,0,12,0.3,10,0.3,0,30,1
+PC.2700.050,PC.2700.050.099.F,"shaving and hair removal , clipper lubricant/cleaner  NOC",P.PC.230.000,clipper lubricant/cleaner,0,1,Communal,I,0,NA,1,0.25,0.75,0,12,0.3,10,0.3,0,30,1
 PC.2700.060,#N/A,#N/A,P.PC.290,#N/A,#N/A,0,Personal,,0,NA,NA,0.1,0.2,0,NA,NA,NA,NA,NA,NA,NA
 PC.2700.060,PC.2700.060.050.F,"shaving and hair removal , depilatory  spray",P.PC.290.029,depilatory spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,17,0.3,15,0.3,0,5.5,1
 PC.2700.060,PC.2700.060.099.F,"shaving and hair removal , depilatory  NOC",P.PC.290.029,depilatory spray,0,1,Personal,I,0,NA,NA,0.5,0.5,0.5,17,0.3,15,0.3,0,5.5,1
@@ -463,84 +463,84 @@ PC.2900.010,PC.2900.010.099.F,"sunscreen , sunscreen  NOC",P.PC.840.029,sunscree
 PC.2900.010,PC.2900.010.001.F,"sunscreen , sunscreen  child",P.PC.840.100,sunscreen children,0,1,Personal,I,0,NA,NA,0.25,0.25,0.25,75,0.3,5,0.3,0,10,1
 PC.2900.010,PC.2900.010.011.F,"sunscreen , sunscreen  child | spray",P.PC.840.101,sunscreen children|spray,0,1,Personal,I,0,NA,NA,0.25,0.25,0.25,75,0.3,5,0.3,0,10,1
 PE.0100.010,#N/A,#N/A,P.PE.010,#N/A,#N/A,0,Communal,,Other Outdoor,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0100.010,PE.0100.010.050.F,"animal repellent , animal repellent  spray",P.PE.010.029,animal repellent spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,0,200,1
-PE.0100.010,PE.0100.010.099.F,"animal repellent , animal repellent  NOC",P.PE.010.029,animal repellent spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,0,200,1
+PE.0100.010,PE.0100.010.050.F,"animal repellent , animal repellent  spray",P.PE.010.029,animal repellent spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,0,200,1
+PE.0100.010,PE.0100.010.099.F,"animal repellent , animal repellent  NOC",P.PE.010.029,animal repellent spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,0,200,1
 PE.0200.010,#N/A,#N/A,P.PE.020,#N/A,#N/A,0,Communal,,Other Outdoor,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0200.010,PE.0200.010.050.F,"fungicide , fungicide  spray",P.PE.020.029,fungicide-spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,1,1,10,0.6,0,500,1
-PE.0200.010,PE.0200.010.099.F,"fungicide , fungicide  NOC",P.PE.020.029,fungicide-spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,1,1,10,0.6,0,500,1
+PE.0200.010,PE.0200.010.050.F,"fungicide , fungicide  spray",P.PE.020.029,fungicide-spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,1,1,10,0.6,0,500,1
+PE.0200.010,PE.0200.010.099.F,"fungicide , fungicide  NOC",P.PE.020.029,fungicide-spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,1,1,10,0.6,0,500,1
 PE.0300.010,#N/A,#N/A,#N/A,#N/A,#N/A,0,Personal,,,NA,NA,0.5,0.5,0.5,NA,NA,NA,NA,NA,NA,NA
 PE.0300.010,PE.0300.010.050.F,"insect repellent , insect repellent  spray",P.PE.030.029,insect repellent-spray,0,1,Personal,O,0,NA,NA,0.5,0.5,0.5,48,0.3,5,0.6,0,1,1
 PE.0300.010,PE.0300.010.099.F,"insect repellent , insect repellent  NOC",P.PE.030.029,insect repellent-spray,0,1,Personal,O,0,NA,NA,0.5,0.5,0.5,48,0.3,5,0.6,0,1,1
 PE.0300.020,#N/A,#N/A,P.PE.030,#N/A,#N/A,0,Communal,,0,0.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0300.020,PE.0300.020.099.F,"insect repellent , insect repellent - exterior  NOC",P.PE.030.005,insect repellent exterior,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,48,0.3,10,0.6,0,1,1
-PE.0300.020,PE.0300.020.050.F,"insect repellent , insect repellent - exterior  spray",P.PE.030.006,insecticide-exterior|spray,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,48,0.3,10,0.6,0,1,1
+PE.0300.020,PE.0300.020.099.F,"insect repellent , insect repellent - exterior  NOC",P.PE.030.005,insect repellent exterior,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,48,0.3,10,0.6,0,1,1
+PE.0300.020,PE.0300.020.050.F,"insect repellent , insect repellent - exterior  spray",P.PE.030.006,insecticide-exterior|spray,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,48,0.3,10,0.6,0,1,1
 PE.0300.030,#N/A,#N/A,#N/A,#N/A,#N/A,0,Personal,,0,NA,NA,0.5,0.5,0.5,NA,NA,NA,NA,NA,NA,NA
 PE.0300.030,PE.0300.030.099.F,"insect repellent , insect repellent - skin  NOC",P.PE.030.026,insect repellent skin,0,1,Personal,O,0,NA,NA,0.5,0.5,0.5,48,0.3,5,0.6,0,1,1
 PE.0300.030,PE.0300.030.050.F,"insect repellent , insect repellent - skin  spray",P.PE.030.027,insect repellent skin|spray,0,1,Personal,O,0,NA,NA,0.5,0.5,0.5,48,0.3,5,0.6,0,1,1
 PE.0400.010,#N/A,#N/A,P.PE.040,#N/A,#N/A,0,Communal,,Other Outdoor,0.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0400.010,PE.0400.010.050.F,"insecticide , insecticide  spray",P.PE.040.029,insecticide spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,27,0.3,5,0.6,0,20,1
-PE.0400.010,PE.0400.010.099.F,"insecticide , insecticide  NOC",P.PE.040.029,insecticide spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,27,0.3,5,0.6,0,20,1
+PE.0400.010,PE.0400.010.050.F,"insecticide , insecticide  spray",P.PE.040.029,insecticide spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,27,0.3,5,0.6,0,20,1
+PE.0400.010,PE.0400.010.099.F,"insecticide , insecticide  NOC",P.PE.040.029,insecticide spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,27,0.3,5,0.6,0,20,1
 PE.0400.020,#N/A,#N/A,#N/A,#N/A,#N/A,0,Communal,,Other Outdoor,0.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0400.020,PE.0400.020.099.F,"insecticide , insecticide - exterior  NOC",P.PE.040.005,insecticide exterior,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,10,1,10,0.6,0,500,1
-PE.0400.020,PE.0400.020.050.F,"insecticide , insecticide - exterior  spray",P.PE.040.006,insecticide exterior|spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.8,0.2,0,10,1,10,0.6,0,500,1
+PE.0400.020,PE.0400.020.099.F,"insecticide , insecticide - exterior  NOC",P.PE.040.005,insecticide exterior,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,10,1,10,0.6,0,500,1
+PE.0400.020,PE.0400.020.050.F,"insecticide , insecticide - exterior  spray",P.PE.040.006,insecticide exterior|spray,0,1,Communal,O,Other Outdoor,NA,0.5,0.66,0.34,0,10,1,10,0.6,0,500,1
 PE.0400.030,#N/A,#N/A,#N/A,#N/A,#N/A,0,Communal,,0,0.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0400.030,PE.0400.030.099.F,"insecticide , insecticide - interior  NOC",P.PE.040.009,insecticide interior,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,27,0.3,5,0.6,0,50,1
-PE.0400.030,PE.0400.030.050.F,"insecticide , insecticide - interior  spray",P.PE.040.010,insecticide interior|spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,27,0.3,5,0.6,0,50,1
+PE.0400.030,PE.0400.030.099.F,"insecticide , insecticide - interior  NOC",P.PE.040.009,insecticide interior,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,27,0.3,5,0.6,0,50,1
+PE.0400.030,PE.0400.030.050.F,"insecticide , insecticide - interior  spray",P.PE.040.010,insecticide interior|spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,27,0.3,5,0.6,0,50,1
 PE.0500.010,#N/A,#N/A,P.PE.050,#N/A,#N/A,0,Communal,,Other Outdoor,0.07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PE.0500.010,PE.0500.010.099.F,"rodenticide , rodenticide  NOC",P.PE.050.000,rodenticide,0,1,Communal,O,Other Outdoor,NA,1,0.8,0.2,0,2,1,5,0.6,0,20,1
+PE.0500.010,PE.0500.010.099.F,"rodenticide , rodenticide  NOC",P.PE.050.000,rodenticide,0,1,Communal,O,Other Outdoor,NA,1,0.66,0.34,0,2,1,5,0.6,0,20,1
 PT.0100.060,#N/A,#N/A,P.PT.030,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0100.060,PT.0100.060.050.F,"all pets , other pet treatments  spray",P.PT.030.029,other pet treatments spray,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,12,0.3,5,0.6,0,50,1
-PT.0100.060,PT.0100.060.099.F,"all pets , other pet treatments  NOC",P.PT.030.029,other pet treatments spray,0,1,Communal,O,0,NA,0.5,0.8,0.2,0,12,0.3,5,0.6,0,50,1
+PT.0100.060,PT.0100.060.050.F,"all pets , other pet treatments  spray",P.PT.030.029,other pet treatments spray,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,12,0.3,5,0.6,0,50,1
+PT.0100.060,PT.0100.060.099.F,"all pets , other pet treatments  NOC",P.PT.030.029,other pet treatments spray,0,1,Communal,O,0,NA,0.5,0.66,0.34,0,12,0.3,5,0.6,0,50,1
 PT.0100.070,#N/A,#N/A,P.PT.040,#N/A,#N/A,0,Communal,,0,0.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0100.070,PT.0100.070.099.F,"all pets , pesticide - pet  NOC",P.PT.040.020,pesticide pet,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,12,0.3,2,0.6,2,5,1
-PT.0100.070,PT.0100.070.050.F,"all pets , pesticide - pet  spray",P.PT.040.021,pesticide pet|spray,0,1,Communal,I,0,NA,0.5,0.2,0.8,0,12,0.3,2,0.6,2,5,1
+PT.0100.070,PT.0100.070.099.F,"all pets , pesticide - pet  NOC",P.PT.040.020,pesticide pet,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,12,0.3,2,0.6,2,5,1
+PT.0100.070,PT.0100.070.050.F,"all pets , pesticide - pet  spray",P.PT.040.021,pesticide pet|spray,0,1,Communal,I,0,NA,0.5,0.25,0.75,0,12,0.3,2,0.6,2,5,1
 PT.0100.080,#N/A,#N/A,P.PT.050,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0100.080,PT.0100.080.099.F,"all pets , pet shampoo  NOC",P.PT.050.000,pet shampoo,0,1,Communal,I,0,NA,1,0.2,0.8,0,6,1,15,0.6,0,50,1
+PT.0100.080,PT.0100.080.099.F,"all pets , pet shampoo  NOC",P.PT.050.000,pet shampoo,0,1,Communal,I,0,NA,1,0.25,0.75,0,6,1,15,0.6,0,50,1
 PT.0100.090,#N/A,#N/A,P.PT.060,#N/A,#N/A,0,Communal,,0,0.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0100.090,PT.0100.090.050.F,"all pets , pet stain cleaner  spray",P.PT.060.029,pet stain cleaner spray,0,1,Communal,I,0,NA,0.25,0.2,0.8,0,96,0.3,10,0.6,0,50,1
-PT.0100.090,PT.0100.090.099.F,"all pets , pet stain cleaner  NOC",P.PT.060.029,pet stain cleaner spray,0,1,Communal,I,0,NA,0.25,0.2,0.8,0,96,0.3,10,0.6,0,50,1
+PT.0100.090,PT.0100.090.050.F,"all pets , pet stain cleaner  spray",P.PT.060.029,pet stain cleaner spray,0,1,Communal,I,0,NA,0.25,0.25,0.75,0,96,0.3,10,0.6,0,50,1
+PT.0100.090,PT.0100.090.099.F,"all pets , pet stain cleaner  NOC",P.PT.060.029,pet stain cleaner spray,0,1,Communal,I,0,NA,0.25,0.25,0.75,0,96,0.3,10,0.6,0,50,1
 PT.0200.010,#N/A,#N/A,P.PT.020,#N/A,#N/A,0,Communal,,0,0.3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0200.010,PT.0200.010.099.F,"cats , cat litter  NOC",P.PT.020.000,cat litter,0,1,Communal,I,0,NA,1,0.2,0.8,0,104,0.3,5,0.6,5,8000,1
+PT.0200.010,PT.0200.010.099.F,"cats , cat litter  NOC",P.PT.020.000,cat litter,0,1,Communal,I,0,NA,1,0.25,0.75,0,104,0.3,5,0.6,5,8000,1
 PT.0400.010,#N/A,#N/A,P.PT.010,#N/A,#N/A,0,Communal,,0,0.02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-PT.0400.010,PT.0400.010.099.F,"fish , aquarium  NOC",P.PT.010.000,aquarium,0,1,Communal,O,0,NA,1,0.8,0.2,0,12,0.3,20,0.6,20,50,1
+PT.0400.010,PT.0400.010.099.F,"fish , aquarium  NOC",P.PT.010.000,aquarium,0,1,Communal,O,0,NA,1,0.66,0.34,0,12,0.3,20,0.6,20,50,1
 VE.0100.010,#N/A,#N/A,P.AP.050,#N/A,#N/A,0,Communal,,0,0.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0100.010,VE.0100.010.050.F,"auto body work , auto paint  spray",P.AP.050.029,auto paint spray,0,1,Communal,OO,0,NA,0.5,0.8,0.2,0,5,1,50,0.6,0,300,1
-VE.0100.010,VE.0100.010.099.F,"auto body work , auto paint  NOC",P.AP.050.029,auto paint spray,0,1,Communal,OO,0,NA,0.5,0.8,0.2,0,5,1,50,0.6,0,300,1
+VE.0100.010,VE.0100.010.050.F,"auto body work , auto paint  spray",P.AP.050.029,auto paint spray,0,1,Communal,OO,0,NA,0.5,0.66,0.34,0,5,1,50,0.6,0,300,1
+VE.0100.010,VE.0100.010.099.F,"auto body work , auto paint  NOC",P.AP.050.029,auto paint spray,0,1,Communal,OO,0,NA,0.5,0.66,0.34,0,5,1,50,0.6,0,300,1
 VE.0100.020,#N/A,#N/A,P.AP.100,#N/A,#N/A,0,Communal,,0,0.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0100.020,VE.0100.020.050.F,"auto body work , body repair  spray",P.AP.100.029,auto products,0,1,Communal,OO,0,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,40,150,1
-VE.0100.020,VE.0100.020.099.F,"auto body work , body repair  NOC",P.AP.100.029,auto products,0,1,Communal,OO,0,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,40,150,1
+VE.0100.020,VE.0100.020.050.F,"auto body work , body repair  spray",P.AP.100.029,auto products,0,1,Communal,OO,0,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,40,150,1
+VE.0100.020,VE.0100.020.099.F,"auto body work , body repair  NOC",P.AP.100.029,auto products,0,1,Communal,OO,0,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,40,150,1
 VE.0100.030,#N/A,#N/A,P.AP.130,#N/A,#N/A,0,Communal,,Car Maintenance -2,0.16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0100.030,VE.0100.030.050.F,"auto body work , detailing  spray",P.AP.130.029,detailing spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,11,1,10,0.6,0,90,1
-VE.0100.030,VE.0100.030.099.F,"auto body work , detailing  NOC",P.AP.130.029,detailing spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,11,1,10,0.6,0,90,1
+VE.0100.030,VE.0100.030.050.F,"auto body work , detailing  spray",P.AP.130.029,detailing spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,11,1,10,0.6,0,90,1
+VE.0100.030,VE.0100.030.099.F,"auto body work , detailing  NOC",P.AP.130.029,detailing spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,11,1,10,0.6,0,90,1
 VE.0100.040,#N/A,#N/A,P.AP.150,#N/A,#N/A,0,Communal,,Car Maintenance -2,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0100.040,VE.0100.040.050.F,"auto body work , windows/windshield  spray",P.AP.150.029,windows/windshield spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,5,1,10,0.6,10,100,1
-VE.0100.040,VE.0100.040.099.F,"auto body work , windows/windshield  NOC",P.AP.150.029,windows/windshield spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,5,1,10,0.6,10,100,1
+VE.0100.040,VE.0100.040.050.F,"auto body work , windows/windshield  spray",P.AP.150.029,windows/windshield spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,5,1,10,0.6,10,100,1
+VE.0100.040,VE.0100.040.099.F,"auto body work , windows/windshield  NOC",P.AP.150.029,windows/windshield spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,5,1,10,0.6,10,100,1
 VE.0200.020,#N/A,#N/A,P.AP.070,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0200.020,VE.0200.020.099.F,"boat care and maintenance , boat cleaner - general  NOC",P.AP.070.000,boat cleaner,0,1,Communal,O,0,NA,1,0.8,0.2,0,2,1,120,0.6,0,500,1
+VE.0200.020,VE.0200.020.099.F,"boat care and maintenance , boat cleaner - general  NOC",P.AP.070.000,boat cleaner,0,1,Communal,O,0,NA,1,0.66,0.34,0,2,1,120,0.6,0,500,1
 VE.0200.040,#N/A,#N/A,P.AP.080,#N/A,#N/A,0,Communal,,0,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0200.040,VE.0200.040.099.F,"boat care and maintenance , boat engine fluids  NOC",P.AP.080.000,boat engine fluids,0,1,Communal,O,0,NA,1,0.8,0.2,0,2,1,10,0.6,30,50,1
+VE.0200.040,VE.0200.040.099.F,"boat care and maintenance , boat engine fluids  NOC",P.AP.080.000,boat engine fluids,0,1,Communal,O,0,NA,1,0.66,0.34,0,2,1,10,0.6,30,50,1
 VE.0300.010,#N/A,#N/A,P.AP.020,#N/A,#N/A,0,Communal,,Car Maintenance -2,0.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0300.010,VE.0300.010.050.F,"car interior , auto air freshener  spray",P.AP.020.029,auto air freshener spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,5,1,1,0.6,3,10,1
-VE.0300.010,VE.0300.010.099.F,"car interior , auto air freshener  NOC",P.AP.020.029,auto air freshener spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,5,1,1,0.6,3,10,1
+VE.0300.010,VE.0300.010.050.F,"car interior , auto air freshener  spray",P.AP.020.029,auto air freshener spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,5,1,1,0.6,3,10,1
+VE.0300.010,VE.0300.010.099.F,"car interior , auto air freshener  NOC",P.AP.020.029,auto air freshener spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,5,1,1,0.6,3,10,1
 VE.0400.010,#N/A,#N/A,P.AP.090,#N/A,#N/A,0,Communal,,Car Maintenance -2,0.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0400.010,VE.0400.010.099.F,"car surface treatment , body cleaner  NOC",P.AP.090.000,body cleaner,0,1,Communal,OO,Car Maintenance -2,NA,1,0.8,0.2,0,12,0.3,10,0.6,0,150,1
+VE.0400.010,VE.0400.010.099.F,"car surface treatment , body cleaner  NOC",P.AP.090.000,body cleaner,0,1,Communal,OO,Car Maintenance -2,NA,1,0.66,0.34,0,12,0.3,10,0.6,0,150,1
 VE.0400.020,#N/A,#N/A,P.AP.110,#N/A,#N/A,0,Communal,,Car Maintenance -2,0.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0400.020,VE.0400.020.050.F,"car surface treatment , body wax  spray",P.AP.110.029,body wax spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,0,150,1
-VE.0400.020,VE.0400.020.099.F,"car surface treatment , body wax  NOC",P.AP.110.029,body wax spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.8,0.2,0,12,0.3,10,0.6,0,150,1
+VE.0400.020,VE.0400.020.050.F,"car surface treatment , body wax  spray",P.AP.110.029,body wax spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,0,150,1
+VE.0400.020,VE.0400.020.099.F,"car surface treatment , body wax  NOC",P.AP.110.029,body wax spray,0,1,Communal,OO,Car Maintenance -2,NA,0.5,0.66,0.34,0,12,0.3,10,0.6,0,150,1
 VE.0400.040,#N/A,#N/A,P.AP.120,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0400.040,VE.0400.040.050.F,"car surface treatment , degreaser  spray",P.AP.120.029,degreaser spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,15,0.3,10,0.6,0,100,1
-VE.0400.040,VE.0400.040.099.F,"car surface treatment , degreaser  NOC",P.AP.120.029,degreaser spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,15,0.3,10,0.6,0,100,1
+VE.0400.040,VE.0400.040.050.F,"car surface treatment , degreaser  spray",P.AP.120.029,degreaser spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,15,0.3,10,0.6,0,100,1
+VE.0400.040,VE.0400.040.099.F,"car surface treatment , degreaser  NOC",P.AP.120.029,degreaser spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,15,0.3,10,0.6,0,100,1
 VE.0500.010,#N/A,#N/A,P.AP.010,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0500.010,VE.0500.010.099.F,"engine maintenance , antifreeze  NOC",P.AP.010.000,antifreeze,0,1,Communal,OO,Car Maintenance -1,NA,1,0.8,0.2,0,0.5,1,2,0.6,10,500,1
+VE.0500.010,VE.0500.010.099.F,"engine maintenance , antifreeze  NOC",P.AP.010.000,antifreeze,0,1,Communal,OO,Car Maintenance -1,NA,1,0.66,0.34,0,0.5,1,2,0.6,10,500,1
 VE.0500.020,#N/A,#N/A,P.AP.030,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0500.020,VE.0500.020.050.F,"engine maintenance , auto fluids and additives  spray",P.AP.030.029,auto fluids and additives spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,5,1,10,0.6,0,200,1
-VE.0500.020,VE.0500.020.099.F,"engine maintenance , auto fluids and additives  NOC",P.AP.030.029,auto fluids and additives spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,5,1,10,0.6,0,200,1
+VE.0500.020,VE.0500.020.050.F,"engine maintenance , auto fluids and additives  spray",P.AP.030.029,auto fluids and additives spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,5,1,10,0.6,0,200,1
+VE.0500.020,VE.0500.020.099.F,"engine maintenance , auto fluids and additives  NOC",P.AP.030.029,auto fluids and additives spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,5,1,10,0.6,0,200,1
 VE.0500.030,#N/A,#N/A,P.AP.040,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0500.030,VE.0500.030.050.F,"engine maintenance , auto lubricant  spray",P.AP.040.029,auto lubricant spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,11,1,10,0.6,0,50,1
-VE.0500.030,VE.0500.030.099.F,"engine maintenance , auto lubricant  NOC",P.AP.040.029,auto lubricant spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.8,0.2,0,11,1,10,0.6,0,50,1
+VE.0500.030,VE.0500.030.050.F,"engine maintenance , auto lubricant  spray",P.AP.040.029,auto lubricant spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,11,1,10,0.6,0,50,1
+VE.0500.030,VE.0500.030.099.F,"engine maintenance , auto lubricant  NOC",P.AP.040.029,auto lubricant spray,0,1,Communal,OO,Car Maintenance -1,NA,0.5,0.66,0.34,0,11,1,10,0.6,0,50,1
 VE.0500.040,#N/A,#N/A,P.AP.060,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0500.040,VE.0500.040.099.F,"engine maintenance , auto refrigerant  NOC",P.AP.060.000,auto refrigerant,0,1,Communal,OO,Car Maintenance -1,NA,1,0.8,0.2,0,0.5,1,10,0.6,0,30,1
+VE.0500.040,VE.0500.040.099.F,"engine maintenance , auto refrigerant  NOC",P.AP.060.000,auto refrigerant,0,1,Communal,OO,Car Maintenance -1,NA,1,0.66,0.34,0,0.5,1,10,0.6,0,30,1
 VE.0500.050,#N/A,#N/A,P.AP.140,#N/A,#N/A,0,Communal,,Car Maintenance -1,0.25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-VE.0500.050,VE.0500.050.099.F,"engine maintenance , motor oil  NOC",P.AP.140.000,motor oil,0,1,Communal,OO,Car Maintenance -1,NA,1,0.8,0.2,0.5,4,1,10,0.6,0,500,1
+VE.0500.050,VE.0500.050.099.F,"engine maintenance , motor oil  NOC",P.AP.140.000,motor oil,0,1,Communal,OO,Car Maintenance -1,NA,1,0.66,0.34,0.5,4,1,10,0.6,0,500,1
 PC.2000.090,PC.2000.090.099.F,"hair styling and care , hair conditioner NOC",P.PC.550.029,hair conditioner spray,,1,Personal,I,Hair treatment,NA,NA,0.5,0.5,0.5,96,0.3,10,0.6,0,50,1
 PC.2000.150,PC.2000.150.099.F,"hair styling and care , hair styling NOC",P.PC.590.029,hair styling spray,0,1,Personal,I,Hair treatment,NA,NA,0.33,0.33,0.33,96,0.3,10,0.6,0,50,1
