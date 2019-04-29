@@ -1,5 +1,5 @@
 #############################################
-# ABM is executed by calling ABM_Runner() 
+# ABM is executed by calling ABM_Runner()
 ##############################################
 
 rm(list=ls())
@@ -12,7 +12,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   # Inputs:
   #       pth_str: a working folder with the following three sub-folders:
   #                INPUTS, CODE, OUTPUTS
-  #       household_number: a vector of house ID you are interested, this  
+  #       household_number: a vector of house ID you are interested, this
   #                         vector only contains one number now
   #       random_seed: number of a random seed
   ############################################################################
@@ -28,7 +28,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   
   
   ##########################
-  ## for a given household 
+  ## for a given household
   ##########################
   rdiary_household_output<- data.frame()
   household_index_str <- household_number
@@ -40,7 +40,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   ################################################
   # Call Household Universe of Products (HUP)
   ################################################
-  # define HUP results for a household as 'HUP_output' and 
+  # define HUP results for a household as 'HUP_output' and
   # re-write as a dataframe (only communal)
   HUP_output <- HUP(household_index_str, phf, ent)
   
@@ -50,8 +50,8 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   CPS_out <- CPS(HUP_output, HCP_output_sub, sheds_var_raw)
   # write.csv(CPS_out, paste0("./OUTPUTS/CPS_out_", household_index_str, ".csv"))
   
-  # create a dataframe PUC_household to hold available PUCs at the 
-  # household level with its user's information (gender, age), PUC use 
+  # create a dataframe PUC_household to hold available PUCs at the
+  # household level with its user's information (gender, age), PUC use
   # profile (mass, duration), as well as household information (size)
   # IUP_output_full <- data.frame()
   # RPT_output_full <- data.frame()
@@ -60,8 +60,8 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   # loop through individuals in a household -- first pass
   ##########################################################
   for (person_index_str in 1:length(person_list)){
-    # loop by person 
-    # person_index_str=2        
+    # loop by person
+    # person_index_str=2
     ic <- HCP_output_sub[HCP_output_sub$person_index==person_index_str, ]
     person_index_temp <- person_index_str
     person_gender_temp <- ic$person_gender
@@ -95,7 +95,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     # Call Clustered Activity Aggregator (CAA)
     ####################################################################
     CAA_output <- CAA(df_rpt)
-    df_aggcl <- CAA_output$collapsed_clusters 
+    df_aggcl <- CAA_output$collapsed_clusters
     df_aggcl <- df_aggcl[order(df_aggcl$use_freq, decreasing = TRUE),]
     df_puccl <- CAA_output$PUC_clusters
     df_puccl <- df_puccl[order(df_puccl$use_freq, decreasing = TRUE),]
@@ -178,19 +178,19 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     } # end of assigning PUCs to diary loop
     
     # Clean up rdiary after assigning all PUCs
-    dprooutput <- dpro(rdiary, sheds_var_raw, sheds_id_temp, HCP_output_sub$region[1]) 
+    dprooutput <- dpro(rdiary, sheds_var_raw, sheds_id_temp, HCP_output_sub$region[1])
     rdiary <- dprooutput$rdiary
     rdiary <- mutate(rdiary, ending_time = Start.Time.hr.using.military.time+Duration.hr)
     rdiary <- filter(rdiary, Day.of.the.year>0)
-    rdiary <- select(rdiary, -Minutes, -rind) 
+    rdiary <- select(rdiary, -Minutes, -rind)
     
     ###############################################
-    # Call Aggregated Activity Disaggregator (AAD) 
+    # Call Aggregated Activity Disaggregator (AAD)
     ###############################################
     rdiary <- AAD(rdiary)
     
     ###############################################
-    # Call Clustered Activity Disaggregator (CAD) 
+    # Call Clustered Activity Disaggregator (CAD)
     ###############################################
     rdiary_final <- CAD(rdiary, df_puccl)
     rdiary_final$person_index <- person_index_temp
@@ -198,54 +198,70 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
     rdiary_final$person_age <- person_age_temp
     rdiary_final$household_index <- household_index_str
     # create table of relevant refined PUCs with fields like use_mass, use_ht
-    df_rpt_temp <- merge(select(df_rpt, sheds_id, use_ht, use_act, use_mass), 
-                         product_refine_tbl, all.x=T, by.x="sheds_id", by.y="PUCID_refined") 
+    df_rpt_temp <- merge(select(df_rpt, sheds_id, use_ht, use_act, use_mass),
+                         product_refine_tbl, all.x=T, by.x="sheds_id", by.y="PUCID_refined")
     # add fields like use_mass to idnvidual diary
-    rdiary_final <- merge(rdiary_final, df_rpt_temp, all.x=T, by="sheds_id") 
+    rdiary_final <- merge(rdiary_final, df_rpt_temp, all.x=T, by="sheds_id")
+    # ### hack to fix Painting cluster indoor outdoor differential status
+    # 
+    # a=rdiary_final[which(rdiary_final$Clusters=="Painting"),] # partition painting cluster rows if any
+    # b=rdiary_final[(rdiary_final$Clusters!="Painting"),] # all other rows
+    # 
+    # if (nrow(a)>0) {
+    #   c<-sheds_var_raw[,c("PUCID_refined","indoor_outdoor")]
+    #   c<-c[c$PUCID_refined!="#NA", ]
+    #   d<-merge(a,c,by.a="sheds_id",by.c="PUCID_refined",all.a=T)
+    #   d$Indoor_outdoor<-d$indoor_outdoor # replace with original PUCIDs for Painting
+    #   e<-d[,!(names(d) %in% c("PUCID_refined","indoor_outdoor"))] # drop new vars
+    #   rdiary_final<-bind_rows(b,e) # bind the non painting cluster rows with the painting cluster rows -- not sorted. done later anyway.
+    # }
+    # 
+    # # end of hack
     
     rdiary_household_output <- bind_rows(rdiary_household_output, rdiary_final)
   } # end of second pass loop
   
   
   household_output <- rdiary_household_output %>% select( #Person.ID,
-    Day.of.the.year, 
-    Start.Time.hr.using.military.time, 
+    Day.of.the.year,
+    Start.Time.hr.using.military.time,
     End.Time.hr.using.military.time=ending_time,
     Duration.hr,
-    Duration.min, 
-    Activity.Code, 
-    Diary.category, 
-    PUCID.productype=PUCID_productype, 
-    sheds.id.refined=sheds_id, 
+    Duration.min,
+    Activity.Code,
+    Diary.category,
+    PUCID.productype=PUCID_productype,
+    sheds.id.refined=sheds_id,
     PUCID.PT.description=PUCID_PT_description,
     Personal.or.Communal=Personal_or_Communal,
     Clusters,
     Indoor.outdoor=Indoor_outdoor,
-    periodicity, 
+    periodicity,
     dur.actural=dur_actural,
-    dur.theory.combine=dur_theory_combine, 
+    dur.theory.combine=dur_theory_combine,
     new.cluster.PUC=new_cluster_PUC,
-    new.cluster.name=new_cluster_name, 
+    new.cluster.name=new_cluster_name,
     fni.list=fni_list,
-    freq.list=freq_list, 
+    freq.list=freq_list,
     agg.fold.list=agg_fold_list,
-    freq.float=freq_float, 
+    freq.float=freq_float,
     flag,
     household.index=household_index,
-    person.index=person_index, 
+    person.index=person_index,
     person.gender=person_gender,
-    person.age=person_age, 
+    person.age=person_age,
     use.ht=use_ht,
-    use.act=use_act, 
+    use.act=use_act,
     use.mass=use_mass
-  ) %>% 
+  ) %>%
     arrange(person.index, Day.of.the.year, Start.Time.hr.using.military.time)
+  household_output<-household_output[!is.na(household_output$Day.of.the.year),] # part of hack
   
   household_output$Primary.person <- 0
   household_output[household_output$person.index=="1", "Primary.person"] <- 1
   household_output$freq.float <- as.numeric(household_output$freq.float)
-  household_output <- household_output %>% mutate_at(.vars = c("Duration.hr", "periodicity", "dur.actural", 
-                                                               "dur.theory.combine", "freq.float", "Duration.min", 
+  household_output <- household_output %>% mutate_at(.vars = c("Duration.hr", "periodicity", "dur.actural",
+                                                               "dur.theory.combine", "freq.float", "Duration.min",
                                                                "use.ht", "use.act", "use.mass"),
                                                      .funs = funs(round(.,3)))
   opcols <- c("Day.of.the.year","Start.Time.hr.using.military.time","End.Time.hr.using.military.time","Duration.hr","Duration.min","Activity.Code","Diary.category","PUCID.productype","sheds.id.refined","PUCID.PT.description","Personal.or.Communal","Clusters","Indoor.outdoor","household.index","person.index","person.gender","person.age","use.ht","use.act","use.mass","Primary.person")
@@ -260,6 +276,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
   
   # clean up memory
   gc()
+  an.error.occured<<-FALSE
 }
 
 
@@ -272,7 +289,7 @@ ABM_Runner <- function(pth_str=NULL, household_number=3){
 
 # declare working folder
 set.seed(1234)
-pth_str <- "C:/Users/13963/Documents/ABM/2018/ProductUseScheduler_07152018/"
+pth_str <- "C:/Users/13963SS/Documents/ABM/2019/ProductUseScheduler-master_PP3/"
 
 setwd(pth_str)
 tryCatch(source("./CODE/ABS.R"),
@@ -297,22 +314,22 @@ HCP_output <- ABSoutput$HCP_output
 
 
 ### NON PARALLEL VERSION  ###############
-
-# house_list <- 1:10
+#
+# house_list <- 1:1000
+# 
 # for(i in house_list){
-#   tryCatch({
-#   ABM_Runner(pth_str,i)},
-#   error=function(e){
-#     tryCatch({
-#       ABM_Runner(pth_str,i)},
-#       error=function(e){ABM_Runner(pth_str,i)}) # end of 2nd error function and 2nd tryCatch
-#   }) # end of 1st error function and 1st tryCatch
-# }# end of for loop
-
-
+#   tryCatch({ABM_Runner(pth_str,i)}
+#            , error = function(e) {an.error.occured <<- TRUE})
+#      while(an.error.occured==TRUE){
+#      tryCatch({ABM_Runner(pth_str,i)}
+#             , error = function(e) {an.error.occured <<- TRUE})
+#   } # end while
+# 
+#   
+# } # end for
 ###############PARALLEL VERSION ########
-
-house_list <- 1:10
+#
+house_list <- 1:1000
 
 library(foreach)
 library(doParallel)
@@ -323,17 +340,14 @@ registerDoParallel(cl, cores = detectCores() - 1)
 
 
 out <- foreach(i = 1:length(house_list),.packages='dplyr') %dopar% {
-  res <- tryCatch({
-    set.seed(i*97)
-    ABM_Runner(pth_str, house_list[i])
-  }, error=function(e){ # start of 1st error function
-    tryCatch({
-      set.seed(i*98)
-      ABM_Runner(pth_str, house_list[i])
-    }, error=function(e){ # start of 2nd error function
-      set.seed(i*99)
-      ABM_Runner(pth_str,house_list[i])})} # end of 2nd error function, 2nd try-catch, 1st error function
-  ) # end of 1st try catch
+  res <- tryCatch({ABM_Runner(pth_str,i)}
+                  , error = function(e) {an.error.occured <<- TRUE})
+  while(an.error.occured==TRUE){
+    tryCatch({ABM_Runner(pth_str,i)}
+             , error = function(e) {an.error.occured <<- TRUE})
+    
+  } # end while   
+  
 } # end of do-par loop
 
 
